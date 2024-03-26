@@ -194,15 +194,121 @@ header {
 
 // footer
 footer {
-    // background-color: #000;
+    background-color: #000;
     padding: 100px 0;
 
     .footer_top {
         margin-bottom: 120px;
-        @include flex-start();
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+
+    .footer_left_block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .footer_logo {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;   
+
+        span {
+            color: rgb(140, 137, 137);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 120%;
+        }
+    }
+
+    .footer_logo_under {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        li {
+            color: rgb(140, 137, 137);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 16px;
+        }
+    }
+
+    .footer_block_center {
+        display: flex;
+        gap: 60px;
+
+        .footer_center_in {
+            width: 180px;
+        }
+
+        h6 {
+            color: rgb(255, 255, 255);
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-bottom: 40px;
+        }
+
+        .footer_link {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            a {
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 16px;
+            }
+
+            .footer_btn {
+                display: none;
+            }
+
+            .footer_phone {
+                color: rgb(255, 255, 255);
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 20px;
+            }
+        }
+
+
+        .footer_social_btn {
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 140%;
+            @include flex-full-center();
+            gap: 12px;
+            width: 180px;
+            height: 44px;
+            background: rgb(43, 43, 43);
+        }
         
     }
 
+    .footer_btn {
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 140%;
+        background: linear-gradient(270.00deg, rgb(225, 107, 95),rgb(243, 168, 158) 100%);
+        width: 223px;
+        height: 54px;
+        @include flex-full-center();
+    }
+
+    p {
+        margin-top: 20px;
+        color: rgb(140, 137, 137);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 140%;
+    }
 
     .footer_bottom {
         border-top: 1px solid rgb(43, 43, 43);
