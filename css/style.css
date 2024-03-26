@@ -132,6 +132,31 @@ header .burger {
   display: none;
 }
 
+@media only screen and (max-width: 1100px) {
+  header .logo {
+    min-width: 244px;
+    gap: 10px;
+  }
+  header .logo img {
+    width: 125px;
+  }
+  header .logo span {
+    font-size: 10px;
+  }
+  header .nav_link {
+    gap: 17px;
+  }
+  header .nav_link a {
+    white-space: nowrap;
+    font-size: 13px;
+    line-height: 13px;
+  }
+  header .header_btn {
+    font-size: 13px;
+    min-width: 130px;
+    height: 35px;
+  }
+}
 @media only screen and (max-width: 950px) {
   h1 {
     font-size: 50px;
@@ -144,6 +169,17 @@ header .burger {
   }
   h4 {
     font-size: 16px;
+  }
+}
+@media only screen and (max-width: 840px) {
+  header nav {
+    display: none;
+  }
+  header .header_btn {
+    display: none;
+  }
+  header .burger {
+    display: block;
   }
 }
 @media only screen and (max-width: 576px) {
