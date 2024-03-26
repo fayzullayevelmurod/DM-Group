@@ -1,3 +1,27 @@
+h1 {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -28,6 +52,7 @@ html {
 }
 
 body {
+  font-family: "Muller", sans-serif;
   font-style: normal;
 }
 
@@ -49,7 +74,81 @@ button {
 }
 
 .main_container {
-  max-width: 1380px;
-  padding: 0 10px;
+  max-width: 1272px;
+  padding: 0 36px;
   margin: 0 auto;
+}
+
+header {
+  padding: 40px 0;
+}
+header .main_container {
+  display: flex;
+  align-items: center;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+header .logo span {
+  color: rgb(25, 20, 20);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 120%;
+}
+header .nav_link {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+header .nav_link a {
+  color: rgb(25, 20, 20);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+header .header_btn {
+  width: 163px;
+  height: 48px;
+  white-space: nowrap;
+  color: rgb(25, 20, 20);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  box-sizing: border-box;
+  border: 1px solid rgb(25, 20, 20);
+  box-shadow: 0px 0px 15px 0px rgba(25, 20, 20, 0.05);
+}
+header .burger {
+  display: none;
+}
+
+@media only screen and (max-width: 950px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */

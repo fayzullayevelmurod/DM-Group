@@ -30,6 +30,50 @@
 }
 // mixin
 
+// fonts
+$fonts-Manrope: "Manrope", sans-serif;
+$fonts-Mulish: "Mulish", sans-serif;
+$fonts-Muller: "Muller", sans-serif;
+// fonts
+
+// colors
+$color-acent: linear-gradient(270.00deg, rgb(225, 107, 95),rgb(243, 168, 158) 100%);
+$color-main: #191414;
+$color-secondary: #ffffff;
+$color-background: #F9F9F9;
+
+$text-1: #191414;
+$text-2: #ffffff;
+$text-3: #8C8989;
+$stroke: #F1F1F1;
+// colors
+
+// var
+h1 {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 120%;
+}
+// var
+
 * {
     margin: 0;
     padding: 0;
@@ -60,7 +104,7 @@ html {
 }
 
 body {
-
+    font-family: "Muller", sans-serif;
     font-style: normal;
 }
 
@@ -82,10 +126,61 @@ button {
 }
 
 .main_container {
-    max-width: 1380px;
-    padding: 0 10px;
+    max-width: 1272px;
+    padding: 0 36px;
     margin: 0 auto;
 }
+
+// header
+header {
+    padding: 40px 0;
+
+    .main_container {
+        @include flex-center();
+    }
+
+    .logo {
+        @include flex-center();
+        gap: 16px;
+        
+        span {
+            color: rgb(25, 20, 20);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 120%;
+        }
+    }
+
+    .nav_link {
+        @include flex-center();
+        gap: 24px;
+
+        a {
+            color: rgb(25, 20, 20);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 16px;
+        }
+    }
+
+    .header_btn {
+        width: 163px;
+        height: 48px;
+        white-space: nowrap;
+        color: rgb(25, 20, 20);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16px;
+        box-sizing: border-box;
+        border: 1px solid rgb(25, 20, 20);
+        box-shadow: 0px 0px 15px 0px rgba(25, 20, 20, 0.05);
+    }
+
+    .burger {
+        display: none;
+    }
+}
+// header
 
 
 
