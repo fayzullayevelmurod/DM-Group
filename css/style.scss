@@ -197,6 +197,7 @@ header {
 // repair_home
 .repair_home {
     margin-top: 71px;
+    margin-bottom: 200px;
 
     .main_container {
         display: flex;
@@ -326,6 +327,87 @@ header {
     }
 }
 // repair_home
+
+// repair_options
+.repair_options {
+    margin-bottom: 200px;
+    .main_container {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        gap: 23px;
+    }
+
+    .repair_options_card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
+        flex: 1;
+        background-color: #fff;
+        padding: 45px;
+        box-shadow: 0px 0px 15px 0px rgba(25, 20, 20, 0.05);
+
+        .repair_options_card_top_img {
+            width: 100%;
+            height: 191px;
+        }
+
+        .repair_options_card_top {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        h6 {
+            color: rgb(25, 20, 20);
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 140%;
+            text-align: center;
+
+            span {
+                display: block;
+                color: rgb(25, 20, 20);
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 140%;
+                margin-top: 5px;
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            li {
+                color: rgb(140, 137, 137);
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 140%;
+                @include flex-center();
+                gap: 10px;
+
+                img {
+                    flex-shrink: 0;
+                }
+            }
+        }
+
+        button {
+            margin: 0 auto;
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 140%;
+            width: 200px;
+            height: 54px;
+            background: linear-gradient(270.00deg, rgb(225, 107, 95),rgb(243, 168, 158) 100%);
+        }
+    }
+}
+// repair_options
 
 
 // footer
