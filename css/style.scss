@@ -122,7 +122,6 @@ button {
 .wrapper {
     width: 100%;
     overflow: hidden;
-    position: relative;
 }
 
 .main_container {
@@ -190,6 +189,143 @@ header {
     }
 }
 // header
+
+.repair_page {
+    background: rgb(249, 249, 249);
+}
+
+// repair_home
+.repair_home {
+    margin-top: 71px;
+
+    .main_container {
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+    }
+
+    .repair_home_left {
+        h1 {
+            color: #000;
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 120%;
+            margin-bottom: 20px;
+
+            span {
+                color: rgb(140, 137, 137);
+            }
+        }
+
+        .title_under {
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 140%;
+            padding: 10px 20px;
+            background: rgb(30, 67, 57);
+            margin-bottom: 60px;
+        }
+
+        .repair_text_about {
+            margin-bottom: 60px;
+            display: flex;
+            align-items: start;
+            gap: 35px;
+
+            img {
+                margin-bottom: 20px;
+            }
+
+            p {
+                min-width: 96px;
+                color: rgb(140, 137, 137);
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 140%;
+            }
+        }
+
+        .repair_home_form {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+
+            input,
+            button {
+                width: 280px;
+            }
+
+            input {
+                padding: 20px;
+                color: rgb(140, 137, 137);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 140%;
+                border: 1px solid rgb(241, 241, 241);
+                box-shadow: 0px 0px 15px 0px rgba(25, 20, 20, 0.05);
+            }
+
+            button {
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 140%;
+                height: 77px;
+                background: linear-gradient(270.00deg, rgb(225, 107, 95),rgb(243, 168, 158) 100%);
+            }
+        }
+
+        .repair_home_form_under {
+            display: flex;
+            align-items: start;
+            gap: 8px;
+
+            input {
+                width: 25px;
+                height: 25px;
+                accent-color: rgb(30, 67, 57);
+            }
+
+            label {
+                color: rgb(140, 137, 137);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 140%;
+
+
+                a {
+                    text-decoration: underline !important;
+                }
+            }
+        }
+    }
+    
+    .repair_homeSwiper {
+        width: 526px;
+        position: relative;
+
+        .repair_slider_btn {
+            padding: 20px 0 0 20px;
+            position: absolute;
+            bottom: 4px;
+            right: 0;
+            z-index: 2;
+            background-color: #fff;
+            @include flex-center();
+            gap: 10px;
+
+            .repair-button-prev,
+            .repair-button-next {
+                border: 1px solid #000;
+                width: 50px;
+                height: 50px;
+                @include flex-full-center();
+            }
+        }
+    }
+}
+// repair_home
 
 
 // footer
