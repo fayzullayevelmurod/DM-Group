@@ -381,6 +381,11 @@ header .burger {
 .examples_work .main_title {
   margin-bottom: 80px;
 }
+.examples_work .examples_workSwiper {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+}
 .examples_work .examples_work_card {
   display: flex;
   align-items: stretch;

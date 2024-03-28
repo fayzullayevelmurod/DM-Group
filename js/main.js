@@ -7,11 +7,11 @@ let swiper1 = new Swiper(".repair_homeSwiper", {
     },
 });
 
-var swiper2 = new Swiper(".examples_workSwiper", {
+let swiper2 = new Swiper(".examples_workSwiper", {
   spaceBetween: 20,
   loop: true,
   navigation: {
-    nextEl: ".examples_work-button-next",
-    prevEl: ".examples_work-button-prev",
+    nextEl: ".examples_work-next",
+    prevEl: ".examples_work-prev",
   },
 });
