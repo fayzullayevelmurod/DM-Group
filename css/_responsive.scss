@@ -129,6 +129,7 @@
     }
 
     .professional_team {
+        margin-bottom: 130px;
 
         .main_title {
             margin-bottom: 70px;    
@@ -156,6 +157,73 @@
 
             p {
                 font-size: 13px;
+            }
+        }
+    }
+
+    .examples_work {
+        .main_title {
+            margin-bottom: 56px;
+        }
+
+        .examples_work_slider_in {
+            gap: 23px;
+        }
+
+        .examples_work_card {
+            padding: 58px 30px;
+            gap: 36px;
+
+            h4 {
+                font-size: 30px;
+                margin-bottom: 15px;
+            }
+
+            ul {
+                margin-bottom: 20px;
+
+                li {
+                    padding: 7px 0;
+                }
+
+                h6,
+                span {
+                    font-size: 13px;
+                }
+            }
+
+            p {
+                font-size: 13px;
+                margin-bottom: 7px;
+            }
+
+            .examples_work_right_btn {
+                font-size: 13px;
+
+                span {
+                    width: 10px;
+                    height: 10px;
+
+                    img {
+                        width: 7px;
+                    }
+                }
+            }
+
+            .examples_work_slider_btn {
+                margin-top: 25px;
+                font-size: 16px;
+                padding: 11px 14px;
+            }
+        }
+
+        .examples_work-prev,
+        .examples_work-next {
+            width: 36px;
+            height: 36px;
+
+            img {
+                width: 17px;
             }
         }
     }
@@ -271,7 +339,25 @@
     }
 }
 
+@media only screen and (max-width: 930px) {
+    .repair_home {
+
+        .main_container {
+            gap: 30px;
+        }
+
+        .repair_homeSwiper {
+            width: 300px;
+        }
+    }
+}
+
 @media only screen and (max-width: 840px) {
+
+    .main_title {
+        font-size: 25px;
+    }
+
     header {
         padding: 20px 0;
 
@@ -292,6 +378,189 @@
         .burger {
             flex-shrink: 0;
             display: block;
+        }
+    }
+
+    .repair_home {
+
+        margin: 20px 0 70px 0;
+
+        .main_container {
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .repair_home_left  {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+
+            .main_title {
+                max-width: 100%;
+                font-size: 25px;
+                text-align: center;
+            }
+
+            .title_under {
+                margin-bottom: 0;
+            }
+        }
+
+        .repair_home_left {
+            .repair_text_about {
+                display: none;
+            }
+
+            .repair_form {
+                display: none;
+            }
+        }
+
+        .repair_home_mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .repair_home_form {
+                flex-direction: column;
+                gap: 13px;
+                margin-bottom: 20px;
+
+                input,button {
+                    width: 320px;
+                    height: 77px;
+                }
+            }
+
+            .repair_home_form_under  {
+                max-width: 320px;
+                input {
+                    width: 15px;
+                    height: 15px;
+                }
+
+                label {
+                    font-size: 12px;
+                }
+            }
+        } 
+
+    }
+
+    .repair_options {
+        .main_title {
+            margin-bottom: 40px;
+        }
+
+        .repair_options_cards {
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .repair_options_card {
+            padding: 27px;
+
+            .repair_options_card_top {
+                gap: 30px;
+            }
+
+            ul {
+                li {
+                    font-size: 16px;
+                }
+            }
+
+            button {
+                width: 200px;
+                height: 54px;
+            }
+        }
+    }
+
+    .professional_team {
+        margin-bottom: 70px;
+
+        .main_title {
+            text-align: center;
+            font-size: 25px;
+            margin-bottom: 50px;
+        }
+        .professional_team_in {
+            .professional_team_card {
+                width: 100%;
+                min-height: 303px;
+
+                h6 {
+                    font-size: 20px;
+                    margin-bottom: 25px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+
+                img {
+                    height: 303px;
+                    transform: translateY(4px);
+                }
+            }
+
+            .card_text {
+                padding: 50px 30px;
+            }
+        }
+    }
+
+    .examples_work {
+        margin-bottom: 50px;
+
+        .main_title {
+            text-align: center;
+        }
+
+        .examples_work_btn_desktop {
+            display: none;
+        }
+
+        .examples_work_slider_in {
+            display: flex;
+        }
+
+        .examples_work_card {
+            padding: 27px 29px 60px 29px;
+            flex-direction: column;
+            gap: 40px;
+
+            h4 {
+                font-size: 25px;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .examples_work_left {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .slider_main_btn {
+                @include flex-full-center;
+            }
+
+            .examples_work_slider_btn {
+                margin-top: 35px;
+                height: 54px;
+                width: 200px;
+            }
+        }
+
+        .examples_workSwiper_btns {
+            margin-top: 40px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
         }
     }
 

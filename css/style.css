@@ -189,16 +189,19 @@ header .burger {
   font-weight: 400;
   line-height: 140%;
 }
-.repair_home .repair_home_left .repair_home_form {
+.repair_home .repair_home_mobile {
+  display: none;
+}
+.repair_home .repair_home_form {
   display: flex;
   gap: 10px;
   margin-bottom: 30px;
 }
-.repair_home .repair_home_left .repair_home_form input,
-.repair_home .repair_home_left .repair_home_form button {
+.repair_home .repair_home_form input,
+.repair_home .repair_home_form button {
   width: 280px;
 }
-.repair_home .repair_home_left .repair_home_form input {
+.repair_home .repair_home_form input {
   padding: 20px;
   color: rgb(140, 137, 137);
   font-size: 16px;
@@ -207,7 +210,7 @@ header .burger {
   border: 1px solid rgb(241, 241, 241);
   box-shadow: 0px 0px 15px 0px rgba(25, 20, 20, 0.05);
 }
-.repair_home .repair_home_left .repair_home_form button {
+.repair_home .repair_home_form button {
   color: rgb(255, 255, 255);
   font-size: 16px;
   font-weight: 700;
@@ -215,23 +218,23 @@ header .burger {
   height: 77px;
   background: linear-gradient(270deg, rgb(225, 107, 95), rgb(243, 168, 158) 100%);
 }
-.repair_home .repair_home_left .repair_home_form_under {
+.repair_home .repair_home_form_under {
   display: flex;
   align-items: start;
   gap: 8px;
 }
-.repair_home .repair_home_left .repair_home_form_under input {
+.repair_home .repair_home_form_under input {
   width: 25px;
   height: 25px;
   accent-color: rgb(30, 67, 57);
 }
-.repair_home .repair_home_left .repair_home_form_under label {
+.repair_home .repair_home_form_under label {
   color: rgb(140, 137, 137);
   font-size: 16px;
   font-weight: 400;
   line-height: 140%;
 }
-.repair_home .repair_home_left .repair_home_form_under label a {
+.repair_home .repair_home_form_under label a {
   text-decoration: underline !important;
 }
 .repair_home .repair_homeSwiper {
@@ -477,6 +480,9 @@ header .burger {
   background: linear-gradient(270deg, rgb(225, 107, 95), rgb(243, 168, 158) 100%);
   padding: 16px 20px;
 }
+.examples_work .examples_workSwiper_btns {
+  display: none;
+}
 
 footer {
   background-color: #000;
@@ -712,6 +718,9 @@ footer .footer_bottom span {
     height: 45px;
     font-size: 16px;
   }
+  .professional_team {
+    margin-bottom: 130px;
+  }
   .professional_team .main_title {
     margin-bottom: 70px;
   }
@@ -732,6 +741,58 @@ footer .footer_bottom span {
   }
   .professional_team .professional_team_in p {
     font-size: 13px;
+  }
+  .examples_work .main_title {
+    margin-bottom: 56px;
+  }
+  .examples_work .examples_work_slider_in {
+    gap: 23px;
+  }
+  .examples_work .examples_work_card {
+    padding: 58px 30px;
+    gap: 36px;
+  }
+  .examples_work .examples_work_card h4 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .examples_work .examples_work_card ul {
+    margin-bottom: 20px;
+  }
+  .examples_work .examples_work_card ul li {
+    padding: 7px 0;
+  }
+  .examples_work .examples_work_card ul h6,
+  .examples_work .examples_work_card ul span {
+    font-size: 13px;
+  }
+  .examples_work .examples_work_card p {
+    font-size: 13px;
+    margin-bottom: 7px;
+  }
+  .examples_work .examples_work_card .examples_work_right_btn {
+    font-size: 13px;
+  }
+  .examples_work .examples_work_card .examples_work_right_btn span {
+    width: 10px;
+    height: 10px;
+  }
+  .examples_work .examples_work_card .examples_work_right_btn span img {
+    width: 7px;
+  }
+  .examples_work .examples_work_card .examples_work_slider_btn {
+    margin-top: 25px;
+    font-size: 16px;
+    padding: 11px 14px;
+  }
+  .examples_work .examples_work-prev,
+  .examples_work .examples_work-next {
+    width: 36px;
+    height: 36px;
+  }
+  .examples_work .examples_work-prev img,
+  .examples_work .examples_work-next img {
+    width: 17px;
   }
 }
 @media only screen and (max-width: 1100px) {
@@ -811,7 +872,18 @@ footer .footer_bottom span {
     font-size: 16px;
   }
 }
+@media only screen and (max-width: 930px) {
+  .repair_home .main_container {
+    gap: 30px;
+  }
+  .repair_home .repair_homeSwiper {
+    width: 300px;
+  }
+}
 @media only screen and (max-width: 840px) {
+  .main_title {
+    font-size: 25px;
+  }
   header {
     padding: 20px 0;
   }
@@ -827,6 +899,145 @@ footer .footer_bottom span {
   header .burger {
     flex-shrink: 0;
     display: block;
+  }
+  .repair_home {
+    margin: 20px 0 70px 0;
+  }
+  .repair_home .main_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .repair_home .repair_home_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .repair_home .repair_home_left .main_title {
+    max-width: 100%;
+    font-size: 25px;
+    text-align: center;
+  }
+  .repair_home .repair_home_left .title_under {
+    margin-bottom: 0;
+  }
+  .repair_home .repair_home_left .repair_text_about {
+    display: none;
+  }
+  .repair_home .repair_home_left .repair_form {
+    display: none;
+  }
+  .repair_home .repair_home_mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .repair_home .repair_home_mobile .repair_home_form {
+    flex-direction: column;
+    gap: 13px;
+    margin-bottom: 20px;
+  }
+  .repair_home .repair_home_mobile .repair_home_form input, .repair_home .repair_home_mobile .repair_home_form button {
+    width: 320px;
+    height: 77px;
+  }
+  .repair_home .repair_home_mobile .repair_home_form_under {
+    max-width: 320px;
+  }
+  .repair_home .repair_home_mobile .repair_home_form_under input {
+    width: 15px;
+    height: 15px;
+  }
+  .repair_home .repair_home_mobile .repair_home_form_under label {
+    font-size: 12px;
+  }
+  .repair_options .main_title {
+    margin-bottom: 40px;
+  }
+  .repair_options .repair_options_cards {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .repair_options .repair_options_card {
+    padding: 27px;
+  }
+  .repair_options .repair_options_card .repair_options_card_top {
+    gap: 30px;
+  }
+  .repair_options .repair_options_card ul li {
+    font-size: 16px;
+  }
+  .repair_options .repair_options_card button {
+    width: 200px;
+    height: 54px;
+  }
+  .professional_team {
+    margin-bottom: 70px;
+  }
+  .professional_team .main_title {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+  .professional_team .professional_team_in .professional_team_card {
+    width: 100%;
+    min-height: 303px;
+  }
+  .professional_team .professional_team_in .professional_team_card h6 {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  .professional_team .professional_team_in .professional_team_card p {
+    font-size: 16px;
+  }
+  .professional_team .professional_team_in .professional_team_card img {
+    height: 303px;
+    transform: translateY(4px);
+  }
+  .professional_team .professional_team_in .card_text {
+    padding: 50px 30px;
+  }
+  .examples_work {
+    margin-bottom: 50px;
+  }
+  .examples_work .main_title {
+    text-align: center;
+  }
+  .examples_work .examples_work_btn_desktop {
+    display: none;
+  }
+  .examples_work .examples_work_slider_in {
+    display: flex;
+  }
+  .examples_work .examples_work_card {
+    padding: 27px 29px 60px 29px;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .examples_work .examples_work_card h4 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .examples_work .examples_work_card .examples_work_left img {
+    width: 100%;
+  }
+  .examples_work .examples_work_card .slider_main_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .examples_work .examples_work_card .examples_work_slider_btn {
+    margin-top: 35px;
+    height: 54px;
+    width: 200px;
+  }
+  .examples_work .examples_workSwiper_btns {
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
   }
   footer {
     padding: 70px 0 45px 0;
