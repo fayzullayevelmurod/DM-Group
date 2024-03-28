@@ -130,6 +130,17 @@ button {
     margin: 0 auto;
 }
 
+.main_title {
+    color: #000;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 120%;
+
+    span {
+        color: rgb(140, 137, 137);
+    }
+}
+
 // header
 header {
     padding: 40px 0;
@@ -331,7 +342,12 @@ header {
 // repair_options
 .repair_options {
     margin-bottom: 200px;
-    .main_container {
+
+    .main_title {
+        margin-bottom: 80px;
+    }
+
+    .repair_options_cards {
         display: flex;
         align-items: stretch;
         justify-content: space-between;
@@ -408,6 +424,154 @@ header {
     }
 }
 // repair_options
+
+// professional_team
+.professional_team {
+    margin-bottom: 150px;
+
+    .main_title {
+        margin-bottom: 100px;
+        max-width: 940px;
+    }
+
+    .professional_team_in {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+
+        .professional_team_card {
+            width: calc(100% / 4);
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .card_text {
+            padding: 50px 25px;
+        }
+
+        h6 {
+            color: rgb(255, 255, 255);
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 120%;
+            margin-bottom: 25px;
+            color: rgb(25, 20, 20);
+        }
+
+        p {
+            color: rgb(191, 191, 191);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 140%;
+        }
+
+        .green_card {
+            background: #1E4339;
+            h6 {
+                color: #fff;
+            }
+
+            p {
+                color: rgb(191, 191, 191);
+            }
+        }
+    }
+
+}
+// professional_team
+
+// examples_work
+.examples_work {
+    .main_title {
+        margin-bottom: 80px;
+    }
+
+    .examples_work_card {
+        display: flex;
+        align-items: stretch;
+        gap: 50px;
+        padding: 80px 40px;
+        box-shadow: 0px 0px 15px 0px rgba(25, 20, 20, 0.05);
+        background: rgb(255, 255, 255);
+
+        h4 {
+            max-width: 470px;
+            color: rgb(25, 20, 20);
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 120%;
+            margin-bottom: 23px;
+        }
+
+        ul {
+            margin-bottom: 30px;
+            li {
+                @include flex-center();
+                justify-content: space-between;
+                padding: 10px 0;
+                border-bottom: 1px solid rgb(241, 241, 241);
+
+                &:last-child {
+                    border: none;
+                }
+            }
+
+            h6 {
+                color: rgb(25, 20, 20);
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 140%;
+            }
+
+            span {
+                color: rgb(140, 137, 137);
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 140%;
+            }
+        }
+
+        p {
+            color: rgb(25, 20, 20);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 140%;
+            margin-bottom: 10px;
+        }
+
+        .examples_work_right_btn {
+            margin-bottom: 5px;
+            color: rgb(140, 137, 137);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 140%;
+            @include flex-center();
+            gap: 7px;
+
+            span {
+                border-radius: 50%;
+                @include flex-full-center();
+                width: 15px;
+                height: 15px;
+                box-shadow: 0px 0px 15px 0px rgba(25, 20, 20, 0.05);
+                background: linear-gradient(270.00deg, rgb(225, 107, 95),rgb(243, 168, 158) 100%);
+            }
+        }
+
+        .examples_work_slider_btn {
+            margin-top: 30px;
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 140%;
+            background: linear-gradient(270.00deg, rgb(225, 107, 95),rgb(243, 168, 158) 100%);
+            padding: 16px 20px;
+        }
+    }
+}
+// examples_work
 
 // footer
 footer {

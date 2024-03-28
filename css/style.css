@@ -78,6 +78,16 @@ button {
   margin: 0 auto;
 }
 
+.main_title {
+  color: #000;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 120%;
+}
+.main_title span {
+  color: rgb(140, 137, 137);
+}
+
 header {
   padding: 40px 0;
 }
@@ -252,7 +262,10 @@ header .burger {
 .repair_options {
   margin-bottom: 200px;
 }
-.repair_options .main_container {
+.repair_options .main_title {
+  margin-bottom: 80px;
+}
+.repair_options .repair_options_cards {
   display: flex;
   align-items: stretch;
   justify-content: space-between;
@@ -318,6 +331,132 @@ header .burger {
   width: 200px;
   height: 54px;
   background: linear-gradient(270deg, rgb(225, 107, 95), rgb(243, 168, 158) 100%);
+}
+
+.professional_team {
+  margin-bottom: 150px;
+}
+.professional_team .main_title {
+  margin-bottom: 100px;
+  max-width: 940px;
+}
+.professional_team .professional_team_in {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.professional_team .professional_team_in .professional_team_card {
+  width: 25%;
+}
+.professional_team .professional_team_in .professional_team_card img {
+  height: 100%;
+}
+.professional_team .professional_team_in .card_text {
+  padding: 50px 25px;
+}
+.professional_team .professional_team_in h6 {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 25px;
+  color: rgb(25, 20, 20);
+}
+.professional_team .professional_team_in p {
+  color: rgb(191, 191, 191);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.professional_team .professional_team_in .green_card {
+  background: #1E4339;
+}
+.professional_team .professional_team_in .green_card h6 {
+  color: #fff;
+}
+.professional_team .professional_team_in .green_card p {
+  color: rgb(191, 191, 191);
+}
+
+.examples_work .main_title {
+  margin-bottom: 80px;
+}
+.examples_work .examples_work_card {
+  display: flex;
+  align-items: stretch;
+  gap: 50px;
+  padding: 80px 40px;
+  box-shadow: 0px 0px 15px 0px rgba(25, 20, 20, 0.05);
+  background: rgb(255, 255, 255);
+}
+.examples_work .examples_work_card h4 {
+  max-width: 470px;
+  color: rgb(25, 20, 20);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 23px;
+}
+.examples_work .examples_work_card ul {
+  margin-bottom: 30px;
+}
+.examples_work .examples_work_card ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid rgb(241, 241, 241);
+}
+.examples_work .examples_work_card ul li:last-child {
+  border: none;
+}
+.examples_work .examples_work_card ul h6 {
+  color: rgb(25, 20, 20);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.examples_work .examples_work_card ul span {
+  color: rgb(140, 137, 137);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.examples_work .examples_work_card p {
+  color: rgb(25, 20, 20);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 10px;
+}
+.examples_work .examples_work_card .examples_work_right_btn {
+  margin-bottom: 5px;
+  color: rgb(140, 137, 137);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.examples_work .examples_work_card .examples_work_right_btn span {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  box-shadow: 0px 0px 15px 0px rgba(25, 20, 20, 0.05);
+  background: linear-gradient(270deg, rgb(225, 107, 95), rgb(243, 168, 158) 100%);
+}
+.examples_work .examples_work_card .examples_work_slider_btn {
+  margin-top: 30px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 140%;
+  background: linear-gradient(270deg, rgb(225, 107, 95), rgb(243, 168, 158) 100%);
+  padding: 16px 20px;
 }
 
 footer {
