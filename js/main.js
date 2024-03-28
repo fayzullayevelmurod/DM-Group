@@ -15,3 +15,5 @@ let swiper2 = new Swiper(".examples_workSwiper", {
     prevEl: ".examples_work-prev",
   },
 });
+
+console.log(swiper2);

@@ -217,7 +217,7 @@ header {
     }
 
     .repair_home_left {
-        h1 {
+        .main_title {
             color: #000;
             font-size: 40px;
             font-weight: 400;
@@ -440,6 +440,7 @@ header {
         flex-wrap: wrap;
 
         .professional_team_card {
+            background: #fff;
             width: calc(100% / 4);
 
             img {
@@ -484,13 +485,25 @@ header {
 
 // examples_work
 .examples_work {
+    margin-bottom: 200px;
+
     .main_title {
         margin-bottom: 80px;
     }
 
-    .examples_workSwiper {
-        border: 1px solid red;
+    .examples_work_slider_in {
         @include flex-center();
+        gap: 32px;
+    }
+
+    .examples_work-prev,
+    .examples_work-next {
+        position: static;
+        flex-shrink: 0;
+        width: 50px;
+        height: 50px;   
+        border: 1px solid rgb(25, 20, 20);
+        @include flex-full-center();
     }
 
     .examples_work_card {
