@@ -1,4 +1,9 @@
 @media only screen and (max-width: 1300px) {
+
+    .main_title {
+        font-size: 30px;
+    }
+
     .repair_home {
         margin: 20px 0 130px 0;
         
@@ -75,6 +80,82 @@
                         width: 17px;
                     }
                 }
+            }
+        }
+    }
+
+    .repair_options {
+        margin-bottom: 130px;
+
+        .main_title {
+            margin-bottom: 57px;
+        }
+
+        .repair_options_cards {
+            gap: 15px;
+        }
+
+        .repair_options_card {
+            padding: 32px;
+            gap: 30px;
+
+            .repair_options_card_top {
+                gap: 20px;
+            }
+
+            ul {
+                gap: 7px;
+
+                li {
+                    font-size: 13px;
+                }
+            }
+
+            h6 {
+                font-size: 24px;
+
+                span {
+                    font-size: 13px;
+                }
+            }
+
+            button {
+                width: 146px;
+                height: 45px;
+                font-size: 16px;
+            }
+        }
+
+    }
+
+    .professional_team {
+
+        .main_title {
+            margin-bottom: 70px;    
+        }
+
+        .professional_team_in {
+
+            .professional_team_card {
+                min-height: 278px;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .card_text {
+                padding: 36px 17px;
+            }
+
+            h6 {
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-size: 13px;
             }
         }
     }
