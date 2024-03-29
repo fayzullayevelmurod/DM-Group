@@ -61,6 +61,7 @@ input {
 }
 
 button {
+  font-family: "Muller", sans-serif;
   border: none;
   cursor: pointer;
   background: transparent;
@@ -225,6 +226,9 @@ header .burger {
   display: flex;
   align-items: start;
   gap: 8px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .repair_home .repair_home_form_under input {
   width: 25px;
@@ -552,6 +556,81 @@ header .burger {
   background: rgb(30, 67, 57);
 }
 
+.accordion {
+  margin: 200px 0;
+}
+.accordion .main_container {
+  display: flex;
+}
+.accordion .accordion-single-item {
+  padding: 16px;
+  box-shadow: 0px 0px 15px 0px rgba(25, 20, 20, 0.05);
+  background: rgb(255, 255, 255);
+}
+.accordion .accordion-single {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.accordion .accordion-single span {
+  margin-left: auto;
+}
+.accordion .accordion-single-title {
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  color: rgb(25, 20, 20);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.accordion .accordion-single-title:focus .accordion_icon .two_icon {
+  opacity: 0;
+}
+.accordion .accordion_icon {
+  flex-shrink: 0;
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+.accordion .accordion_icon .one_icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.accordion .accordion_icon .two_icon {
+  transition: 0.2s ease;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transform: rotate(90deg);
+}
+.accordion .accordion-single-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+.accordion .accordion-single-content p {
+  max-width: 80%;
+  margin-top: 16px;
+  color: rgb(140, 137, 137);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.accordion .accordion-single-item.is-open .accordion-single-content {
+  max-height: 150px;
+}
+.accordion .accordion-single-item.is-open .accordion-single-title::after {
+  transform: translateY(-50%) rotate(315deg);
+}
+
 footer {
   background-color: #000;
   padding: 100px 0;
@@ -862,6 +941,25 @@ footer .footer_bottom span {
   .examples_work .examples_work-next img {
     width: 17px;
   }
+  .accordion {
+    margin: 130px 0;
+  }
+  .accordion .accordion-single {
+    gap: 11px;
+  }
+  .accordion .accordion-single-item {
+    padding: 11px;
+  }
+  .accordion .accordion-single-title {
+    font-size: 18px;
+  }
+  .accordion .accordion-single-content p {
+    margin-top: 11px;
+    font-size: 16px;
+  }
+  .accordion .accordion_icon {
+    width: 17px;
+  }
 }
 @media only screen and (max-width: 1100px) {
   header .logo {
@@ -1117,6 +1215,7 @@ footer .footer_bottom span {
     margin-bottom: 0;
   }
   .examples_Swiper_block .examples_work_title p {
+    font-size: 15px;
     text-align: center;
   }
   .examples_Swiper_block .examples_work_card {
@@ -1156,6 +1255,26 @@ footer .footer_bottom span {
   .examples_Swiper_block .examples_work_right,
   .examples_Swiper_block .examples_work_left {
     width: 100%;
+  }
+  .accordion {
+    margin: 70px 0;
+  }
+  .accordion .main_container {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .accordion .main_title {
+    text-align: center;
+  }
+  .accordion .accordion-single-item {
+    padding: 20px 14px;
+  }
+  .accordion .accordion-single-title {
+    font-size: 16px;
+  }
+  .accordion .accordion-single-content p {
+    max-width: 95%;
+    font-size: 12px;
   }
   footer {
     padding: 70px 0 45px 0;

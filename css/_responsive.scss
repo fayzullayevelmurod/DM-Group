@@ -227,6 +227,33 @@
             }
         }
     }
+
+    .accordion {
+        margin: 130px 0;
+
+        .accordion-single {
+            gap: 11px;
+        }
+
+        .accordion-single-item {
+            padding: 11px;
+        }
+
+        .accordion-single-title {
+            font-size: 18px;
+        }
+
+        .accordion-single-content {
+            p {
+                margin-top: 11px;
+                font-size: 16px;
+            }
+        }
+
+        .accordion_icon {
+            width: 17px;
+        }
+    }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -576,6 +603,7 @@
             }
 
             p {
+                font-size: 15px;
                 text-align: center;
             }
         }
@@ -628,6 +656,33 @@
         .examples_work_right,
         .examples_work_left {
             width: 100%;
+        }
+    }
+
+    .accordion {
+        margin: 70px 0;
+        .main_container {
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        .main_title {
+            text-align: center;
+        }
+
+        .accordion-single-item {
+            padding: 20px 14px;
+        }
+
+        .accordion-single-title {
+            font-size: 16px;
+        }
+
+        .accordion-single-content {
+            p {
+                max-width: 95%;
+                font-size: 12px;
+            }
         }
     }
 

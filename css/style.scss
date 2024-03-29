@@ -113,6 +113,7 @@ input {
 }
 
 button {
+    font-family: "Muller", sans-serif;
     border: none;
     cursor: pointer;
     background: transparent;
@@ -301,6 +302,7 @@ header {
         display: flex;
         align-items: start;
         gap: 8px;
+        user-select: none;
 
         input {
             width: 25px;
@@ -685,6 +687,99 @@ header {
     }
 }
 // examples_Swiper_block
+
+// accordion
+.accordion {
+    margin: 200px 0;
+
+    .main_container {
+        display: flex;
+    }
+
+    .accordion-single-item {
+        padding: 16px;
+        box-shadow: 0px 0px 15px 0px rgba(25, 20, 20, 0.05);
+        background: rgb(255, 255, 255);
+    }
+
+    .accordion-single  {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        span {
+            margin-left: auto;
+        }
+    }
+      
+    .accordion-single-title {
+        text-align: left;
+        width: 100%;
+        cursor: pointer;
+        position: relative;
+        color: rgb(25, 20, 20);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 140%;
+        @include flex-center();
+        justify-content: space-between;
+        gap: 10px;
+
+        &:focus {
+            .accordion_icon {
+                .two_icon {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
+    .accordion_icon {
+        flex-shrink: 0;
+        position: relative;
+        width: 24px;
+        height: 24px;
+
+        .one_icon {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .two_icon {
+            @include transition();
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 1;
+            transform: rotate(90deg);
+        }
+    }
+      
+    .accordion-single-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .3s ease-in-out;
+    }
+      
+    .accordion-single-content p {
+        max-width: 80%;
+        margin-top: 16px;
+        color: rgb(140, 137, 137);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 140%;
+    }
+      
+    .accordion-single-item.is-open .accordion-single-content  {
+        max-height: 150px;
+    }
+      
+    .accordion-single-item.is-open .accordion-single-title::after  {
+        transform: translateY(-50%) rotate(315deg);
+    }
+}
+// accordion
 
 // footer
 footer {
