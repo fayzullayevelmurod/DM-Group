@@ -16,4 +16,11 @@ let swiper2 = new Swiper(".examples_workSwiper", {
   },
 });
 
-console.log(swiper2);
+let swiper3 = new Swiper(".examples_Swiper", {
+  spaceBetween: 20,
+  loop: true,
+  navigation: {
+    nextEl: ".examples_Swiper-next",
+    prevEl: ".examples_Swiper-prev",
+  },
+});

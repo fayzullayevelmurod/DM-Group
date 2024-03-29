@@ -120,6 +120,7 @@ header .nav_link a {
   line-height: 16px;
 }
 header .header_btn {
+  font-family: "Muller";
   width: 163px;
   height: 48px;
   white-space: nowrap;
@@ -165,6 +166,7 @@ header .burger {
   color: rgb(140, 137, 137);
 }
 .repair_home .repair_home_left .title_under {
+  font-family: "Muller";
   color: rgb(255, 255, 255);
   font-size: 20px;
   font-weight: 400;
@@ -200,6 +202,7 @@ header .burger {
 .repair_home .repair_home_form input,
 .repair_home .repair_home_form button {
   width: 280px;
+  font-family: "Muller";
 }
 .repair_home .repair_home_form input {
   padding: 20px;
@@ -411,6 +414,16 @@ header .burger {
   box-shadow: 0px 0px 15px 0px rgba(25, 20, 20, 0.05);
   background: rgb(255, 255, 255);
 }
+.examples_work .examples_work_card address {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgb(140, 137, 137);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 100%;
+  margin-bottom: 16px;
+}
 .examples_work .examples_work_card h4 {
   max-width: 470px;
   color: rgb(25, 20, 20);
@@ -482,6 +495,61 @@ header .burger {
 }
 .examples_work .examples_workSwiper_btns {
   display: none;
+}
+
+.examples_Swiper_block .examples_work_title {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.examples_Swiper_block .examples_work_title .main_title {
+  max-width: 588px;
+}
+.examples_Swiper_block .examples_work_title p {
+  color: rgb(140, 137, 137);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+  max-width: 486px;
+}
+.examples_Swiper_block .examples_work_left {
+  flex: 1;
+}
+.examples_Swiper_block .examples_work_left img {
+  width: 100%;
+}
+.examples_Swiper_block .examples_work_right {
+  flex: 1;
+}
+.examples_Swiper_block .examples_work_card {
+  align-items: center;
+  padding: 32px;
+}
+.examples_Swiper_block .examples_work_card ul li {
+  padding: 15px 0;
+  display: flex;
+  gap: 10px;
+  align-items: start;
+  justify-content: space-between;
+}
+.examples_Swiper_block .examples_work_card ul li h6 {
+  max-width: 180px;
+}
+.examples_Swiper_block .examples_work_card ul li h6 span {
+  display: block;
+}
+.examples_Swiper_block .examples_work_card ul span {
+  font-size: 16px;
+  max-width: 280px;
+}
+.examples_Swiper_block .examples_work_card .examples_work_slider_btn {
+  font-family: "Muller";
+  text-align: left;
+  font-size: 24px;
+  padding: 8px 16px;
+  width: 100%;
+  margin-top: 0;
+  background: rgb(30, 67, 57);
 }
 
 footer {
@@ -1039,6 +1107,56 @@ footer .footer_bottom span {
     gap: 10px;
     justify-content: center;
   }
+  .examples_Swiper_block .examples_work_title {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  .examples_Swiper_block .examples_work_title .main_title {
+    margin-bottom: 0;
+  }
+  .examples_Swiper_block .examples_work_title p {
+    text-align: center;
+  }
+  .examples_Swiper_block .examples_work_card {
+    padding: 30px;
+  }
+  .examples_Swiper_block .examples_work_card h4 {
+    max-width: 100%;
+  }
+  .examples_Swiper_block .examples_work_card address {
+    font-size: 16px;
+    justify-content: center;
+  }
+  .examples_Swiper_block .examples_work_card ul li {
+    padding: 30px 0;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .examples_Swiper_block .examples_work_card ul li h6 {
+    font-size: 16px;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    justify-content: space-between;
+  }
+  .examples_Swiper_block .examples_work_card ul span {
+    font-size: 16px;
+    max-width: 100%;
+  }
+  .examples_Swiper_block .examples_work_card ul span br {
+    display: none;
+  }
+  .examples_Swiper_block .examples_work_card .examples_work_slider_btn {
+    margin-top: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .examples_Swiper_block .examples_work_right,
+  .examples_Swiper_block .examples_work_left {
+    width: 100%;
+  }
   footer {
     padding: 70px 0 45px 0;
   }
@@ -1120,5 +1238,21 @@ footer .footer_bottom span {
   }
   h4 {
     font-size: 15px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .main_container {
+    padding: 0 15px;
+  }
+  footer .footer_block_end {
+    width: 100%;
+  }
+  footer .footer_block_end .footer_btn {
+    max-width: 100%;
+    width: 100%;
+  }
+  footer .footer_block_center {
+    justify-content: space-between;
+    gap: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
