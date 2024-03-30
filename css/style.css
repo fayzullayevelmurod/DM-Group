@@ -54,6 +54,7 @@ html {
 body {
   font-family: "Muller", sans-serif;
   font-style: normal;
+  background: rgb(249, 249, 249);
 }
 
 input {
@@ -772,6 +773,63 @@ header .burger {
   transform: translateY(-50%) rotate(315deg);
 }
 
+.thanks {
+  padding: 110px 0 185px 0;
+}
+.thanks .main_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+}
+.thanks .thanks_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0px 0px 15px 0px rgba(25, 20, 20, 0.05);
+  background: rgb(255, 255, 255);
+}
+.thanks .thanks_icon img {
+  width: 55px;
+}
+.thanks .thanks_text .main_title {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.thanks .thanks_text p {
+  color: rgb(140, 137, 137);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  text-align: center;
+}
+.thanks .thanks_btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.thanks .thanks_btns a {
+  width: 250px;
+  height: 76px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 140%;
+  text-align: center;
+  background: linear-gradient(270deg, rgb(225, 107, 95), rgb(243, 168, 158) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.thanks .thanks_btns .thanks_btn_two {
+  color: rgb(243, 168, 158);
+  background: transparent;
+  border: 2px solid rgb(225, 107, 95);
+}
+
 footer {
   background-color: #000;
   padding: 100px 0;
@@ -1142,6 +1200,16 @@ footer .footer_bottom span {
   }
   .accordion .accordion_icon {
     width: 17px;
+  }
+  .thanks {
+    padding: 60px 0 150px 0;
+  }
+  .thanks .thanks_icon {
+    width: 90px;
+    height: 90px;
+  }
+  .thanks .thanks_icon img {
+    width: 40px;
   }
 }
 @media only screen and (max-width: 1100px) {
@@ -1524,6 +1592,34 @@ footer .footer_bottom span {
   .accordion .accordion-single-content p {
     max-width: 95%;
     font-size: 12px;
+  }
+  .thanks {
+    padding: 60px 0 130px 0;
+  }
+  .thanks .main_container {
+    gap: 25px;
+  }
+  .thanks .thanks_icon {
+    width: 66px;
+    height: 66px;
+  }
+  .thanks .thanks_text {
+    margin-bottom: 15px;
+  }
+  .thanks .thanks_text .main_title {
+    margin-bottom: 15px;
+  }
+  .thanks .thanks_text p {
+    font-size: 15px;
+  }
+  .thanks .thanks_btns {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .thanks .thanks_btns a {
+    width: 250px;
+    height: 60px;
+    font-size: 16px;
   }
   footer {
     padding: 70px 0 45px 0;

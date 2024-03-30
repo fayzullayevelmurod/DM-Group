@@ -309,6 +309,20 @@
             width: 17px;
         }
     }
+
+    .thanks {
+        padding: 60px 0 150px 0;
+
+        .thanks_icon {
+            width: 90px;
+            height: 90px;
+
+            img {
+                width: 40px;
+            }
+        }
+    }
+
 }
 
 @media only screen and (max-width: 1100px) {
@@ -823,6 +837,42 @@
             p {
                 max-width: 95%;
                 font-size: 12px;
+            }
+        }
+    }
+
+    .thanks {
+        padding: 60px 0 130px 0;
+        .main_container {
+            gap: 25px;
+        }
+
+        .thanks_icon {
+            width: 66px;
+            height: 66px;
+        }
+
+        .thanks_text {
+            margin-bottom: 15px;
+            .main_title {
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+        }
+
+
+        .thanks_btns {
+            flex-direction: column;
+            gap: 10px;
+
+            a {
+                width: 250px;
+                height: 60px;
+                font-size: 16px;
             }
         }
     }
