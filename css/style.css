@@ -216,6 +216,57 @@ button {
   stroke: #fff;
 }
 
+.management_home_form .form_group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0px 0px 15px 0px rgba(25, 20, 20, 0.05);
+  background: rgb(255, 255, 255);
+  padding: 24px 20px;
+  margin-bottom: 8px;
+}
+.management_home_form .form_group input {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: rgb(140, 137, 137);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.management_home_form button {
+  margin: 12px 0 20px 0;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 140%;
+  background: linear-gradient(270deg, rgb(225, 107, 95), rgb(243, 168, 158) 100%);
+}
+.management_home_form .form_group,
+.management_home_form button {
+  width: 385px;
+  height: 76px;
+}
+.management_home_form .form_under {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+}
+.management_home_form .form_under input {
+  width: 20px;
+  height: 20px;
+  accent-color: rgb(225, 107, 95);
+}
+.management_home_form .form_under label {
+  color: rgb(151, 151, 151);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.management_home_form .form_under label a {
+  text-decoration: underline !important;
+}
+
 header {
   padding: 40px 0;
 }
@@ -1692,6 +1743,9 @@ footer .footer_bottom span {
   width: 260px;
 }
 
+.management_home {
+  margin: 70px 0 200px 0;
+}
 .management_home .main_container {
   display: flex;
   align-items: start;
@@ -1707,6 +1761,54 @@ footer .footer_bottom span {
   font-weight: 400;
   line-height: 140%;
   margin-bottom: 35px;
+}
+
+.cooperation_formats {
+  margin-bottom: 200px;
+}
+.cooperation_formats .cooperation_formats_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 90px;
+}
+.cooperation_formats .cooperation_formats_title p {
+  color: rgb(140, 137, 137);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.cooperation_formats .cooperation_formats_cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cooperation_formats .cooperation_formats_cards .card_green {
+  background: rgb(30, 67, 57);
+}
+.cooperation_formats .cooperation_formats_cards .card_green h6 {
+  color: rgb(255, 255, 255);
+}
+.cooperation_formats h6 {
+  color: rgb(25, 20, 20);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 25px;
+}
+.cooperation_formats .cooperation_formats_card {
+  width: 25%;
+  padding: 50px 25px;
+  background: rgb(255, 255, 255);
+}
+.cooperation_formats .cooperation_formats_card img {
+  margin-bottom: 35px;
+}
+.cooperation_formats .cooperation_formats_card p {
+  color: rgb(182, 182, 182);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
 }
 
 @media only screen and (max-width: 1300px) {
