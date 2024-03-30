@@ -106,7 +106,7 @@ html {
 body {
     font-family: "Muller", sans-serif;
     font-style: normal;
-    background: #F9F9F9;
+    background: rgb(249, 249, 249);
 }
 
 input {
@@ -114,6 +114,7 @@ input {
 }
 
 button {
+    font-family: "Muller", sans-serif;
     border: none;
     cursor: pointer;
     background: transparent;
@@ -254,7 +255,45 @@ button {
     }
 }
 
+.repair_slider_btn {
+    button {
+        @include transition();
 
+        svg {
+            @include transition();
+        }
+        
+        &:hover {
+            border: transparent !important;
+            background: linear-gradient(270.00deg, rgb(225, 107, 95),rgb(243, 168, 158) 100%);
+            svg {
+                path {
+                    stroke: #fff;
+                }
+            }
+        }
+    }
+}
+
+.examples_work_slider_in, .examples_workSwiper_btns {
+    button {
+        @include transition();
+
+        svg {
+            @include transition();
+        }
+
+        &:hover {
+            border: transparent !important;
+            background: linear-gradient(270.00deg, rgb(225, 107, 95),rgb(243, 168, 158) 100%);
+            svg {
+                path {
+                    stroke: #fff;
+                }
+            }
+        }
+    }
+}
 
 // header
 header {
@@ -299,6 +338,7 @@ header {
     }
 
     .header_btn {
+        font-family: 'Muller';
         width: 163px;
         height: 48px;
         white-space: nowrap;
@@ -340,7 +380,7 @@ header {
     }
 
     .repair_home_left {
-        h1 {
+        .main_title {
             color: #000;
             font-size: 40px;
             font-weight: 400;
@@ -353,6 +393,7 @@ header {
         }
 
         .title_under {
+            font-family: 'Muller';
             color: rgb(255, 255, 255);
             font-size: 20px;
             font-weight: 400;
@@ -381,57 +422,64 @@ header {
             }
         }
 
-        .repair_home_form {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 30px;
+    }
 
-            input,
-            button {
-                width: 280px;
-            }
+    .repair_home_mobile {
+        display: none;
+    }
 
-            input {
-                padding: 20px;
-                color: rgb(140, 137, 137);
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 140%;
-                border: 1px solid rgb(241, 241, 241);
-                box-shadow: 0px 0px 15px 0px rgba(25, 20, 20, 0.05);
-            }
+    .repair_home_form {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 30px;
 
-            button {
-                color: rgb(255, 255, 255);
-                font-size: 16px;
-                font-weight: 700;
-                line-height: 140%;
-                height: 77px;
-                background: linear-gradient(270.00deg, rgb(225, 107, 95),rgb(243, 168, 158) 100%);
-            }
+        input,
+        button {
+            width: 280px;
+            font-family: 'Muller';
         }
 
-        .repair_home_form_under {
-            display: flex;
-            align-items: start;
-            gap: 8px;
+        input {
+            padding: 20px;
+            color: rgb(140, 137, 137);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 140%;
+            border: 1px solid rgb(241, 241, 241);
+            box-shadow: 0px 0px 15px 0px rgba(25, 20, 20, 0.05);
+        }
 
-            input {
-                width: 25px;
-                height: 25px;
-                accent-color: rgb(30, 67, 57);
-            }
+        button {
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 140%;
+            height: 77px;
+            background: linear-gradient(270.00deg, rgb(225, 107, 95),rgb(243, 168, 158) 100%);
+        }
+    }
 
-            label {
-                color: rgb(140, 137, 137);
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 140%;
+    .repair_home_form_under {
+        display: flex;
+        align-items: start;
+        gap: 8px;
+        user-select: none;
+
+        input {
+            width: 25px;
+            height: 25px;
+            accent-color: rgb(30, 67, 57);
+        }
+
+        label {
+            color: rgb(140, 137, 137);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 140%;
 
 
-                a {
-                    text-decoration: underline !important;
-                }
+            a {
+                text-decoration: underline !important;
             }
         }
     }
@@ -489,7 +537,6 @@ header {
 
         .repair_options_card_top_img {
             width: 100%;
-            height: 191px;
         }
 
         .repair_options_card_top {
@@ -563,6 +610,7 @@ header {
         flex-wrap: wrap;
 
         .professional_team_card {
+            background: #fff;
             width: calc(100% / 4);
 
             img {
@@ -607,13 +655,25 @@ header {
 
 // examples_work
 .examples_work {
+    margin-bottom: 200px;
+
     .main_title {
         margin-bottom: 80px;
     }
 
-    .examples_workSwiper {
-        border: 1px solid red;
+    .examples_work_slider_in {
         @include flex-center();
+        gap: 32px;
+    }
+
+    .examples_work-prev,
+    .examples_work-next {
+        position: static;
+        flex-shrink: 0;
+        width: 50px;
+        height: 50px;   
+        border: 1px solid rgb(25, 20, 20);
+        @include flex-full-center();
     }
 
     .examples_work_card {
@@ -623,6 +683,16 @@ header {
         padding: 80px 40px;
         box-shadow: 0px 0px 15px 0px rgba(25, 20, 20, 0.05);
         background: rgb(255, 255, 255);
+
+        address {
+            @include flex-center;
+            gap: 8px;
+            color: rgb(140, 137, 137);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 100%;
+            margin-bottom: 16px;
+        }
 
         h4 {
             max-width: 470px;
@@ -698,8 +768,388 @@ header {
             padding: 16px 20px;
         }
     }
+
+    .examples_workSwiper_btns {
+        display: none;
+    }
 }
 // examples_work
+
+// repair_contact
+.repair_contact {
+    margin-bottom: 50px;
+    
+    .main_container {
+        padding-bottom: 160px;
+        position: relative;
+
+        .repair_contact_bg {
+            position: absolute;
+            bottom: 0;
+            right: -504px;
+            z-index: 1;
+            width: 1629px;
+            height: 593px;
+        }
+    }
+
+    .repair_contact_text {
+        position: relative;
+        z-index: 2;
+    }
+
+    .repair_title {
+        margin-bottom: 25px;
+        display: flex;
+        align-items: start;
+        gap: 60px;
+
+        .main_title {
+            max-width: 432px;
+
+            span {
+                display: inline;
+            }
+        }
+
+        .calc {
+            img {
+                margin-bottom: 15px;
+            }
+            
+            p {
+                margin-bottom: 0;
+                max-width: 181px;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 120%;
+                color: rgb(140, 137, 137);
+
+                span {
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    p {
+        color: rgb(140, 137, 137);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 140%;
+        max-width: 461px;
+        margin-bottom: 40px;
+    }
+
+    .repair_contact_block {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 30px;
+
+        .input_group {
+            width: 260px;
+            @include flex-center();
+            gap: 15px;
+            background: #fff;
+            padding: 24px 20px;
+            border: 1px solid rgb(241, 241, 241);
+            box-shadow: 0px 0px 15px 0px rgba(25, 20, 20, 0.05);
+
+            input {
+                width: 100%;
+                color: rgb(140, 137, 137);
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 140%;
+                border: none;
+            }
+        }
+
+        button {
+            width: 260px;
+            padding: 24px;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 140%;
+            text-align: center;
+            background: linear-gradient(270.00deg, rgb(225, 107, 95),rgb(243, 168, 158) 100%);
+        }
+    }
+
+    .repair_contact_block_under {
+        display: flex;
+        align-items: start;
+        gap: 8px;
+        user-select: none;
+
+        input {
+            width: 25px;
+            height: 25px;
+            accent-color: rgb(30, 67, 57);
+        }
+
+        label {
+            max-width: 454px;
+            color: rgb(140, 137, 137);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 140%;
+
+
+            a {
+                text-decoration: underline !important;
+            }
+        }
+    }
+
+    .repair_contact_text_media {
+        display: none;
+    }
+}
+// repair_contact
+
+// examples_Swiper_block
+.examples_Swiper_block {
+    .examples_work_title {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+
+        .main_title {
+            max-width: 588px;
+        }
+
+        p {
+            color: rgb(140, 137, 137);
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 140%;
+            max-width: 486px;
+        }
+    }
+
+    
+    .examples_work_left {
+        flex: 1;
+        
+        img {
+            width: 100%;
+        }
+    }
+    
+    .examples_work_right {
+        flex: 1;
+    }
+    
+    .examples_work_card {
+        align-items: center;
+        padding: 32px;
+
+        ul {
+            li {
+                padding: 15px 0;
+                display: flex;
+                gap: 10px;
+                align-items: start;
+                justify-content: space-between;
+    
+                h6 {
+                    max-width: 180px;
+    
+                    span {
+                        display: block;
+                    }
+                }
+    
+            }
+
+            span {
+                font-size: 16px;
+                max-width: 280px;
+            }
+        }
+
+        .examples_work_slider_btn {
+            font-family: 'Muller';
+            text-align: left;
+            font-size: 24px;
+            padding: 8px 16px;
+            width: 100%;
+            margin-top: 0;
+            background: rgb(30, 67, 57);
+        }
+    }
+}
+// examples_Swiper_block
+
+// accordion
+.accordion {
+    margin: 200px 0;
+
+    .main_container {
+        display: flex;
+    }
+
+    .accordion-single-item {
+        padding: 16px;
+        box-shadow: 0px 0px 15px 0px rgba(25, 20, 20, 0.05);
+        background: rgb(255, 255, 255);
+    }
+
+    .accordion-single  {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        span {
+            margin-left: auto;
+        }
+    }
+      
+    .accordion-single-title {
+        text-align: left;
+        width: 100%;
+        cursor: pointer;
+        position: relative;
+        color: rgb(25, 20, 20);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 140%;
+        @include flex-center();
+        justify-content: space-between;
+        gap: 10px;
+
+        &:focus {
+            .accordion_icon {
+                .two_icon {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
+    .accordion_icon {
+        flex-shrink: 0;
+        position: relative;
+        width: 24px;
+        height: 24px;
+
+        .one_icon {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .two_icon {
+            @include transition();
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 1;
+            transform: rotate(90deg);
+        }
+    }
+      
+    .accordion-single-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .3s ease-in-out;
+    }
+      
+    .accordion-single-content p {
+        max-width: 80%;
+        margin-top: 16px;
+        color: rgb(140, 137, 137);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 140%;
+    }
+      
+    .accordion-single-item.is-open .accordion-single-content  {
+        max-height: 150px;
+    }
+      
+    .accordion-single-item.is-open .accordion-single-title::after  {
+        transform: translateY(-50%) rotate(315deg);
+    }
+}
+// accordion
+
+// thanks
+.thanks {
+    padding: 110px 0 185px 0;
+
+    .main_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 45px;
+    }
+
+    h2 {
+        color: rgb(217, 217, 217);
+        font-size: 220px;
+        font-weight: 400;
+        line-height: 120%;
+        text-align: center;
+    }
+
+    .thanks_icon {
+        @include flex-full-center();
+        width: 100px;
+        height: 100px;
+        box-shadow: 0px 0px 15px 0px rgba(25, 20, 20, 0.05);
+        background: rgb(255, 255, 255);
+
+        img {
+            width: 55px;
+        }
+    }
+
+    .thanks_text {
+        .main_title {
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        p {
+            color: rgb(140, 137, 137);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 140%;
+            text-align: center;
+        }
+    }
+
+    .thanks_btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+
+        a {
+            width: 250px;
+            height: 76px;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 140%;
+            text-align: center;
+            background: linear-gradient(270.00deg, rgb(225, 107, 95),rgb(243, 168, 158) 100%);
+            @include flex-full-center();
+        }
+
+        .thanks_btn_two {
+            color: rgb(243, 168, 158);
+            background: transparent;
+            border-width: 2px;
+            border-style: solid;
+            border-image: linear-gradient(270.00deg, rgb(225, 107, 95),rgb(243, 168, 158) 100%) 1;
+        }
+    }
+}
+// thanks
 
 // footer
 footer {
@@ -809,6 +1259,11 @@ footer {
                 height: 44px;
                 padding: 8px 16px;
                 background: rgb(43, 43, 43);
+                @include transition();
+
+                &:hover {
+                    background: linear-gradient(270.00deg, rgb(225, 107, 95),rgb(243, 168, 158) 100%);
+                }
             }
         }
 
