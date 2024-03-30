@@ -1023,7 +1023,9 @@ header {
         .thanks_btn_two {
             color: rgb(243, 168, 158);
             background: transparent;
-            border: 2px solid rgb(225, 107, 95);
+            border-width: 2px;
+            border-style: solid;
+            border-image: linear-gradient(270.00deg, rgb(225, 107, 95),rgb(243, 168, 158) 100%) 1;
         }
     }
 }

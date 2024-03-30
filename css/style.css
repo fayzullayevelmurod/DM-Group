@@ -834,7 +834,10 @@ header .burger {
 .thanks .thanks_btns .thanks_btn_two {
   color: rgb(243, 168, 158);
   background: transparent;
-  border: 2px solid rgb(225, 107, 95);
+  border-width: 2px;
+  border-style: solid;
+  -o-border-image: linear-gradient(270deg, rgb(225, 107, 95), rgb(243, 168, 158) 100%) 1;
+     border-image: linear-gradient(270deg, rgb(225, 107, 95), rgb(243, 168, 158) 100%) 1;
 }
 
 footer {
