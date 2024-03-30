@@ -1811,6 +1811,69 @@ footer .footer_bottom span {
   line-height: 140%;
 }
 
+.cooperation_work {
+  margin-bottom: 200px;
+}
+.cooperation_work .main_title {
+  margin-bottom: 80px;
+}
+.cooperation_work .cooperation_work_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px 0;
+}
+.cooperation_work .cooperation_work_cards .work_card_end .line {
+  display: none;
+}
+.cooperation_work .cooperation_work_cards .work_card_end .cooperation_work_card_text {
+  padding-right: 0 !important;
+}
+.cooperation_work .cooperation_work_cards .cooperation_work_card {
+  width: 25%;
+}
+.cooperation_work .cooperation_work_cards .cooperation_work_card .cooperation_work_card_top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.cooperation_work .cooperation_work_cards .cooperation_work_card .cooperation_work_card_number {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(180deg, rgb(243, 168, 158), rgb(225, 107, 95) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cooperation_work .cooperation_work_cards .cooperation_work_card .cooperation_work_card_number span {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 0;
+}
+.cooperation_work .cooperation_work_cards .cooperation_work_card .line {
+  width: 100%;
+  height: 3px;
+  background: rgb(255, 255, 255);
+}
+.cooperation_work .cooperation_work_cards .cooperation_work_card .cooperation_work_card_text {
+  padding-right: 60px;
+}
+.cooperation_work .cooperation_work_cards .cooperation_work_card h6 {
+  color: rgb(25, 20, 20);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 18px;
+}
+.cooperation_work .cooperation_work_cards .cooperation_work_card p {
+  color: rgb(140, 137, 137);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
 @media only screen and (max-width: 1300px) {
   .main_title {
     font-size: 30px;
