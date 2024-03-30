@@ -1758,9 +1758,8 @@ footer {
                 gap: 4px;
                 position: relative;
                 width: 100%;
-                border: 1px solid blue;
 
-                .main_img {
+                &__main_img {
                     height: 409px;
                     width: calc(100% - 104px);
                     object-fit: cover;
@@ -1773,11 +1772,10 @@ footer {
                     gap: 4px;
                     min-width: 100px;
                     flex-shrink: 0;
-                    border: 1px solid red;
 
                     &__item {
                         width: 100px;
-                        height: calc(100% / 3 - 8px / 3);
+                        height: 133.67px;
 
                         img, span {
                             position: absolute;
