@@ -1,3 +1,27 @@
+.main_checkbox {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 8px;
+  cursor: pointer;
+}
+.main_checkbox span {
+  color: #8C8989;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.main_checkbox span a {
+  text-decoration: underline !important;
+}
+.main_checkbox input {
+  width: 25px;
+  height: 25px;
+  accent-color: rgb(30, 67, 57);
+}
+
 h1 {
   font-size: 64px;
   font-weight: 400;
@@ -59,6 +83,7 @@ body {
 
 input {
   outline: none;
+  font-family: "Muller", sans-serif;
 }
 
 button {
@@ -251,6 +276,9 @@ button {
   display: flex;
   align-items: start;
   gap: 8px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .management_home_form .form_under input {
   width: 20px;
@@ -1890,6 +1918,33 @@ footer .footer_bottom span {
   font-size: 20px;
   font-weight: 400;
   line-height: 140%;
+}
+
+.cooperation_contact {
+  background: rgb(18, 38, 33);
+}
+.cooperation_contact .main_container {
+  position: relative;
+  padding: 100px 36px;
+  z-index: 2;
+}
+.cooperation_contact .main_title {
+  color: #fff;
+  max-width: 400px;
+  margin-bottom: 40px;
+}
+.cooperation_contact .contact_us__description {
+  max-width: 500px;
+  margin-bottom: 40px;
+}
+.cooperation_contact .cooperation_contact_img {
+  position: absolute;
+  bottom: 0;
+  right: -150px;
+  z-index: -1;
+}
+.cooperation_contact .main_checkbox {
+  margin-top: 30px;
 }
 
 @media only screen and (max-width: 1300px) {

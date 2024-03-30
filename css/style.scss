@@ -48,6 +48,31 @@ $text-3: #8C8989;
 $stroke: #F1F1F1;
 // colors
 
+.main_checkbox {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 8px;
+    cursor: pointer;
+
+    span {
+        color: $text-3;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 140%;
+        user-select: none;
+
+        a {
+            text-decoration: underline !important;
+        }
+    }
+
+    input {
+        width: 25px;
+        height: 25px;
+        accent-color: rgb(30, 67, 57);
+    }
+}
+
 // var
 h1 {
     font-size: 64px;
@@ -111,6 +136,7 @@ body {
 
 input {
     outline: none;
+    font-family: "Muller", sans-serif;
 }
 
 button {
@@ -221,7 +247,6 @@ button {
         }
     }
 }
-
 
 .tab_item {
     display: none;
@@ -334,6 +359,7 @@ button {
     .form_under {
         @include flex-start();
         gap: 8px;
+        user-select: none;
 
         input {
             width: 20px;
@@ -2293,5 +2319,39 @@ footer {
 
 }
 // text_field
+
+// cooperation_contact
+.cooperation_contact {
+    background: rgb(18, 38, 33);
+    
+    .main_container {
+        position: relative;
+        padding: 100px 36px;
+        z-index: 2;
+    }
+
+    .main_title {
+        color: #fff;
+        max-width: 400px;
+        margin-bottom: 40px;
+    }
+
+    .contact_us__description {
+        max-width: 500px;
+        margin-bottom: 40px;
+    }
+
+    .cooperation_contact_img {
+        position: absolute;
+        bottom: 0;
+        right: -150px;
+        z-index: -1;
+    }
+
+    .main_checkbox {
+        margin-top: 30px;
+    }
+}
+// cooperation_contact
 
 @import './responsive';
