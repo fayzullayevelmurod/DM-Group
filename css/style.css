@@ -89,6 +89,34 @@ button {
   color: rgb(140, 137, 137);
 }
 
+.repair_slider_btn button {
+  transition: 0.2s ease;
+}
+.repair_slider_btn button svg {
+  transition: 0.2s ease;
+}
+.repair_slider_btn button:hover {
+  border: transparent !important;
+  background: linear-gradient(270deg, rgb(225, 107, 95), rgb(243, 168, 158) 100%);
+}
+.repair_slider_btn button:hover svg path {
+  stroke: #fff;
+}
+
+.examples_work_slider_in button, .examples_workSwiper_btns button {
+  transition: 0.2s ease;
+}
+.examples_work_slider_in button svg, .examples_workSwiper_btns button svg {
+  transition: 0.2s ease;
+}
+.examples_work_slider_in button:hover, .examples_workSwiper_btns button:hover {
+  border: transparent !important;
+  background: linear-gradient(270deg, rgb(225, 107, 95), rgb(243, 168, 158) 100%);
+}
+.examples_work_slider_in button:hover svg path, .examples_workSwiper_btns button:hover svg path {
+  stroke: #fff;
+}
+
 header {
   padding: 40px 0;
 }
@@ -726,6 +754,10 @@ footer .footer_block_center .footer_link .footer_social_btn {
   height: 44px;
   padding: 8px 16px;
   background: rgb(43, 43, 43);
+  transition: 0.2s ease;
+}
+footer .footer_block_center .footer_link .footer_social_btn:hover {
+  background: linear-gradient(270deg, rgb(225, 107, 95), rgb(243, 168, 158) 100%);
 }
 footer .footer_btn {
   color: rgb(255, 255, 255);

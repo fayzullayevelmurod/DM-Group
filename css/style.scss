@@ -142,6 +142,46 @@ button {
     }
 }
 
+.repair_slider_btn {
+    button {
+        @include transition();
+
+        svg {
+            @include transition();
+        }
+        
+        &:hover {
+            border: transparent !important;
+            background: linear-gradient(270.00deg, rgb(225, 107, 95),rgb(243, 168, 158) 100%);
+            svg {
+                path {
+                    stroke: #fff;
+                }
+            }
+        }
+    }
+}
+
+.examples_work_slider_in, .examples_workSwiper_btns {
+    button {
+        @include transition();
+
+        svg {
+            @include transition();
+        }
+
+        &:hover {
+            border: transparent !important;
+            background: linear-gradient(270.00deg, rgb(225, 107, 95),rgb(243, 168, 158) 100%);
+            svg {
+                path {
+                    stroke: #fff;
+                }
+            }
+        }
+    }
+}
+
 // header
 header {
     padding: 40px 0;
@@ -889,6 +929,17 @@ footer {
                 height: 44px;
                 padding: 8px 16px;
                 background: rgb(43, 43, 43);
+                @include transition();
+
+                &:hover {
+                    background: linear-gradient(270.00deg, rgb(225, 107, 95),rgb(243, 168, 158) 100%);
+
+                    svg {
+                        path {
+                            
+                        }
+                    }
+                }
             }
         }
 
