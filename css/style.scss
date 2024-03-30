@@ -132,6 +132,31 @@ button {
     margin: 0 auto;
 }
 
+.main_checkbox {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 8px;
+    cursor: pointer;
+
+    span {
+        color: $text-3;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 140%;
+        user-select: none;
+
+        a {
+            text-decoration: underline !important;
+        }
+    }
+
+    input {
+        width: 25px;
+        height: 25px;
+        accent-color: rgb(30, 67, 57);
+    }
+}
+
 .main_title {
     color: #000;
     font-size: 40px;
@@ -1540,12 +1565,22 @@ footer {
             position: absolute;
             top: 316px;
             left: 518px;
+            width: 225px;
+
+            p {
+                white-space: nowrap;
+            }
         }
 
         &_catalog {
             position: absolute;
             top: 467px;
             right: 40px;
+            width: 243px;
+
+            p {
+                white-space: wrap;
+            }
         }
     }
 }
@@ -1556,15 +1591,7 @@ footer {
     margin-bottom: 200px;
 
     &__list {
-        max-width: 1920px;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0;
-
         &_item {
-            width: calc(25%);
-
             a {
                 width: 100%;
                 position: relative;
@@ -1602,6 +1629,26 @@ footer {
             }
         }
     }
+
+    .swiper_btns{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .quick_search {
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+            max-width: 1920px;
+            margin: 0 auto;
+
+            &_item {
+                width: calc(25%);
+            }
+        }
+    }
 }
 // Quick search end
 
@@ -1615,6 +1662,7 @@ footer {
         flex-wrap: wrap;
         gap: 85px 24px;
         margin-bottom: 100px;
+        width: 100%;
 
         &_item {
             width: calc(50% - 12px);
@@ -1624,6 +1672,8 @@ footer {
                 align-items: stretch;
                 gap: 4px;
                 position: relative;
+                width: 100%;
+                border: 1px solid blue;
 
                 .main_img {
                     height: 409px;
@@ -1636,6 +1686,9 @@ footer {
                     flex-direction: column;
                     justify-content: space-between;
                     gap: 4px;
+                    min-width: 100px;
+                    flex-shrink: 0;
+                    border: 1px solid red;
 
                     &__item {
                         width: 100px;
@@ -1883,6 +1936,15 @@ footer {
                 }
             }
         }
+
+        .form_inp {
+            width: 467px;
+            margin-bottom: 32px;
+        }
+
+        .main_checkbox {
+            margin-top: 16px;
+        }
     }
 }
 // Selecting end
@@ -2045,6 +2107,7 @@ footer {
     &__form {
         display: flex;
         gap: 10px;
+        margin-bottom: 20px;
 
         .form_inp, button {
             width: 260px;
@@ -2054,3 +2117,4 @@ footer {
 // Contact us end
 
 @import './responsive';
+@import './responsive2';

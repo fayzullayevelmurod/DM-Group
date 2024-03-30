@@ -171,27 +171,28 @@
                     </div>
                 </div>
 
-                <div class="blur_alert alert_address">
-                    <h4>Комплекс Monaco</h4>
-                    <p>
-                        <img src="./images/icons/location_icon.svg" alt="">
-                        Крым, г. Ялта, пгт. Восход
-                    </p>
-                    <a href="#">
-                        Подробнее
-                        <img src="./images/icons/chevron-right.svg" alt="">
-                    </a>
-                </div>
-                <div class="blur_alert alert_catalog">
-                    <h4>Комплекс Monaco</h4>
-                    <p>
-                        <img src="./images/icons/location_icon.svg" alt="">
-                        Крым, г. Ялта, пгт. Восход
-                    </p>
-                    <a href="#">
-                        Подробнее
-                        <img src="./images/icons/chevron-right.svg" alt="">
-                    </a>
+                <div class="alert_wrap">
+                    <div class="blur_alert alert_address">
+                        <h4>Комплекс Monaco</h4>
+                        <p>
+                            <img src="./images/icons/location_icon.svg" alt="">
+                            Крым, г. Ялта, пгт. Восход
+                        </p>
+                        <a href="#">
+                            Подробнее
+                            <img src="./images/icons/chevron-right.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="blur_alert alert_catalog">
+                        <h4>Полный каталог</h4>
+                        <p>
+                            с ценами <br> и планировками
+                        </p>
+                        <a href="#">
+                            Скачать
+                            <img src="./images/icons/download_icon.svg" alt="">
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -208,56 +209,70 @@
                     <p class="quick_search__description">Для жизни, отдыха, либо инвестирования и пассивного дохода</p>
                 </div>
             </div>
-            <ul class="quick_search__list">
-                <li class="quick_search__list_item">
-                    <a href="#">
-                        <img src="./images/quick_search_card_1.png" alt="">
-                        <span>Студии</span>
-                    </a>
-                </li>
-                <li class="quick_search__list_item">
-                    <a href="#">
-                        <img src="./images/quick_search_card_2.png" alt="">
-                        <span>1-комнатные квартиры</span>
-                    </a>
-                </li>
-                <li class="quick_search__list_item">
-                    <a href="#">
-                        <img src="./images/quick_search_card_3.png" alt="">
-                        <span>2-комнатные квартиры</span>
-                    </a>
-                </li>
-                <li class="quick_search__list_item">
-                    <a href="#">
-                        <img src="./images/quick_search_card_4.png" alt="">
-                        <span>3-комнатные квартиры</span>
-                    </a>
-                </li>
-                <li class="quick_search__list_item">
-                    <a href="#">
-                        <img src="./images/quick_search_card_5.png" alt="">
-                        <span>Для инвестиций</span>
-                    </a>
-                </li>
-                <li class="quick_search__list_item">
-                    <a href="#">
-                        <img src="./images/quick_search_card_6.png" alt="">
-                        <span>Апартаменты</span>
-                    </a>
-                </li>
-                <li class="quick_search__list_item">
-                    <a href="#">
-                        <img src="./images/quick_search_card_7.png" alt="">
-                        <span>С видом на горы</span>
-                    </a>
-                </li>
-                <li class="quick_search__list_item">
-                    <a href="#">
-                        <img src="./images/quick_search_card_8.png" alt="">
-                        <span>С видом на море</span>
-                    </a>
-                </li>
-            </ul>
+            <div class="swiper">
+                <ul class="swiper-wrapper quick_search__list">
+                    <li class="swiper-slide quick_search__list_item">
+                        <a href="#">
+                            <img src="./images/quick_search_card_1.png" alt="">
+                            <span>Студии</span>
+                        </a>
+                    </li>
+                    <li class="swiper-slide quick_search__list_item">
+                        <a href="#">
+                            <img src="./images/quick_search_card_2.png" alt="">
+                            <span>1-комнатные квартиры</span>
+                        </a>
+                    </li>
+                    <li class="swiper-slide quick_search__list_item">
+                        <a href="#">
+                            <img src="./images/quick_search_card_3.png" alt="">
+                            <span>2-комнатные квартиры</span>
+                        </a>
+                    </li>
+                    <li class="swiper-slide quick_search__list_item">
+                        <a href="#">
+                            <img src="./images/quick_search_card_4.png" alt="">
+                            <span>3-комнатные квартиры</span>
+                        </a>
+                    </li>
+                    <li class="swiper-slide quick_search__list_item">
+                        <a href="#">
+                            <img src="./images/quick_search_card_5.png" alt="">
+                            <span>Для инвестиций</span>
+                        </a>
+                    </li>
+                    <li class="swiper-slide quick_search__list_item">
+                        <a href="#">
+                            <img src="./images/quick_search_card_6.png" alt="">
+                            <span>Апартаменты</span>
+                        </a>
+                    </li>
+                    <li class="swiper-slide quick_search__list_item">
+                        <a href="#">
+                            <img src="./images/quick_search_card_7.png" alt="">
+                            <span>С видом на горы</span>
+                        </a>
+                    </li>
+                    <li class="swiper-slide quick_search__list_item">
+                        <a href="#">
+                            <img src="./images/quick_search_card_8.png" alt="">
+                            <span>С видом на море</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="repair_slider_btn swiper_btns">
+                <button class="swiper_btns__prev">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.7578 17.5196L9.23787 11.9997L14.7578 6.47974" stroke="#191414" stroke-width="1.83998" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button class="swiper_btns__next">
+                    <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.70801 6.48038L14.2279 12.0003L8.70801 17.5203" stroke="#191414" stroke-width="1.83998" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
         </section>
         <!-- Quick search end -->
 
@@ -618,6 +633,7 @@
         </section>
         <!-- Partners end -->
 
+
         <!-- Selecting -->
         <section class="selecting">
             <div class="main_container">
@@ -699,6 +715,10 @@
                                 <h3>
                                     Куда отправить подборку?
                                 </h3>
+                                <div class="form_inp phone">
+                                    <img src="./images/icons/flag_icon.svg" alt="">
+                                    <input type="tel" placeholder="+7 (___) ___-__-__">
+                                </div>
                                 <div class="selecting__swiper_btns">
                                     <button>
                                         <img src="./images/icons/phone_white_icon.svg" alt="">
@@ -713,6 +733,12 @@
                                         Telegram
                                     </button>
                                 </div>
+                                <label class="main_checkbox">
+                                    <input type="checkbox">
+                                    <span class="main_checkbox__text">
+                                        Я соглашаюсь на <a href="#">обработку персональных данных</a> <br> согласно <a href="#">политике конфиденциальности</a>
+                                    </span>
+                                </label>
                             </div>
                         </div>
                     </div>
@@ -720,6 +746,209 @@
             </div>
         </section>
         <!-- Selecting end -->
+
+        <!-- examples_work -->
+        <section class="examples_work examples_Swiper_block">
+            <div class="main_container">
+                <div class="examples_work_title">
+                    <h3 class="main_title">
+                        Как рассчитывается доходность <span>наших объектов?</span>
+                    </h3>
+                    <p>
+                        Побережье Чёрного моря одно из самых популярных мест у туристов. В течение 7 месяцев в году заполняемость близка к 90%.
+                    </p>
+                </div>
+                <div class="examples_work_slider_in">
+                    <button class="examples_work-prev examples_Swiper-prev examples_work_btn_desktop">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 18L9 12L15 6" stroke="#191414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </button>
+                    <div class="swiper examples_Swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="examples_work_card">
+                                    <div class="examples_work_left">
+                                        <img src="./images/examples_work2.png" alt="">
+                                    </div>
+                                    <div class="examples_work_right">
+                                        <address>
+                                            <img src="./images/icons/location_icon.svg" alt="">
+                                            г. Сочи
+                                        </address>
+                                        <h4>
+                                            Кейс ЖК «Сочи парк»
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                <h6>
+                                                    <span>
+                                                        Квартира
+                                                    </span>
+                                                    37,9 м²
+                                                </h6>
+                                                <span>
+                                                    Покупка в ноябре 2022 в ипотеку от СберБанка под 12,1%
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <h6>
+                                                    <span>
+                                                        Цена покупки 
+                                                    </span>
+                                                    14 601 550 ₽
+                                                </h6>
+                                                <span>
+                                                    Первоначальный взнос 15% застройщик включил в сумму договора
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <h6>
+                                                    <span>
+                                                        Вложения <br>
+                                                        средств
+                                                    </span>
+                                                    946 300 ₽
+                                                </h6>
+                                                <span>
+                                                    Платежи по ипотеке (за 6 месяцев) — 879 300 ₽
+                                                    Страховка и электронная сделка — 67 000 ₽
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <h6>
+                                                    <span>
+                                                        Продажа квартиры
+                                                    </span>
+                                                    17 055 000 ₽
+                                                </h6>
+                                                <span>
+                                                    Продажа удалённо в июне 2023 года
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <h6>
+                                                    <span>
+                                                        Остаток денег
+                                                    </span>
+                                                    2 553 450 ₽
+                                                </h6>
+                                                <span>
+                                                    Остаток денег у клиента на счёте с учётом погашения ипотеки
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <div class="slider_main_btn">
+                                            <button class="examples_work_slider_btn">
+                                                Доход — 1 607 150 ₽
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="examples_work_card">
+                                    <div class="examples_work_left">
+                                        <img src="./images/examples_work2.png" alt="">
+                                    </div>
+                                    <div class="examples_work_right">
+                                        <address>
+                                            <img src="./images/icons/location_icon.svg" alt="">
+                                            г. Сочи
+                                        </address>
+                                        <h4>
+                                            Кейс ЖК «Сочи парк»
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                <h6>
+                                                    <span>
+                                                        Квартира
+                                                    </span>
+                                                    37,9 м²
+                                                </h6>
+                                                <span>
+                                                    Покупка в ноябре 2022 в ипотеку от СберБанка под 12,1%
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <h6>
+                                                    <span>
+                                                        Цена покупки 
+                                                    </span>
+                                                    14 601 550 ₽
+                                                </h6>
+                                                <span>
+                                                    Первоначальный взнос 15% застройщик включил в сумму договора
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <h6>
+                                                    <span>
+                                                        Вложения <br>
+                                                        средств
+                                                    </span>
+                                                    946 300 ₽
+                                                </h6>
+                                                <span>
+                                                    Платежи по ипотеке (за 6 месяцев) — 879 300 ₽
+                                                    Страховка и электронная сделка — 67 000 ₽
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <h6>
+                                                    <span>
+                                                        Продажа квартиры
+                                                    </span>
+                                                    17 055 000 ₽
+                                                </h6>
+                                                <span>
+                                                    Продажа удалённо в июне 2023 года
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <h6>
+                                                    <span>
+                                                        Остаток денег
+                                                    </span>
+                                                    2 553 450 ₽
+                                                </h6>
+                                                <span>
+                                                    Остаток денег у клиента на счёте с учётом погашения ипотеки
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <div class="slider_main_btn">
+                                            <button class="examples_work_slider_btn">
+                                                Доход — 1 607 150 ₽
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="examples_work-next examples_Swiper-next examples_work_btn_desktop">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 18L15 12L9 6" stroke="#191414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </button>
+                </div>
+                <div class="examples_workSwiper_btns">
+                    <button class="examples_work-prev examples_Swiper-prev">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 18L9 12L15 6" stroke="#191414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </button>
+                    <button class="examples_work-next examples_Swiper-next">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 18L15 12L9 6" stroke="#191414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- examples_work -->
 
         <!-- Our services -->
         <section class="services">
@@ -921,6 +1150,12 @@
                     </div>
                     <button type="submit" class="btn_danger">Оставить заявку</button>
                 </form>
+                <label class="main_checkbox">
+                    <input type="checkbox">
+                    <span class="main_checkbox__text">
+                        Я соглашаюсь на <a href="#">обработку персональных данных</a> <br> согласно <a href="#">политике конфиденциальности</a>
+                    </span>
+                </label>
             </div>
         </section>
         <!-- Contact us end -->
