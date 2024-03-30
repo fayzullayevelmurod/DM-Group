@@ -782,6 +782,13 @@ header .burger {
   align-items: center;
   gap: 45px;
 }
+.thanks h2 {
+  color: rgb(217, 217, 217);
+  font-size: 220px;
+  font-weight: 400;
+  line-height: 120%;
+  text-align: center;
+}
 .thanks .thanks_icon {
   display: flex;
   align-items: center;
@@ -1204,6 +1211,10 @@ footer .footer_bottom span {
   .thanks {
     padding: 60px 0 150px 0;
   }
+  .thanks .thanks_text h2 {
+    font-size: 190px;
+    line-height: 120%;
+  }
   .thanks .thanks_icon {
     width: 90px;
     height: 90px;
@@ -1605,6 +1616,11 @@ footer .footer_bottom span {
   }
   .thanks .thanks_text {
     margin-bottom: 15px;
+  }
+  .thanks .thanks_text h2 {
+    font-size: 160px;
+    font-weight: 400;
+    line-height: 90%;
   }
   .thanks .thanks_text .main_title {
     margin-bottom: 15px;

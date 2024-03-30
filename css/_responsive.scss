@@ -313,6 +313,13 @@
     .thanks {
         padding: 60px 0 150px 0;
 
+        .thanks_text {
+            h2 {
+                font-size: 190px;
+                line-height: 120%;
+            }
+        }
+
         .thanks_icon {
             width: 90px;
             height: 90px;
@@ -854,6 +861,13 @@
 
         .thanks_text {
             margin-bottom: 15px;
+
+            h2 {
+                font-size: 160px;
+                font-weight: 400;
+                line-height: 90%;
+            }
+
             .main_title {
                 margin-bottom: 15px;
             }
@@ -876,6 +890,7 @@
             }
         }
     }
+
 
     footer {
         padding: 70px 0 45px 0;
