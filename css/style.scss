@@ -2271,4 +2271,27 @@ footer {
 }
 // cooperation_work
 
+// text_field
+.text_field {
+    margin-bottom: 200px;
+    .main_title {
+        margin-bottom: 40px;
+    }
+
+    .text_field_text {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    p {
+        color: rgb(140, 137, 137);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+}
+// text_field
+
 @import './responsive';

@@ -1874,6 +1874,24 @@ footer .footer_bottom span {
   line-height: 140%;
 }
 
+.text_field {
+  margin-bottom: 200px;
+}
+.text_field .main_title {
+  margin-bottom: 40px;
+}
+.text_field .text_field_text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.text_field p {
+  color: rgb(140, 137, 137);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
 @media only screen and (max-width: 1300px) {
   .main_title {
     font-size: 30px;
