@@ -1973,7 +1973,6 @@ footer {
 }
 // Our services  end
 
-
 // Contact us
 .contact_us {
     margin-bottom: 227px;
@@ -2052,5 +2051,27 @@ footer {
     }
 }
 // Contact us end
+
+// management_home
+.management_home {
+    .main_container {
+        @include flex-start();
+    }
+
+    .main_title {
+        max-width: 556px;
+        margin-bottom: 30px;
+    }
+
+    p {
+        max-width: 453px;
+        color: rgb(140, 137, 137);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 140%;
+        margin-bottom: 35px;
+    }
+}
+// management_home
 
 @import './responsive';
