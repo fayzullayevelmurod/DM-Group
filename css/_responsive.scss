@@ -228,6 +228,61 @@
         }
     }
 
+    .repair_contact {
+
+        .main_container {
+            padding-bottom: 50px;
+
+            .repair_contact_bg {
+                width: 1019px;
+                height: 371px;
+                right: -44%;
+            }
+        }
+
+        .repair_title {
+            .main_title {
+                max-width: 319px;
+            }
+
+            .calc {
+                img {
+                    width: 45px;
+                }
+
+                p {
+                    max-width: 133px;
+                    font-size: 13px;
+                }
+            }
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .repair_contact_block {
+            margin-bottom: 20px;
+            .input_group, button {
+                width: 200px;
+                height: 56px;
+                padding: 17px 14px;
+                font-size: 16px;
+            }
+        }
+
+        .repair_contact_block_under  {
+            input {
+                width: 20px;
+                height: 20px;
+            }
+            label {
+                font-size: 16px;
+            }
+        }
+    }
+
     .accordion {
         margin: 130px 0;
 
@@ -541,7 +596,7 @@
     }
 
     .examples_work {
-        margin-bottom: 50px;
+        margin-bottom: 70px;
 
         .main_title {
             text-align: center;
@@ -656,6 +711,92 @@
         .examples_work_right,
         .examples_work_left {
             width: 100%;
+        }
+    }
+    
+    .repair_contact {
+
+        .main_container {
+            padding-bottom: 0;
+            .repair_contact_bg {
+                display: none;
+            }
+        }
+
+        .repair_title {
+            margin-bottom: 30px;
+
+            .main_title {
+                text-align: center;
+                max-width: 100%;
+            }
+
+            .calc {
+                display: none;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            max-width: 100%;
+            text-align: center;
+        }
+
+        .repair_contact_block {
+            flex-direction: column;
+            gap: 18px;
+            margin-bottom: 15px;
+
+            .input_group,button {
+                width: 100%;
+                font-size: 18px;
+                height: 73px;
+            }
+        }
+
+        .repair_contact_block_under  {
+            input {
+                width: 15px;
+                height: 15px;
+            }
+
+            label {
+                font-size: 12px;
+            }
+        }
+
+        .repair_contact_text_media {
+            position: relative;
+            display: block;
+            margin-top: 25px;
+            padding-bottom: 162px;
+
+            .calc {
+                img {
+                    width: 45px;
+                }
+
+                p {
+                    max-width: 180px;
+                    margin-top: 10px;
+                    font-size: 16px;
+                    text-align: left;
+
+                    span {
+                        color: #000;
+                    }
+                }
+            }
+
+            .repair_contact_text_media_bg {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 100%;
+                object-fit: cover;
+                width: 100%;
+            }
         }
     }
 

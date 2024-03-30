@@ -654,6 +654,140 @@ header {
 }
 // examples_work
 
+// repair_contact
+.repair_contact {
+    margin-bottom: 50px;
+    
+    .main_container {
+        padding-bottom: 160px;
+        position: relative;
+
+        .repair_contact_bg {
+            position: absolute;
+            bottom: 0;
+            right: -504px;
+            z-index: 1;
+            width: 1629px;
+            height: 593px;
+        }
+    }
+
+    .repair_contact_text {
+        position: relative;
+        z-index: 2;
+    }
+
+    .repair_title {
+        margin-bottom: 25px;
+        display: flex;
+        align-items: start;
+        gap: 60px;
+
+        .main_title {
+            max-width: 432px;
+
+            span {
+                display: inline;
+            }
+        }
+
+        .calc {
+            img {
+                margin-bottom: 15px;
+            }
+            
+            p {
+                margin-bottom: 0;
+                max-width: 181px;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 120%;
+                color: rgb(140, 137, 137);
+
+                span {
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    p {
+        color: rgb(140, 137, 137);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 140%;
+        max-width: 461px;
+        margin-bottom: 40px;
+    }
+
+    .repair_contact_block {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 30px;
+
+        .input_group {
+            width: 260px;
+            @include flex-center();
+            gap: 15px;
+            background: #fff;
+            padding: 24px 20px;
+            border: 1px solid rgb(241, 241, 241);
+            box-shadow: 0px 0px 15px 0px rgba(25, 20, 20, 0.05);
+
+            input {
+                width: 100%;
+                color: rgb(140, 137, 137);
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 140%;
+                border: none;
+            }
+        }
+
+        button {
+            width: 260px;
+            padding: 24px;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 140%;
+            text-align: center;
+            background: linear-gradient(270.00deg, rgb(225, 107, 95),rgb(243, 168, 158) 100%);
+        }
+    }
+
+    .repair_contact_block_under {
+        display: flex;
+        align-items: start;
+        gap: 8px;
+        user-select: none;
+
+        input {
+            width: 25px;
+            height: 25px;
+            accent-color: rgb(30, 67, 57);
+        }
+
+        label {
+            max-width: 454px;
+            color: rgb(140, 137, 137);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 140%;
+
+
+            a {
+                text-decoration: underline !important;
+            }
+        }
+    }
+
+    .repair_contact_text_media {
+        display: none;
+    }
+}
+// repair_contact
+
 // examples_Swiper_block
 .examples_Swiper_block {
     .examples_work_title {
@@ -933,12 +1067,6 @@ footer {
 
                 &:hover {
                     background: linear-gradient(270.00deg, rgb(225, 107, 95),rgb(243, 168, 158) 100%);
-
-                    svg {
-                        path {
-                            
-                        }
-                    }
                 }
             }
         }

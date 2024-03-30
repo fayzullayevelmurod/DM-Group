@@ -529,6 +529,119 @@ header .burger {
   display: none;
 }
 
+.repair_contact {
+  margin-bottom: 50px;
+}
+.repair_contact .main_container {
+  padding-bottom: 160px;
+  position: relative;
+}
+.repair_contact .main_container .repair_contact_bg {
+  position: absolute;
+  bottom: 0;
+  right: -504px;
+  z-index: 1;
+  width: 1629px;
+  height: 593px;
+}
+.repair_contact .repair_contact_text {
+  position: relative;
+  z-index: 2;
+}
+.repair_contact .repair_title {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: start;
+  gap: 60px;
+}
+.repair_contact .repair_title .main_title {
+  max-width: 432px;
+}
+.repair_contact .repair_title .main_title span {
+  display: inline;
+}
+.repair_contact .repair_title .calc img {
+  margin-bottom: 15px;
+}
+.repair_contact .repair_title .calc p {
+  margin-bottom: 0;
+  max-width: 181px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 120%;
+  color: rgb(140, 137, 137);
+}
+.repair_contact .repair_title .calc p span {
+  color: #000;
+}
+.repair_contact p {
+  color: rgb(140, 137, 137);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+  max-width: 461px;
+  margin-bottom: 40px;
+}
+.repair_contact .repair_contact_block {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.repair_contact .repair_contact_block .input_group {
+  width: 260px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #fff;
+  padding: 24px 20px;
+  border: 1px solid rgb(241, 241, 241);
+  box-shadow: 0px 0px 15px 0px rgba(25, 20, 20, 0.05);
+}
+.repair_contact .repair_contact_block .input_group input {
+  width: 100%;
+  color: rgb(140, 137, 137);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+  border: none;
+}
+.repair_contact .repair_contact_block button {
+  width: 260px;
+  padding: 24px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 140%;
+  text-align: center;
+  background: linear-gradient(270deg, rgb(225, 107, 95), rgb(243, 168, 158) 100%);
+}
+.repair_contact .repair_contact_block_under {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.repair_contact .repair_contact_block_under input {
+  width: 25px;
+  height: 25px;
+  accent-color: rgb(30, 67, 57);
+}
+.repair_contact .repair_contact_block_under label {
+  max-width: 454px;
+  color: rgb(140, 137, 137);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.repair_contact .repair_contact_block_under label a {
+  text-decoration: underline !important;
+}
+.repair_contact .repair_contact_text_media {
+  display: none;
+}
+
 .examples_Swiper_block .examples_work_title {
   display: flex;
   justify-content: space-between;
@@ -973,6 +1086,44 @@ footer .footer_bottom span {
   .examples_work .examples_work-next img {
     width: 17px;
   }
+  .repair_contact .main_container {
+    padding-bottom: 50px;
+  }
+  .repair_contact .main_container .repair_contact_bg {
+    width: 1019px;
+    height: 371px;
+    right: -44%;
+  }
+  .repair_contact .repair_title .main_title {
+    max-width: 319px;
+  }
+  .repair_contact .repair_title .calc img {
+    width: 45px;
+  }
+  .repair_contact .repair_title .calc p {
+    max-width: 133px;
+    font-size: 13px;
+  }
+  .repair_contact p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .repair_contact .repair_contact_block {
+    margin-bottom: 20px;
+  }
+  .repair_contact .repair_contact_block .input_group, .repair_contact .repair_contact_block button {
+    width: 200px;
+    height: 56px;
+    padding: 17px 14px;
+    font-size: 16px;
+  }
+  .repair_contact .repair_contact_block_under input {
+    width: 20px;
+    height: 20px;
+  }
+  .repair_contact .repair_contact_block_under label {
+    font-size: 16px;
+  }
   .accordion {
     margin: 130px 0;
   }
@@ -1197,7 +1348,7 @@ footer .footer_bottom span {
     padding: 50px 30px;
   }
   .examples_work {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
   }
   .examples_work .main_title {
     text-align: center;
@@ -1286,6 +1437,72 @@ footer .footer_bottom span {
   }
   .examples_Swiper_block .examples_work_right,
   .examples_Swiper_block .examples_work_left {
+    width: 100%;
+  }
+  .repair_contact .main_container {
+    padding-bottom: 0;
+  }
+  .repair_contact .main_container .repair_contact_bg {
+    display: none;
+  }
+  .repair_contact .repair_title {
+    margin-bottom: 30px;
+  }
+  .repair_contact .repair_title .main_title {
+    text-align: center;
+    max-width: 100%;
+  }
+  .repair_contact .repair_title .calc {
+    display: none;
+  }
+  .repair_contact p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    text-align: center;
+  }
+  .repair_contact .repair_contact_block {
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 15px;
+  }
+  .repair_contact .repair_contact_block .input_group, .repair_contact .repair_contact_block button {
+    width: 100%;
+    font-size: 18px;
+    height: 73px;
+  }
+  .repair_contact .repair_contact_block_under input {
+    width: 15px;
+    height: 15px;
+  }
+  .repair_contact .repair_contact_block_under label {
+    font-size: 12px;
+  }
+  .repair_contact .repair_contact_text_media {
+    position: relative;
+    display: block;
+    margin-top: 25px;
+    padding-bottom: 162px;
+  }
+  .repair_contact .repair_contact_text_media .calc img {
+    width: 45px;
+  }
+  .repair_contact .repair_contact_text_media .calc p {
+    max-width: 180px;
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: left;
+  }
+  .repair_contact .repair_contact_text_media .calc p span {
+    color: #000;
+  }
+  .repair_contact .repair_contact_text_media .repair_contact_text_media_bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
   }
   .accordion {
