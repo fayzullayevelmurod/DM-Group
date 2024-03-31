@@ -1842,6 +1842,9 @@ footer .footer_bottom span {
   line-height: 140%;
   margin-bottom: 35px;
 }
+.management_home .management_home_media_form {
+  display: none;
+}
 
 .cooperation_formats {
   margin-bottom: 200px;
@@ -2806,6 +2809,123 @@ footer .footer_bottom span {
     height: 60px;
     font-size: 16px;
   }
+  .management_home {
+    margin: 30px 0 80px 0;
+  }
+  .management_home .main_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .management_home .main_title {
+    max-width: 100%;
+    text-align: center;
+  }
+  .management_home p {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .management_home .management_home_left .management_home_form {
+    display: none;
+  }
+  .management_home .management_home_media_form {
+    width: 579px;
+    display: block;
+  }
+  .management_home .management_home_media_form .management_home_form .form_group {
+    width: 100%;
+    height: 70px;
+    margin-bottom: 20px;
+  }
+  .management_home .management_home_media_form .management_home_form button {
+    margin: 0 0 20px 0;
+    width: 100%;
+    height: 76px;
+  }
+  .management_home .management_home_media_form .management_home_form .form_under {
+    max-width: 100%;
+  }
+  .management_home .management_home_media_form .management_home_form .form_under input {
+    width: 20px;
+    height: 20px;
+  }
+  .cooperation_formats {
+    margin-bottom: 70px;
+  }
+  .cooperation_formats .cooperation_formats_title {
+    margin-bottom: 50px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .cooperation_formats .cooperation_formats_title p {
+    font-size: 16px;
+  }
+  .cooperation_formats .cooperation_formats_cards {
+    flex-direction: column;
+  }
+  .cooperation_formats .cooperation_formats_cards .cooperation_formats_card {
+    padding: 35px;
+    width: 100%;
+  }
+  .cooperation_formats .cooperation_formats_cards .cooperation_formats_card img {
+    width: 45px;
+    height: 45px;
+  }
+  .cooperation_formats .cooperation_formats_cards .cooperation_formats_card p {
+    margin-top: 25px;
+    font-size: 15px;
+  }
+  .cooperation_work {
+    margin-bottom: 70px;
+  }
+  .cooperation_work .main_title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .cooperation_work .cooperation_work_cards {
+    flex-direction: column;
+    gap: 0;
+  }
+  .cooperation_work .cooperation_work_cards .work_card_end .line {
+    display: block;
+  }
+  .cooperation_work .cooperation_work_cards .full_end .line {
+    display: none;
+  }
+  .cooperation_work .cooperation_work_cards .cooperation_work_card {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    position: relative;
+  }
+  .cooperation_work .cooperation_work_cards .cooperation_work_card .cooperation_work_card_text {
+    padding: 0 0 60px 0;
+  }
+  .cooperation_work .cooperation_work_cards .cooperation_work_card .cooperation_work_card_top {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .cooperation_work .cooperation_work_cards .cooperation_work_card .cooperation_work_card_top .cooperation_work_card_number {
+    position: relative;
+    z-index: 2;
+    width: 44px;
+    height: 44px;
+  }
+  .cooperation_work .cooperation_work_cards .cooperation_work_card .cooperation_work_card_top .cooperation_work_card_number span {
+    font-size: 24px;
+  }
+  .cooperation_work .cooperation_work_cards .cooperation_work_card .cooperation_work_card_top .line {
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background: #fff;
+  }
+  .cooperation_work .cooperation_work_cards .cooperation_work_card p {
+    font-size: 16px;
+  }
   footer {
     padding: 70px 0 45px 0;
   }
@@ -2873,6 +2993,11 @@ footer .footer_bottom span {
   }
   footer .footer_bottom a, footer .footer_bottom span {
     font-size: 10px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .management_home .management_home_media_form {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 576px) {
