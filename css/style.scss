@@ -385,6 +385,7 @@ button {
         @include flex-start();
         gap: 8px;
         user-select: none;
+        max-width: 426px;
 
         input {
             width: 20px;
@@ -2203,6 +2204,8 @@ footer {
     margin: 70px 0 200px 0;
     .main_container {
         @include flex-start();
+        justify-content: space-between;
+        gap: 50px;
     }
 
     .main_title {
@@ -2258,7 +2261,6 @@ footer {
         font-size: 24px;
         font-weight: 400;
         line-height: 120%;
-        margin-bottom: 25px;
     }
 
     .cooperation_formats_card {
@@ -2272,6 +2274,7 @@ footer {
 
 
         p {
+            margin-top: 25px;
             color: rgb(182, 182, 182);
             font-size: 18px;
             font-weight: 400;

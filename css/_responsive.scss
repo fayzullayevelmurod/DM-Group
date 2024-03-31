@@ -1,5 +1,190 @@
 @media only screen and (max-width: 1300px) {
 
+    .management_home_form {
+        .form_group, button {
+            width: 280px;
+            height: 50px;
+
+        }
+        
+        .form_group {
+            gap: 10px;
+            padding: 17px 14px;
+
+            input {
+                font-size: 16px;
+            }
+        }
+
+        button {
+            margin: 14px 0;
+            font-size: 16px;
+        }
+
+        .form_under {
+            input {
+                width: 25px;
+                height: 25px;
+            }
+
+            label {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .cooperation_formats {
+        margin-bottom: 130px;
+
+        .cooperation_formats_title {
+            margin-bottom: 60px;
+
+            p {
+                max-width: 350px;
+                font-size: 13px;
+            }
+        }
+
+        .cooperation_formats_cards {
+            .cooperation_formats_card {
+                padding: 36px 17px;
+
+                img {
+                    width: 36px;
+                    height: 36px;
+                    margin-bottom: 25px;
+                }
+
+                h6 {
+                    font-size: 18px;
+                }
+                
+                p {
+                    margin-top: 15px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .cooperation_work {
+        margin-bottom: 130px;
+
+        .main_title {
+            margin-bottom: 60px;
+        }
+
+        .cooperation_work_cards {
+            gap: 50px 0;
+
+            .cooperation_work_card {
+                h6 {
+                    font-size: 18px;
+                    margin-bottom: 12px;
+                }
+
+                p {
+                    font-size: 13px;
+                }
+
+                .cooperation_work_card_text {
+                    padding-right: 50px;
+                }
+
+                .cooperation_work_card_top {
+                    margin-bottom: 30px;
+                }
+
+                .cooperation_work_card_number {
+                    width: 30px;
+                    height: 30px;
+
+                    span {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+
+    .cooperation_contact {
+        margin-bottom: 130px;
+
+        .main_container {
+            padding: 76px 36px;
+        }
+
+        .cooperation_contact_img {
+            height: 465px;
+            width: 600px;
+            right: -70px;
+        }
+
+        .main_title {
+            margin-bottom: 25px;
+        }
+
+        .contact_us__description {
+            font-size: 16px;
+            max-width: 386px;
+            margin-bottom: 35px;
+        }
+
+        .contact_us__form  {
+            .form_inp {
+                height: 58px;
+                width: 200px;
+
+                img {
+                    width: 20px;
+                    left: 15px;
+                }
+                
+                .user {
+                    width: 11px;
+
+                }
+
+                input {
+                    height: 58px;
+                    font-size: 16px;
+                    padding: 0 20px 0 40px;
+                }
+            }
+
+            button {
+                width: 220px;
+                font-size: 16px;
+            }
+
+            
+        }
+        .main_checkbox {
+            margin-top: 0;
+
+            input {
+                width: 15px;
+                height: 15px;
+            }
+
+            span {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .text_field {
+        margin-bottom: 130px;
+
+        p {
+            font-size: 16px;
+        }
+
+        .text_field_text {
+            gap: 30px;
+        }
+    }
+
     .main_title {
         font-size: 30px;
     }
@@ -166,6 +351,13 @@
             margin-bottom: 56px;
         }
 
+        .examples_work_title {
+            p {
+                font-size: 16px;
+                max-width: 300px;
+            }
+        }
+
         .examples_work_slider_in {
             gap: 23px;
         }
@@ -327,6 +519,19 @@
             img {
                 width: 40px;
             }
+        }
+    }
+
+    .management_home {
+        margin: 20px 0 130px 0;
+
+        .main_title {
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 25px;
         }
     }
 
