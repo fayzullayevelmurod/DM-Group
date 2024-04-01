@@ -1,5 +1,255 @@
 @media only screen and (max-width: 1300px) {
 
+    .life_begins_header {
+        padding: 35px 0 15px 0;
+    }
+
+    .life_begins_home {
+        padding: 150px 0 130px 0;
+        margin-bottom: 130px;
+
+        .main_title {
+            margin: 0 auto 25px auto;
+        }
+
+        p {
+            font-size: 16px;
+            max-width: 610px;
+        }
+
+        .life_begins_home_btns {
+            margin-top: 40px;
+            gap: 15px;
+
+            .life_begins_home_btn {
+                height: 52px;
+                width: 207px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .life-begins_contact {
+        margin-bottom: 130px;
+        .contact_us__title {
+            margin-bottom: 25px;
+        }
+
+        .contact_us__description {
+            font-size: 16px;
+        }
+
+        .contact_us__form {
+            .form_inp, button {
+                width: 206px;
+                height: 60px;
+                font-size: 16px;
+            }
+
+            .form_inp {
+                input {
+                    height: 60px;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .main_checkbox {
+            input {
+                width: 20px;
+                height: 20px;
+            }
+            span {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .management_home_form {
+        .form_group, button {
+            width: 280px;
+            height: 50px;
+
+        }
+        
+        .form_group {
+            gap: 10px;
+            padding: 17px 14px;
+
+            input {
+                font-size: 16px;
+            }
+        }
+
+        button {
+            margin: 14px 0;
+            font-size: 16px;
+        }
+
+        .form_under {
+            input {
+                width: 25px;
+                height: 25px;
+            }
+
+            label {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .cooperation_formats {
+        margin-bottom: 130px;
+
+        .cooperation_formats_title {
+            margin-bottom: 60px;
+
+            p {
+                max-width: 350px;
+                font-size: 13px;
+            }
+        }
+
+        .cooperation_formats_cards {
+            .cooperation_formats_card {
+                padding: 36px 17px;
+
+                img {
+                    width: 36px;
+                    height: 36px;
+                    margin-bottom: 25px;
+                }
+
+                h6 {
+                    font-size: 18px;
+                }
+                
+                p {
+                    margin-top: 15px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .cooperation_work {
+        margin-bottom: 130px;
+
+        .main_title {
+            margin-bottom: 60px;
+        }
+
+        .cooperation_work_cards {
+            gap: 50px 0;
+
+            .cooperation_work_card {
+                h6 {
+                    font-size: 18px;
+                    margin-bottom: 12px;
+                }
+
+                p {
+                    font-size: 13px;
+                }
+
+                .cooperation_work_card_text {
+                    padding-right: 50px;
+                }
+
+                .cooperation_work_card_top {
+                    margin-bottom: 30px;
+                }
+
+                .cooperation_work_card_number {
+                    width: 30px;
+                    height: 30px;
+
+                    span {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+
+    .cooperation_contact {
+        margin-bottom: 130px;
+
+        .main_container {
+            padding: 76px 36px;
+        }
+
+        .cooperation_contact_img {
+            height: 465px;
+            width: 600px;
+            right: -70px;
+        }
+
+        .main_title {
+            margin-bottom: 25px;
+        }
+
+        .contact_us__description {
+            font-size: 16px;
+            max-width: 386px;
+            margin-bottom: 35px;
+        }
+
+        .contact_us__form  {
+            .form_inp {
+                height: 58px;
+                width: 200px;
+
+                img {
+                    width: 20px;
+                    left: 15px;
+                }
+                
+                .user {
+                    width: 11px;
+
+                }
+
+                input {
+                    height: 58px;
+                    font-size: 16px;
+                    padding: 0 20px 0 40px;
+                }
+            }
+
+            button {
+                width: 220px;
+                font-size: 16px;
+            }
+
+            
+        }
+        .main_checkbox {
+            margin-top: 0;
+
+            input {
+                width: 15px;
+                height: 15px;
+            }
+
+            span {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .text_field {
+        margin-bottom: 130px;
+
+        p {
+            font-size: 16px;
+        }
+
+        .text_field_text {
+            gap: 30px;
+        }
+    }
+
     .main_title {
         font-size: 30px;
     }
@@ -166,6 +416,13 @@
             margin-bottom: 56px;
         }
 
+        .examples_work_title {
+            p {
+                font-size: 16px;
+                max-width: 300px;
+            }
+        }
+
         .examples_work_slider_in {
             gap: 23px;
         }
@@ -330,6 +587,19 @@
         }
     }
 
+    .management_home {
+        margin: 20px 0 130px 0;
+
+        .main_title {
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+    }
+
 }
 
 @media only screen and (max-width: 1100px) {
@@ -461,6 +731,130 @@
         font-size: 25px;
     }
 
+    // mobile_menu
+    .mobile_menu_bg {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(2px);
+        z-index: 5;
+        display: none;
+    }
+
+    .mobile_menu_bg.active {
+        display: block;
+    }
+    
+    .mobile_menu {
+        padding: 130px 30px 70px 30px;
+        background: rgb(25, 20, 20);
+        position: fixed;
+        width: 60%;
+        height: 100%;
+        top: 0;
+        right: -100%;
+        z-index: 6;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include transition();
+    
+        .mobile_menu_btn {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+        }
+    
+        .nav_link {
+            max-width: 117px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            padding-bottom: 50px;
+            border-bottom: 1px solid rgb(151, 151, 151);
+    
+            a {
+                color: rgb(255, 255, 255);
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 15px;
+            }
+        }
+    
+        .mobile_bottom {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+    
+            .header_btn {
+                white-space: nowrap;
+                padding: 16px;
+                color: rgb(255, 255, 255);
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 15px;
+                border: 1px solid rgb(255, 255, 255);
+                box-shadow: 0px 0px 15px 0px rgba(25, 20, 20, 0.05);
+                @include transition();
+    
+                &:hover {
+                    background: linear-gradient(90.00deg, rgb(243, 168, 158),rgb(225, 107, 95) 100%);
+                    border: transparent;
+                }
+            }
+        }
+    
+    
+        .mobile_logo {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 123px;
+            span {
+                font-size: 10px;
+                color: rgb(167, 167, 167);
+            }
+        }
+    }
+    
+    .mobile_menu.active {
+        right: 0;
+    }
+    // mobile_menu
+
+    .modal {
+        .modal_close {
+            top: 15px;
+            right: 15px;
+            width: 20px;
+            height: 20px;
+        }
+
+        .main_title {
+            margin: 0 auto 35px auto;
+        }
+
+        .form_group {
+            height: 62px;
+            margin-bottom: 15px;
+
+            input {
+                font-size: 15px;
+            }
+        }
+
+        button {
+            height: 62px;
+            font-size: 16px;
+        }
+    }
+
+    .life_begins_header {
+        padding: 20px 0;
+    }
+
     header {
         padding: 20px 0;
 
@@ -481,6 +875,82 @@
         .burger {
             flex-shrink: 0;
             display: block;
+        }
+    }
+
+    .life_begins_home {
+        margin-bottom: 70px;
+        padding: 130px 0 70px 0;
+
+        .main_title {
+            margin: 0 auto 50px auto;
+        }
+
+        .life_begins_home_btns {
+            margin-top: 50px;
+            flex-direction: column;
+            gap: 30px;
+
+            .life_begins_home_btn {
+                width: 100%;
+            }
+        }
+    }
+
+    .life-begins_contact {
+        margin-bottom: 70px;
+        .contact_us__bg {
+            display: none;
+        }
+
+        .main_container {
+            padding: 0;
+        }
+
+        .life_contact_media_img {
+            display: block;
+            width: 100%;
+        }
+
+        .life_begin_text {
+            padding: 0 36px;
+            .main_title {
+                max-width: 100%;
+                text-align: center;
+            }
+
+            .contact_us__description {
+                max-width: 100%;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+        }
+
+        .contact_us__form {
+            padding: 0 36px;
+            flex-direction: column;
+            gap: 12px;
+
+            .form_inp,
+            button {
+                height: 64px;
+                width: 100%;
+            }
+
+            .form_inp {
+                input {
+                    height: 64px;
+                }
+            }
+
+            .form_inp,
+            button {
+                font-size: 15px;
+            }
+        }
+
+        .main_checkbox {
+            padding: 0 36px;
         }
     }
 
@@ -891,6 +1361,228 @@
         }
     }
 
+    .management_home {
+        margin: 30px 0 80px 0;
+        .main_container {
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .main_title {
+            max-width: 100%;
+            text-align: center;
+        }
+
+        p {
+            max-width: 100%;
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        .management_home_left {
+            .management_home_form {
+                display: none;
+            }
+        }
+
+        .management_home_media_form {
+            width: 579px;
+            display: block;
+
+            .management_home_form {
+
+                .form_group {
+                    width: 100%;
+                    height: 70px;
+                    margin-bottom: 20px;
+                }
+
+                button {
+                    margin: 0 0 20px 0;
+                    width: 100%;
+                    height: 76px;
+                }
+
+                .form_under {
+                    max-width: 100%;
+                    input {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .cooperation_formats {
+        margin-bottom: 70px;
+
+        .cooperation_formats_title {
+            margin-bottom: 50px;
+            flex-direction: column;
+            text-align: center;
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+        .cooperation_formats_cards {
+            flex-direction: column;
+
+            .cooperation_formats_card {
+                padding: 35px;
+                width: 100%;
+
+                img {
+                    width: 45px;
+                    height: 45px;
+                }
+
+                p {
+                    margin-top: 25px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .cooperation_work {
+        margin-bottom: 70px;
+        .main_title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .cooperation_work_cards {
+            flex-direction: column;
+            gap: 0;
+
+            .work_card_end {
+                .line {
+                    display: block;
+                }
+            }
+
+            .full_end {
+                .line {
+                    display: none;
+                }
+            }
+
+            .cooperation_work_card {
+                width: calc(100%);
+                display: flex;
+                align-items: start;
+                gap: 20px;
+                position: relative;
+
+                .cooperation_work_card_text {
+                    padding: 0 0 60px 0;
+                }
+
+                .cooperation_work_card_top {
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 0;
+    
+                    .cooperation_work_card_number {
+                        position: relative;
+                        z-index: 2;
+                        width: 44px;
+                        height: 44px;
+    
+                        span {
+                            font-size: 24px;
+                        }
+                    }
+    
+                    .line {
+                        position: absolute;
+                        height: 100%;
+                        width: 2px;
+                        background: #fff;
+                    }
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+
+    }
+
+    .cooperation_contact {
+        margin-bottom: 70px;
+
+        .cooperation_contact_img {
+            display: none;
+        }
+
+        .main_container {
+            padding: 75px 36px 12px 36px;
+        }
+
+        .cooperation_contact_media {
+            display: block;
+            width: 100%;
+        }
+
+        .main_title {
+            margin-bottom: 35px;
+            max-width: 100%;
+            text-align: center;
+        }
+
+        .contact_us__description {
+            margin-bottom: 40px;
+            text-align: center;
+            max-width: 100%;
+        }
+
+        .contact_us__form {
+            flex-direction: column;
+            gap: 24px;
+
+            .form_inp {
+                width: 100%;
+                height: 76px;
+
+                input {
+                    height: 76px;
+                    font-size: 20px;
+                }
+            }
+
+            button {
+                width: 100%;
+                height: 76px;
+            }
+        }
+
+        .main_checkbox {
+            
+            span {
+                
+                max-width: 100% !important;
+            }
+        }
+    }
+
+    .text_field {
+        margin-bottom: 70px;
+        
+        .main_title {
+            margin-bottom: 35px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
 
     footer {
         padding: 70px 0 45px 0;
@@ -983,6 +1675,14 @@
     }
 }
 
+@media only screen and (max-width: 650px) {
+    .management_home {
+        .management_home_media_form {
+            width: 100%;
+        }
+    }
+}
+
 @media only screen and (max-width: 576px) {
     h1 {
         font-size: 25px;
@@ -1004,6 +1704,51 @@
 @media only screen and (max-width: 360px) {
     .main_container {
         padding: 0 15px;
+    }
+
+    .mobile_menu {
+        padding: 80px 20px 50px 20px;
+
+        .mobile_menu_btn {
+            top: 20px;
+            right: 20px;
+            width: 15px;
+            height: 15px;
+        }
+
+        .nav_link {
+            gap: 20px;
+            padding-bottom: 30px;
+
+            a {
+                font-size: 12px;
+            }
+        }
+
+        .mobile_bottom {
+            gap: 30px;
+            .header_btn {
+                padding: 10px;
+                font-size: 12px;
+            }
+        }
+    }
+
+    header {
+        .logo {
+            min-width: 215px;
+            img {
+                width: 90px;
+            }
+        }
+    }
+
+    .life-begins_contact {
+        .life_begin_text,
+        .main_checkbox,
+        .contact_us__form {
+            padding: 0 15px;
+        }
     }
 
     footer {

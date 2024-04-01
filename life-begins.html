@@ -19,13 +19,39 @@
     <!-- css link -->
 </head>
 <body>
-    <div class="wrapper repair_page">
+    <div class="wrapper">
+
+        <!-- modal -->
+        <div class="modal">
+            <div class="main_container">
+                <button class="modal_close">
+                    <img src="./images/icons/modal_close.svg" alt="">
+                </button>
+                <h2 class="main_title">
+                    Скачайте подробный каталог с ценами и планировками
+                </h2>
+                <form action="#" class="management_home_form modal_form">
+                    <div class="form_group">
+                        <img src="./images/icons/user_icon.svg" alt="">
+                        <input type="text" placeholder="Ваше имя">
+                    </div>
+                    <div class="form_group">
+                        <img src="./images/icons/flag_icon.svg" alt="">
+                        <input type="tel" placeholder="+7 (___) ___-__-__">
+                    </div>
+                    <button type="submit">
+                        Скачать презентацию
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!-- modal -->
 
         <!-- header -->
-        <header>
+        <header class="life_begins_header">
             <div class="main_container">
                 <a class="logo" href="/">
-                    <img src="./images/logo/header_logo_new.svg" alt="">
+                    <img src="./images/logo/life_logo.svg" alt="">
                     <span>
                         группа компаний<br> в сфере недвижимости
                     </span>
@@ -63,323 +89,187 @@
                     Связаться с нами
                 </button>
                 <button class="burger">
-                    <img src="./images/icons/burger_icon.svg" alt="">
+                    <img src="./images/icons/burger_icon_white.svg" alt="">
                 </button>
             </div>
         </header>
         <!-- header -->
 
-        <!-- management_home -->
-        <section class="management_home">
-            <div class="main_container">
-                <div class="management_home_left">
-                    <h3 class="main_title">
-                        Управление недвижимостью <span>
-                            в Сочи, Крыму и на черноморском побережье
-                        </span>
-                    </h3>
-                    <p>
-                        Обеспечим вас регулярным доходом. Возьмем на себя все вопросы связанные со сдачей квартиры в посуточную либо ежемесячную аренду.
-                    </p>
-                    <form action="#" class="management_home_form">
-                        <div class="form_group">
-                            <img src="./images/icons/user_icon.svg" alt="">
-                            <input type="text" placeholder="Ваше имя">
-                        </div>
-                        <div class="form_group">
-                            <img src="./images/icons/flag_icon.svg" alt="">
-                            <input type="tel" placeholder="+7 (___) ___-__-__">
-                        </div>
-                        <button type="submit">
-                            Предложить квартиру
-                        </button>
-                        <div class="form_under">
-                            <input type="checkbox" id="checkbox">
-                            <label for="checkbox">
-                                Я соглашаюсь на <a href="#">обработку персональных данных</a> согласно <a href="#">политике конфиденциальности</a>
-                            </label>
-                        </div>
-                    </form>
-                </div>
-                <div class="management_home_right">
-                    <img src="./images/management_home_img.png" alt="">
-                </div>
-                <div class="management_home_media_form">
-                    <form action="#" class="management_home_form">
-                        <div class="form_group">
-                            <img src="./images/icons/user_icon.svg" alt="">
-                            <input type="text" placeholder="Ваше имя">
-                        </div>
-                        <div class="form_group">
-                            <img src="./images/icons/flag_icon.svg" alt="">
-                            <input type="tel" placeholder="+7 (___) ___-__-__">
-                        </div>
-                        <button type="submit">
-                            Предложить квартиру
-                        </button>
-                        <div class="form_under">
-                            <input type="checkbox" id="checkbox">
-                            <label for="checkbox">
-                                Я соглашаюсь на <a href="#">обработку персональных данных</a> согласно <a href="#">политике конфиденциальности</a>
-                            </label>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-        <!-- management_home -->
-
-        <!-- cooperation_formats -->
-        <section class="cooperation_formats">
-            <div class="main_container">
-                <div class="cooperation_formats_title">
-                    <h3 class="main_title">
-                        Форматы сотрудничества
-                    </h3>
-                    <p>
-                        Принимаем в управление квартиры, дома, апартаменты
-                    </p>
-                </div>
-                <div class="cooperation_formats_cards">
-                    <div class="cooperation_formats_card">
-                        <img src="./images/icons/Cooperation_formats1.svg" alt="">
-                        <h6>
-                            Управляем посуточной арендой
-                        </h6>
-                        <p>
-                            Ваш объект недвижимости будет сдаваться посуточно, это позволит увеличить доход со сдачи до 2 раз.
-                        </p>
-                        <p>
-                            Мы возьмем все процессына себя, поможемподготовить недвижимость к сдаче и будем вести клиентский поток.
-                        </p>
-                    </div>
-                    <div class="cooperation_formats_card card_green">
-                        <img src="./images/icons/Cooperation_formats2.svg" alt="">
-                        <h6>
-                            Управляем
-                            длительной арендой
-                        </h6>
-                        <p>
-                            Ваша квартира будет сдаваться на длительный срок. Подготовим вашу
-                            недвижимость к сдаче 
-                            и найдем надёжного
-                            арендатора. 
-                        </p>
-                        <p>
-                            Проконтролируем своевременное внесение арендной платы.
-                        </p>
-                    </div>
-                    <div class="cooperation_formats_card">
-                        <img src="./images/icons/Cooperation_formats3.svg" alt="">
-                        <h6>
-                            Ремонт и
-                            хоумстейджинг
-                        </h6>
-                        <p>
-                            Сделаем ремонт под ключ,
-                            подскажем как уложиться в
-                            ограниченный бюджет и сделать объект гораздо
-                            привлекательней. В
-                            короткие сроки сделаем
-                            дизайн-проект, выполним ремонт, завезем мебель, сделаем генуборку и отснимем сочные фото.
-                        </p>
-                    </div>
-                    <div class="cooperation_formats_card card_green">
-                        <img src="./images/icons/Cooperation_formats4.svg" alt="">
-                        <h6>
-                            Инвестиции в
-                            недвижимость
-                        </h6>
-                        <p>
-                            Поможем приобрести максимально доходную недвижимость, проверим юридическую чистоту сделки, сопроводим на всех этапах. Делаем анализ рынка в моменте и предлагаем наиболее перспективные варианты для решения инвестиционных задач.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- cooperation_formats -->
-
-        <!-- cooperation_work -->
-        <section class="cooperation_work">
+        <!-- life_begins_home -->
+        <div class="life_begins_home">
             <div class="main_container">
                 <h3 class="main_title">
-                    Как мы работаем:
+                    <span>
+                        Переезд на Юг России под ключ
+                    </span> 
+                    - Ваша новая жизнь начинается здесь
                 </h3>
-                <div class="cooperation_work_cards">
-                    <div class="cooperation_work_card">
-                        <div class="cooperation_work_card_top">
-                            <div class="cooperation_work_card_number">
-                                <span>
-                                    1
-                                </span>
-                            </div>
-                            <div class="line"></div>
-                        </div>
-                        <div class="cooperation_work_card_text">
-                            <h6>
-                                Оцениваем объект
-                            </h6>
-                            <p>
-                                Проводим анализ и определяем наиболее выгодные для вас условия
-                            </p>
-                        </div>
-                    </div>
-                    <div class="cooperation_work_card">
-                        <div class="cooperation_work_card_top">
-                            <div class="cooperation_work_card_number">
-                                <span>
-                                    2
-                                </span>
-                            </div>
-                            <div class="line"></div>
-                        </div>
-                        <div class="cooperation_work_card_text">
-                            <h6>
-                                Заключаем договор
-                            </h6>
-                            <p>
-                                Берем на себя ответственность за управление вашим имуществом и даем гарантии.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="cooperation_work_card">
-                        <div class="cooperation_work_card_top">
-                            <div class="cooperation_work_card_number">
-                                <span>
-                                    3
-                                </span>
-                            </div>
-                            <div class="line"></div>
-                        </div>
-                        <div class="cooperation_work_card_text">
-                            <h6>
-                                Готовим объект к сдаче
-                            </h6>
-                            <p>
-                                Меблируем и при необходимости делаем ремонт, страхуем имущество.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="cooperation_work_card work_card_end">
-                        <div class="cooperation_work_card_top">
-                            <div class="cooperation_work_card_number">
-                                <span>
-                                    4
-                                </span>
-                            </div>
-                            <div class="line"></div>
-                        </div>
-                        <div class="cooperation_work_card_text">
-                            <h6>
-                                Рекламируем
-                            </h6>
-                            <p>
-                                Делаем профессиональные фото. Используем более 15 площадок для размещения.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="cooperation_work_card">
-                        <div class="cooperation_work_card_top">
-                            <div class="cooperation_work_card_number">
-                                <span>
-                                    5
-                                </span>
-                            </div>
-                            <div class="line"></div>
-                        </div>
-                        <div class="cooperation_work_card_text">
-                            <h6>
-                                Заселение
-                            </h6>
-                            <p>
-                                Бесконтактно заселяем гостей. Если нужно наш менеджер организовывает встречу гостя в аэропорту и трансфер до объекта.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="cooperation_work_card">
-                        <div class="cooperation_work_card_top">
-                            <div class="cooperation_work_card_number">
-                                <span>
-                                    6
-                                </span>
-                            </div>
-                            <div class="line"></div>
-                        </div>
-                        <div class="cooperation_work_card_text">
-                            <h6>
-                                Контроль аренды
-                            </h6>
-                            <p>
-                                Своевременную оплату аренды, коммунальных платежей и ежемесячно проверяем имущество.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="cooperation_work_card">
-                        <div class="cooperation_work_card_top">
-                            <div class="cooperation_work_card_number">
-                                <span>
-                                    7
-                                </span>
-                            </div>
-                            <div class="line"></div>
-                        </div>
-                        <div class="cooperation_work_card_text">
-                            <h6>
-                                Сервис
-                            </h6>
-                            <p>
-                                Берем на себя ответственность за комфортный отдых гостей 
-                                и решаем практически любой их вопрос.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="cooperation_work_card work_card_end full_end">
-                        <div class="cooperation_work_card_top">
-                            <div class="cooperation_work_card_number">
-                                <span>
-                                    8
-                                </span>
-                            </div>
-                            <div class="line"></div>
-                        </div>
-                        <div class="cooperation_work_card_text">
-                            <h6>
-                                Отчетность
-                            </h6>
-                            <p>
-                                Предоставляем полный документальный отчет 
-                                по проделанной работе согласно договору с фото 
-                                и видео.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- cooperation_work -->
-
-        <!-- contact us -->
-        <section class="contact_us cooperation_contact">
-            <div class="main_container">
-                <img src="./images/cooperation_contact_img.png" alt="" class="cooperation_contact_img">
-                <h3 class="main_title">
-                    Передайте квартиру в управление
-                </h3>
-                <p class="contact_us__description">
-                    Заполните форму и откройте для себя новый формат пассивного дохода. Наш менеджер свяжется с вами в ближайшее время. 
+                <p>
+                    Мечтаете о смене обстановки и новых возможностях на берегу теплого моря? Мы знаем, как сделать вашу мечту реальностью! Наша компания предлагает эксклюзивную услугу — организованный и беззаботный переезд в Краснодарский край, где сочетаются благоприятный климат, развитая инфраструктура и бесконечные возможности для жизни и отдыха. 
                 </p>
+                <div class="life_begins_home_btns">
+                    <a href="#" class="life_begins_home_btn">
+                        Узнать больше
+                    </a>
+                    <a href="#" class="life_begins_home_btn life_begins_home_btn_two">
+                        Заказать переезд
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- life_begins_home -->
+
+        <div class="mobile_menu">
+            <button class="mobile_menu_btn">
+                <img src="./images/icons/burger_close.svg" alt="">
+            </button>
+            <ul class="nav_link">
+                <li class="nav_item">
+                    <a href="#">
+                        О нас
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a href="#">
+                        Новостройки
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a href="#">
+                        Ремонт
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a href="#">
+                        Сопровождение
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a href="#">
+                        Переезд
+                    </a>
+                </li>
+            </ul>
+            <div class="mobile_bottom">
+                <button class="header_btn">
+                    Связаться с нами
+                </button>
+                <a class="mobile_logo" href="/">
+                    <img src="./images/logo/media_logo.svg" alt="">
+                    <span>
+                        группа компаний<br> в сфере недвижимости
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="mobile_menu_bg"></div>
+
+        <!-- professional team -->
+        <section class="professional_team life-begins_team">
+            <div class="main_container">
+                <h3 class="main_title">
+                    Почему мы помогаем <span>
+                        с переездом на юг России? 
+                    </span>
+                </h3>
+                <div class="professional_team_in">
+                    <div class="professional_team_card green_card card_text green_card">
+                        <h6>
+                            <span>
+                                Причина 1.
+                            </span>
+                            Тут тепло
+                        </h6>
+                        <p>
+                            В Краснодарском крае самый комфортный климат. Здесь 300 солнечных дней ёв году. Зимой снега мало, иногда в зимние месяцы температура повышается до +15-20. Лето начинается рано и круглый год радует зеленая и яркая картинка.
+                        </p>
+                    </div>
+                    <div class="professional_team_card card_text">
+                        <h6>
+                            <span>
+                                Причина 2.
+                            </span>
+                            Жизнь у моря
+                        </h6>
+                        <p>
+                            Мечта жить у моря - не утопия, а реальность. Для многих переезд на юг является показанием по здоровью. Лечиться здесь дешевле и эффективнее, чем в других регионах. Лечит целебный воздух, источники, грязи и море.
+                        </p>
+                    </div>
+                    <div class="professional_team_card">
+                        <img src="./images/profissional_team3.png" alt="">
+                    </div>
+                    <div class="professional_team_card card_text green_card">
+                        <h6>
+                            <span>
+                                Причина 3.
+                            </span>
+                            Финансирование
+                        </h6>
+                        <p>
+                            Департамент социологии Финансового Университета отдал Краснодарскому краю 1 место по качеству жизни. Опрос южан  показал, что 98% из них довольны своим местом жительства. В Москве таких 83%, а в Уфе — 74%.
+                        </p>
+                    </div>
+                    <div class="professional_team_card card_text">
+                        <h6>
+                            <span>
+                                Причина 4.
+                            </span>
+                            Высокий заработок
+                        </h6>
+                        <p>
+                            Уровень безработицы 
+                            на юге один из самых низких 
+                            в России — 0,5%. И это не смотря на то, что юг — один из лидеров по притоку населения за последние годы. Приезжие равномерно распределяются по станицам и регионам.           
+                        </p>
+                    </div>
+                    <div class="professional_team_card">
+                        <img src="./images/profissional_team4.png" alt="">
+                    </div>
+                    <div class="professional_team_card green_card card_text">
+                        <h6>
+                            <span>
+                                Причина 5.
+                            </span>
+                            Хочется перемен
+                        </h6>
+                        <p>
+                            Кому-то надоели холода. Кому-то — старые квартиры с видом на шоссе и серый смог. Кому-то в печенках сидят пробки. А кому-то — химические продукты сетевых магазинов, переполненное метро и разваленные маршрутки. 
+                        </p>
+                    </div>
+                    <div class="professional_team_card">
+                        <img src="./images/profissional_team5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- professional team -->
+
+        <!-- Contact us -->
+        <section class="contact_us life-begins_contact">
+            <div class="main_container">
+                <div class="life_begin_text">
+                    <h2 class="main_title contact_us__title">
+                        Готовы к переезду вашей мечты?
+                    </h2>
+                    <p class="contact_us__description">
+                        Мы здесь, чтобы сделать ваш переход в новую жизнь на Юге России максимально гладким и беззаботным. Всё, что вам нужно сделать, — это заполнить форму ниже, и мы возьмем на себя все организационные вопросы. Наша команда специалистов гарантирует, что ваш переезд пройдет легко и без стресса.  Заказать переезд — это ваш первый шаг к мечте. 
+                        <span>
+                            Сделайте его сейчас!
+                        </span>
+                    </p>
+                </div>
+                <img class="life_contact_media_img" src="./images/life_contact_media_img.png" alt="">
+                <img src="./images/contact_us_bg.png" alt="" class="contact_us__bg">
                 <form action="" class="contact_us__form">
                     <div class="form_inp">
-                        <img class="user" src="./images/icons/user_icon.svg" alt="">
+                        <img src="./images/icons/user_icon.svg" alt="">
                         <input type="text" placeholder="Ваше имя">
                     </div>
                     <div class="form_inp phone">
                         <img src="./images/icons/flag_icon.svg" alt="">
                         <input type="tel" placeholder="+7 (___) ___-__-__">
                     </div>
-                    <button type="submit" class="btn_danger">
-                        Предложить квартиру
-                    </button>
+                    <button type="submit" class="btn_danger">Оставить заявку</button>
                 </form>
                 <label class="main_checkbox">
                     <input type="checkbox">
@@ -388,9 +278,8 @@
                     </span>
                 </label>
             </div>
-            <img class="cooperation_contact_media" src="./images/cooperation_contact_media.png" alt="">
         </section>
-        <!-- contact us end -->
+        <!-- Contact us end -->
 
         <!-- text_field -->
         <section class="text_field">
