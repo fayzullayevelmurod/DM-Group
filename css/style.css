@@ -626,6 +626,21 @@ header .burger {
   color: rgb(191, 191, 191);
 }
 
+.life-begins_team .main_title {
+  max-width: 100%;
+  margin-bottom: 80px;
+}
+.life-begins_team .main_title span {
+  display: inline;
+}
+.life-begins_team .professional_team_card h6 {
+  margin-bottom: 15px;
+}
+.life-begins_team .professional_team_card h6 span {
+  display: block;
+  color: rgb(167, 167, 167);
+}
+
 .examples_work {
   margin-bottom: 200px;
 }
@@ -1819,6 +1834,17 @@ footer .footer_bottom span {
 }
 .contact_us__form .form_inp, .contact_us__form button {
   width: 260px;
+}
+
+.life-begins_contact .contact_us__title {
+  max-width: 302px;
+}
+.life-begins_contact .contact_us__description {
+  max-width: 546px;
+}
+.life-begins_contact .contact_us__bg {
+  height: 100%;
+  left: 525px;
 }
 
 .management_home {

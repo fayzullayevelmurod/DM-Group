@@ -762,6 +762,26 @@ header {
     }
 
 }
+
+.life-begins_team {
+    .main_title {
+        max-width: 100%;
+        margin-bottom: 80px;
+        span {
+            display: inline;
+        }
+    }
+
+    .professional_team_card {
+        h6 {
+            margin-bottom: 15px;
+            span {
+                display: block;
+                color: rgb(167, 167, 167);
+            }
+        }
+    }
+}
 // professional_team
 
 // examples_work
@@ -2195,6 +2215,21 @@ footer {
         .form_inp, button {
             width: 260px;
         }
+    }
+}
+
+.life-begins_contact {
+    .contact_us__title {
+        max-width: 302px;
+    }
+    
+    .contact_us__description {
+        max-width: 546px;
+    }
+
+    .contact_us__bg {
+        height: 100%;
+        left: 525px;
     }
 }
 // Contact us end
