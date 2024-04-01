@@ -146,3 +146,17 @@ window.addEventListener('resize', function () {
 //     swiperCard1()
 //   }
 // });
+
+// modal
+let modal = document.querySelector('.modal');
+let modal_close = document.querySelector('.modal_close');
+let header_btn = document.querySelector('.header_btn');
+
+header_btn.addEventListener('click', () => {
+  modal.classList.add('active');
+})
+
+modal_close.addEventListener('click', () => {
+  modal.classList.remove('active');
+})
+// modal

@@ -320,6 +320,54 @@ button {
   text-decoration: underline !important;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+.modal .modal_close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+.modal .main_container {
+  width: 100%;
+}
+.modal .main_title {
+  text-align: center;
+  max-width: 607px;
+  margin: 0 auto 42px auto;
+}
+.modal .modal_form {
+  max-width: 607px;
+  margin: 0 auto;
+}
+.modal .modal_form .form_group {
+  padding: 20px;
+  height: 64px;
+  width: 100%;
+  border: 1px solid rgb(217, 217, 217);
+  margin-bottom: 12px;
+}
+.modal .modal_form .form_group input {
+  font-size: 18px;
+}
+.modal .modal_form button {
+  height: 64px;
+  margin: 0;
+  width: 100%;
+  box-shadow: 0px 0px 15px 0px rgba(25, 20, 20, 0.05);
+}
+
+.modal.active {
+  display: flex;
+}
+
 header {
   padding: 40px 0;
 }
@@ -2512,6 +2560,26 @@ footer .footer_bottom span {
 @media only screen and (max-width: 840px) {
   .main_title {
     font-size: 25px;
+  }
+  .modal .modal_close {
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+  }
+  .modal .main_title {
+    margin: 0 auto 35px auto;
+  }
+  .modal .form_group {
+    height: 62px;
+    margin-bottom: 15px;
+  }
+  .modal .form_group input {
+    font-size: 15px;
+  }
+  .modal button {
+    height: 62px;
+    font-size: 16px;
   }
   header {
     padding: 20px 0;

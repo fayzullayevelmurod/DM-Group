@@ -666,6 +666,33 @@
         font-size: 25px;
     }
 
+    .modal {
+        .modal_close {
+            top: 15px;
+            right: 15px;
+            width: 20px;
+            height: 20px;
+        }
+
+        .main_title {
+            margin: 0 auto 35px auto;
+        }
+
+        .form_group {
+            height: 62px;
+            margin-bottom: 15px;
+
+            input {
+                font-size: 15px;
+            }
+        }
+
+        button {
+            height: 62px;
+            font-size: 16px;
+        }
+    }
+
     header {
         padding: 20px 0;
 
