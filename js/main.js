@@ -1,4 +1,5 @@
-let tabs = document.querySelectorAll('.tab');
+let tabs = document.querySelectorAll('.tab'),
+    body = document.querySelector('body');
 if (tabs.length) {
   tabs.forEach(tab => {
     let tab_btns = tab.querySelectorAll('button');
@@ -7,17 +8,18 @@ if (tabs.length) {
       tab_btn.onclick = () => {
         if (!tab_items[btn_idx].classList.contains('active')) {
           tab_items.forEach((tab_item, item_idx) => {
-            if (tab_item.classList.contains('active')) {
-              tab_item.classList.remove('active');
-              tab_item.classList.add('end-active')
-              setTimeout(() => {
-                tab_item.classList.remove('end-active')
-              }, 200);
-            }
+            
+            tab_item.classList.remove('active');
+            // if (tab_item.classList.contains('active')) {
+            //   tab_item.classList.add('end-active')
+            //   setTimeout(() => {
+            //     tab_item.classList.remove('end-active')
+            //   }, 200);
+            // }
           })
-          setTimeout(() => {
-            tab_items[btn_idx].classList.add('active')
-          }, 200);
+          tab_items[btn_idx].classList.add('active')
+          // setTimeout(() => {
+          // }, 200);
         }
         tab_btns.forEach(item => {
           item.classList.remove('active')
@@ -140,12 +142,110 @@ window.addEventListener('resize', function () {
   }
 })
 
-// window.addEventListener("resize", function () {
-//   console.log(window.innerWidth);
-//   if (quick_search) {
-//     swiperCard1()
-//   }
-// });
+let main_dropdown = document.querySelectorAll('.main_dropdown');
+if (main_dropdown.length) {
+  main_dropdown.forEach(dropdown => {
+    let dropdown_btn = dropdown.querySelector('.main_dropdown__btn'),
+        dropdown_body = dropdown.querySelector('.main_dropdown__body_wrap'),
+        body_btns = dropdown.querySelectorAll('.main_dropdown__body button'),
+        dropdown_value = dropdown.querySelector('.main_dropdown__btn_value');
+    dropdown_btn.onclick = () => {
+      dropdown.classList.toggle('active');
+      dropdown_body.style.maxHeight = dropdown_body.style.maxHeight ? null : dropdown_body.scrollHeight + 'px';
+    }
+    body_btns.forEach(btn => {
+      btn.onclick = () => {
+        body_btns.forEach(el => {
+          if (el != btn) {
+            el.classList.remove('active');
+          }
+        })
+        btn.classList.add('active');
+        dropdown.classList.toggle('active');
+        dropdown_body.style.maxHeight = dropdown_body.style.maxHeight ? null : dropdown_body.scrollHeight + 'px';
+        if (dropdown_value) {
+          dropdown_value.textContent = btn.textContent;
+        }
+      }
+    })
+  })
+}
+
+const target = document.querySelector('#myTarget')
+
+document.addEventListener('click', (event) => {
+  
+  if (main_dropdown.length) {
+    main_dropdown.forEach(dropdown => {
+      const withinBoundaries = event.composedPath().includes(dropdown)
+      
+      if (dropdown.classList.contains('active') && !withinBoundaries) {
+        dropdown.classList.toggle('active');
+        let dropdown_body = dropdown.querySelector('.main_dropdown__body_wrap');
+        dropdown_body.style.maxHeight = dropdown_body.style.maxHeight ? null : dropdown_body.scrollHeight + 'px';
+      }
+    })
+  }
+
+  // if (withinBoundaries) {
+  //   target.innerText = 'Click happened inside element'
+  // } else {
+  //   target.innerText = 'Click happened **OUTSIDE** element'
+  // }
+})
+
+let main_ranges = document.querySelectorAll('.main_range');
+
+if (main_ranges.length) {
+  main_ranges.forEach(mainRange => {
+    const rangeInput = mainRange.querySelectorAll(".main_range__inp input"),
+          range = mainRange.querySelector(".main_range__progress"),
+          priceInput = mainRange.querySelectorAll('.main_range__result .result_btn span');
+    let priceGap = 1000;
+    let minVal = parseInt(rangeInput[0].value),
+        maxVal = parseInt(rangeInput[1].value);
+
+    range.style.left = (minVal / rangeInput[0].max) * 100 + "%";
+    range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+    
+    rangeInput.forEach((input) => {
+      input.addEventListener("input", (e) => {
+        minVal = parseInt(rangeInput[0].value),
+        maxVal = parseInt(rangeInput[1].value);
+    
+        if (maxVal - minVal < priceGap) {
+          if (e.target.className === "range-min") {
+            rangeInput[0].value = maxVal - priceGap;
+          } else {
+            rangeInput[1].value = minVal + priceGap;
+          }
+        } else {
+          priceInput[0].textContent = new Intl.NumberFormat('ru-RU', { style: 'currency', currency: 'RUB', minimumFractionDigits: 0 }).format(minVal);
+          priceInput[1].textContent = new Intl.NumberFormat('ru-RU', { style: 'currency', currency: 'RUB', minimumFractionDigits: 0 }).format(maxVal);
+          range.style.left = (minVal / rangeInput[0].max) * 100 + "%";
+          range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+        }
+      });
+    });
+  })
+}
+
+let filter_modal = document.querySelector('.filter_modal'),
+    filter_open = document.querySelectorAll('.filter_modal__open'),
+    filter_close = document.querySelector('.filter_modal__close')
+if (filter_open.length) {
+  filter_open.forEach(open_btn => {
+    open_btn.onclick = () => {
+      filter_modal.classList.add('active');
+      body.style.overflow = 'hidden'
+    }
+  })
+  
+  filter_close.onclick = () => {
+    filter_modal.classList.remove('active');
+    body.style.overflow = 'visible'
+  }
+}
 
 // modal
 let modal = document.querySelector('.modal');
