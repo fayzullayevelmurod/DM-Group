@@ -320,15 +320,7 @@ button {
   text-decoration: underline !important;
 }
 
-.mobile_menu_bg {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
-  z-index: 5;
+.mobile_menu {
   display: none;
 }
 
@@ -2091,7 +2083,145 @@ footer .footer_bottom span {
   margin-top: 30px;
 }
 
+.life_begins_header {
+  padding: 50px 0 24px 0;
+  -webkit-backdrop-filter: blur(18px);
+          backdrop-filter: blur(18px);
+  background: rgba(0, 0, 0, 0.01);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.life_begins_header .logo span {
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+}
+.life_begins_header .nav_link a {
+  color: rgb(255, 255, 255);
+}
+.life_begins_header .header_btn {
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+}
+.life_begins_header .header_btn:hover {
+  border: transparent;
+}
+
+.life_begins_home {
+  margin-bottom: 200px;
+  padding: 240px 0 215px 0;
+  background-image: url("../images/begin-life_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.life_begins_home .main_title {
+  text-align: center;
+  max-width: 772px;
+  margin: 0 auto 45px auto;
+  color: rgb(255, 255, 255);
+}
+.life_begins_home .main_title span {
+  display: block;
+  background: -webkit-linear-gradient(270deg, rgb(225, 107, 95), rgb(243, 168, 158) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.life_begins_home p {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 140%;
+  text-align: center;
+  max-width: 890px;
+  margin: 0 auto;
+}
+.life_begins_home .life_begins_home_btns {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.life_begins_home .life_begins_home_btns .life_begins_home_btn {
+  width: 250px;
+  height: 76px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 140%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(270deg, rgb(225, 107, 95), rgb(243, 168, 158) 100%);
+}
+.life_begins_home .life_begins_home_btns .life_begins_home_btn_two {
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.01);
+  border-width: 2px;
+  border-style: solid;
+  -o-border-image: linear-gradient(270deg, rgb(225, 107, 95), rgb(243, 168, 158) 100%) 1;
+     border-image: linear-gradient(270deg, rgb(225, 107, 95), rgb(243, 168, 158) 100%) 1;
+}
+
+.life-begins_contact .life_contact_media_img {
+  display: none;
+}
+
 @media only screen and (max-width: 1300px) {
+  .life_begins_header {
+    padding: 35px 0 15px 0;
+  }
+  .life_begins_home {
+    padding: 150px 0 130px 0;
+    margin-bottom: 130px;
+  }
+  .life_begins_home .main_title {
+    margin: 0 auto 25px auto;
+  }
+  .life_begins_home p {
+    font-size: 16px;
+    max-width: 610px;
+  }
+  .life_begins_home .life_begins_home_btns {
+    margin-top: 40px;
+    gap: 15px;
+  }
+  .life_begins_home .life_begins_home_btns .life_begins_home_btn {
+    height: 52px;
+    width: 207px;
+    font-size: 16px;
+  }
+  .life-begins_contact {
+    margin-bottom: 130px;
+  }
+  .life-begins_contact .contact_us__title {
+    margin-bottom: 25px;
+  }
+  .life-begins_contact .contact_us__description {
+    font-size: 16px;
+  }
+  .life-begins_contact .contact_us__form .form_inp, .life-begins_contact .contact_us__form button {
+    width: 206px;
+    height: 60px;
+    font-size: 16px;
+  }
+  .life-begins_contact .contact_us__form .form_inp input {
+    height: 60px;
+    font-size: 16px;
+  }
+  .life-begins_contact .main_checkbox input {
+    width: 20px;
+    height: 20px;
+  }
+  .life-begins_contact .main_checkbox span {
+    font-size: 12px;
+  }
   .management_home_form .form_group, .management_home_form button {
     width: 280px;
     height: 50px;
@@ -2573,6 +2703,17 @@ footer .footer_bottom span {
   .main_title {
     font-size: 25px;
   }
+  .mobile_menu_bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+    z-index: 5;
+    display: none;
+  }
   .mobile_menu_bg.active {
     display: block;
   }
@@ -2662,6 +2803,9 @@ footer .footer_bottom span {
     height: 62px;
     font-size: 16px;
   }
+  .life_begins_header {
+    padding: 20px 0;
+  }
   header {
     padding: 20px 0;
   }
@@ -2677,6 +2821,66 @@ footer .footer_bottom span {
   header .burger {
     flex-shrink: 0;
     display: block;
+  }
+  .life_begins_home {
+    margin-bottom: 70px;
+    padding: 130px 0 70px 0;
+  }
+  .life_begins_home .main_title {
+    margin: 0 auto 50px auto;
+  }
+  .life_begins_home .life_begins_home_btns {
+    margin-top: 50px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .life_begins_home .life_begins_home_btns .life_begins_home_btn {
+    width: 100%;
+  }
+  .life-begins_contact {
+    margin-bottom: 70px;
+  }
+  .life-begins_contact .contact_us__bg {
+    display: none;
+  }
+  .life-begins_contact .main_container {
+    padding: 0;
+  }
+  .life-begins_contact .life_contact_media_img {
+    display: block;
+    width: 100%;
+  }
+  .life-begins_contact .life_begin_text {
+    padding: 0 36px;
+  }
+  .life-begins_contact .life_begin_text .main_title {
+    max-width: 100%;
+    text-align: center;
+  }
+  .life-begins_contact .life_begin_text .contact_us__description {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .life-begins_contact .contact_us__form {
+    padding: 0 36px;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .life-begins_contact .contact_us__form .form_inp,
+  .life-begins_contact .contact_us__form button {
+    height: 64px;
+    width: 100%;
+  }
+  .life-begins_contact .contact_us__form .form_inp input {
+    height: 64px;
+  }
+  .life-begins_contact .contact_us__form .form_inp,
+  .life-begins_contact .contact_us__form button {
+    font-size: 15px;
+  }
+  .life-begins_contact .main_checkbox {
+    padding: 0 36px;
   }
   .repair_home {
     margin: 20px 0 70px 0;
@@ -3275,6 +3479,11 @@ footer .footer_bottom span {
   }
   header .logo img {
     width: 90px;
+  }
+  .life-begins_contact .life_begin_text,
+  .life-begins_contact .main_checkbox,
+  .life-begins_contact .contact_us__form {
+    padding: 0 15px;
   }
   footer .footer_block_end {
     width: 100%;

@@ -1,5 +1,70 @@
 @media only screen and (max-width: 1300px) {
 
+    .life_begins_header {
+        padding: 35px 0 15px 0;
+    }
+
+    .life_begins_home {
+        padding: 150px 0 130px 0;
+        margin-bottom: 130px;
+
+        .main_title {
+            margin: 0 auto 25px auto;
+        }
+
+        p {
+            font-size: 16px;
+            max-width: 610px;
+        }
+
+        .life_begins_home_btns {
+            margin-top: 40px;
+            gap: 15px;
+
+            .life_begins_home_btn {
+                height: 52px;
+                width: 207px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .life-begins_contact {
+        margin-bottom: 130px;
+        .contact_us__title {
+            margin-bottom: 25px;
+        }
+
+        .contact_us__description {
+            font-size: 16px;
+        }
+
+        .contact_us__form {
+            .form_inp, button {
+                width: 206px;
+                height: 60px;
+                font-size: 16px;
+            }
+
+            .form_inp {
+                input {
+                    height: 60px;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .main_checkbox {
+            input {
+                width: 20px;
+                height: 20px;
+            }
+            span {
+                font-size: 12px;
+            }
+        }
+    }
+
     .management_home_form {
         .form_group, button {
             width: 280px;
@@ -667,6 +732,17 @@
     }
 
     // mobile_menu
+    .mobile_menu_bg {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(2px);
+        z-index: 5;
+        display: none;
+    }
+
     .mobile_menu_bg.active {
         display: block;
     }
@@ -775,6 +851,10 @@
         }
     }
 
+    .life_begins_header {
+        padding: 20px 0;
+    }
+
     header {
         padding: 20px 0;
 
@@ -795,6 +875,82 @@
         .burger {
             flex-shrink: 0;
             display: block;
+        }
+    }
+
+    .life_begins_home {
+        margin-bottom: 70px;
+        padding: 130px 0 70px 0;
+
+        .main_title {
+            margin: 0 auto 50px auto;
+        }
+
+        .life_begins_home_btns {
+            margin-top: 50px;
+            flex-direction: column;
+            gap: 30px;
+
+            .life_begins_home_btn {
+                width: 100%;
+            }
+        }
+    }
+
+    .life-begins_contact {
+        margin-bottom: 70px;
+        .contact_us__bg {
+            display: none;
+        }
+
+        .main_container {
+            padding: 0;
+        }
+
+        .life_contact_media_img {
+            display: block;
+            width: 100%;
+        }
+
+        .life_begin_text {
+            padding: 0 36px;
+            .main_title {
+                max-width: 100%;
+                text-align: center;
+            }
+
+            .contact_us__description {
+                max-width: 100%;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+        }
+
+        .contact_us__form {
+            padding: 0 36px;
+            flex-direction: column;
+            gap: 12px;
+
+            .form_inp,
+            button {
+                height: 64px;
+                width: 100%;
+            }
+
+            .form_inp {
+                input {
+                    height: 64px;
+                }
+            }
+
+            .form_inp,
+            button {
+                font-size: 15px;
+            }
+        }
+
+        .main_checkbox {
+            padding: 0 36px;
         }
     }
 
@@ -1584,6 +1740,14 @@
             img {
                 width: 90px;
             }
+        }
+    }
+
+    .life-begins_contact {
+        .life_begin_text,
+        .main_checkbox,
+        .contact_us__form {
+            padding: 0 15px;
         }
     }
 
