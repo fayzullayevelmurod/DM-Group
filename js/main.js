@@ -90,6 +90,15 @@ let swiper3 = new Swiper(".examples_Swiper", {
   },
 });
 
+let swiper4 = new Swiper(".complex_layouts_Swiper", {
+  spaceBetween: 20,
+  loop: true,
+  navigation: {
+    nextEl: ".examples_Swiper-next",
+    prevEl: ".examples_Swiper-prev",
+  },
+});
+
 const accSingleTriggers = document.querySelectorAll('.js-acc-single-trigger');
 
 accSingleTriggers.forEach(trigger => trigger.addEventListener('click', toggleAccordion));
