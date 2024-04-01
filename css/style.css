@@ -320,10 +320,22 @@ button {
   text-decoration: underline !important;
 }
 
+.mobile_menu_bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  z-index: 5;
+  display: none;
+}
+
 .modal {
   display: none;
   position: fixed;
-  z-index: 4;
+  z-index: 7;
   width: 100%;
   height: 100%;
   background-color: #fff;
@@ -2561,6 +2573,75 @@ footer .footer_bottom span {
   .main_title {
     font-size: 25px;
   }
+  .mobile_menu_bg.active {
+    display: block;
+  }
+  .mobile_menu {
+    padding: 130px 30px 70px 30px;
+    background: rgb(25, 20, 20);
+    position: fixed;
+    width: 60%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.2s ease;
+  }
+  .mobile_menu .mobile_menu_btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  .mobile_menu .nav_link {
+    max-width: 117px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgb(151, 151, 151);
+  }
+  .mobile_menu .nav_link a {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 15px;
+  }
+  .mobile_menu .mobile_bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .mobile_menu .mobile_bottom .header_btn {
+    white-space: nowrap;
+    padding: 16px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 15px;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 15px 0px rgba(25, 20, 20, 0.05);
+    transition: 0.2s ease;
+  }
+  .mobile_menu .mobile_bottom .header_btn:hover {
+    background: linear-gradient(90deg, rgb(243, 168, 158), rgb(225, 107, 95) 100%);
+    border: transparent;
+  }
+  .mobile_menu .mobile_logo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 123px;
+  }
+  .mobile_menu .mobile_logo span {
+    font-size: 10px;
+    color: rgb(167, 167, 167);
+  }
+  .mobile_menu.active {
+    right: 0;
+  }
   .modal .modal_close {
     top: 15px;
     right: 15px;
@@ -3165,6 +3246,35 @@ footer .footer_bottom span {
 @media only screen and (max-width: 360px) {
   .main_container {
     padding: 0 15px;
+  }
+  .mobile_menu {
+    padding: 80px 20px 50px 20px;
+  }
+  .mobile_menu .mobile_menu_btn {
+    top: 20px;
+    right: 20px;
+    width: 15px;
+    height: 15px;
+  }
+  .mobile_menu .nav_link {
+    gap: 20px;
+    padding-bottom: 30px;
+  }
+  .mobile_menu .nav_link a {
+    font-size: 12px;
+  }
+  .mobile_menu .mobile_bottom {
+    gap: 30px;
+  }
+  .mobile_menu .mobile_bottom .header_btn {
+    padding: 10px;
+    font-size: 12px;
+  }
+  header .logo {
+    min-width: 215px;
+  }
+  header .logo img {
+    width: 90px;
   }
   footer .footer_block_end {
     width: 100%;

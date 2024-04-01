@@ -150,13 +150,37 @@ window.addEventListener('resize', function () {
 // modal
 let modal = document.querySelector('.modal');
 let modal_close = document.querySelector('.modal_close');
-let header_btn = document.querySelector('.header_btn');
+let header_btn = document.querySelectorAll('.header_btn');
 
-header_btn.addEventListener('click', () => {
-  modal.classList.add('active');
+header_btn.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    modal.classList.add('active');
+  })
 })
 
 modal_close.addEventListener('click', () => {
   modal.classList.remove('active');
 })
 // modal
+
+// burger 
+let burger = document.querySelector('.burger');
+let mobile_menu = document.querySelector('.mobile_menu');
+let mobile_menu_bg = document.querySelector('.mobile_menu_bg');
+let mobile_menu_btn = document.querySelector('.mobile_menu_btn');
+
+burger.addEventListener('click', () => {
+  mobile_menu.classList.add('active');
+  mobile_menu_bg.classList.add('active');
+})
+
+mobile_menu_btn.addEventListener('click', () => {
+  mobile_menu.classList.remove('active');
+  mobile_menu_bg.classList.remove('active');
+})
+
+mobile_menu_bg.addEventListener('click', () => {
+  mobile_menu.classList.remove('active');
+  mobile_menu_bg.classList.remove('active');
+})
+// burger 
