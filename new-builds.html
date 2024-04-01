@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DM-Group</title>
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- css file -->
+    <!-- fonts -->
+    <link rel="stylesheet" href="./fonts/Muller/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- fonts -->
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- css link -->
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- header -->
+        <header>
+            <div class="main_container">
+                <a class="logo" href="/">
+                    <img src="./images/logo/header_logo_new.svg" alt="">
+                    <span>
+                        группа компаний<br> в сфере недвижимости
+                    </span>
+                </a>
+                <nav>
+                    <ul class="nav_link">
+                        <li class="nav_item">
+                            <a href="#">
+                                О нас
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#">
+                                Новостройки
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#">
+                                Ремонт
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#">
+                                Сопровождение
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#">
+                                Переезд
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header_btn">
+                    Связаться с нами
+                </button>
+                <button class="burger">
+                    <img src="./images/icons/burger_icon.svg" alt="">
+                </button>
+            </div>
+        </header>
+        <!-- header -->
+
+        <!-- New builds -->
+        <section class="new_builds">
+            <div class="main_container">
+                <h1 class="hero_home__title new_builds__title">
+                    Купить квартиру <br> в 
+                    <span class="text_animation">
+                        <span>Сочи</span>
+                        <span>Краснодаре</span>
+                        <span>Крыму</span>
+                    </span>
+                </h1>
+
+                <ul class="new_builds__filter">
+                    <li class="new_builds__filter_item filter_studio">
+                        <span>Студия</span>
+                        <span class="line"></span>
+                        <a href="#">1</a>
+                        <span class="line"></span>
+                        <a href="#">2</a>
+                        <span class="line"></span>
+                        <a href="#">3</a>
+                        <span class="line"></span>
+                        <a href="#">4+</a>
+                    </li>
+                    <li class="line"></li>
+                    <li class="new_builds__filter_item">Апартаменты</li>
+                    <li class="line"></li>
+                    <li class="new_builds__filter_item main_dropdown">
+                        <button class="main_dropdown__btn">
+                            <span>Вид</span>
+                            <img src="./images/icons/dropdown_icon.svg" alt="">
+                        </button>
+                        <div class="main_dropdown__body_wrap">
+                            <div class="main_dropdown__body">
+                                <h4>Вид</h4>
+                                <div class="btns">
+                                    <button class="active">На море</button>
+                                    <button>На горы</button>
+                                    <button>На город</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="line"></li>
+                    <li class="new_builds__filter_item main_dropdown">
+                        <button class="main_dropdown__btn">
+                            <span>Любой бюджет</span>
+                            <img src="./images/icons/dropdown_icon.svg" alt="">
+                        </button>
+                        <div class="main_dropdown__body_wrap">
+                            <div class="main_dropdown__body">
+                                <h4>Бюджет</h4>
+                                <div class="main_range">
+                                    <div class="main_range__inp">
+                                        <div class="main_range__progress"></div>
+                                        <input type="range" class="range-min" min="0" max="50000000" value="15000000" step="100">
+                                        <input type="range" class="range-max" min="0" max="50000000" value="30000000" step="100">
+                                    </div>
+                                    <div class="main_range__result">
+                                        <span class="result_btn result_min">
+                                            мин. цена
+                                            <span>15 000 000 ₽</span>
+                                        </span>
+                                        <span class="result_btn result_max">
+                                            макс. цена
+                                            <span>30 000 000 ₽</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="line"></li>
+                    <li class="new_builds__filter_item main_dropdown">
+                        <button class="main_dropdown__btn">
+                            <span>Класс комплекса</span>
+                            <img src="./images/icons/dropdown_icon.svg" alt="">
+                        </button>
+                        <div class="main_dropdown__body_wrap">
+                            <div class="main_dropdown__body">
+                                <h4>Класс комплекса</h4>
+                                <div class="btns">
+                                    <button class="active">Бизнес</button>
+                                    <button>Элитный</button>
+                                    <button>Комфорт</button>
+                                    <button>Премиум</button>
+                                    <button>Делюкс</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="line"></li>
+                    <li class="new_builds__filter_item main_dropdown">
+                        <button class="main_dropdown__btn">
+                            <span>Локация</span>
+                            <img src="./images/icons/dropdown_icon.svg" alt="">
+                        </button>
+                        <div class="main_dropdown__body_wrap">
+                            <div class="main_dropdown__body">
+                                <h4>Локация</h4>
+                                <div class="btns">
+                                    <button class="active">Сочи</button>
+                                    <button>Крым</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="line"></li>
+                    <li class="new_builds__filter_item">
+                        <button class="more_filter filter_modal__open">
+                            <span>Больше фильтров</span>
+                            <img src="./images/icons/more_filter_icon.svg" alt="">
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="new_builds__mobile">
+                    <button class="btn_danger filter_modal__open">
+                        <span>Больше фильтров</span> 
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.65405 1.93896V7.36866" stroke="white" stroke-width="0.997292" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1.93921 4.65381H7.36891" stroke="white" stroke-width="0.997292" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="new_builds__sorts">
+                    <button>
+                        <span>Студия</span>
+                        <img src="./images/icons/times.svg" alt="">
+                    </button>
+                    <button>
+                        <span>Вид на море</span>
+                        <img src="./images/icons/times.svg" alt="">
+                    </button>
+                    <button>
+                        <span>15-30 млн ₽</span>
+                        <img src="./images/icons/times.svg" alt="">
+                    </button>
+                </div>
+
+                <div class="new_builds__search">
+                    <h3>Найдено <span>99 комплексов</span></h3>
+                    <div class="main_dropdown">
+                        <button class="main_dropdown__btn">
+                            <img src="./images/icons/filter_icon.svg" alt="">
+                            <span class="main_dropdown__btn_value">по умолчанию</span>
+                        </button>
+                        <div class="main_dropdown__body_wrap">
+                            <div class="main_dropdown__body">
+                                <div class="btns">
+                                    <button class="active">по умолчанию</button>
+                                    <button>сначала дорогие</button>
+                                    <button>сначала дешёвые</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- New builds end -->
+
+        <!-- Filter modal -->
+        <section class="filter_modal">
+            <div class="filter_modal__content">
+                <h2 class="filter_modal__content_head">
+                    <span>Собрать подборку</span>
+                    <button class="filter_modal__close">
+                        <img src="./images/icons/times.svg" alt="">
+                    </button>
+                </h2>
+
+                <div class="filter_modal__data">
+                    <h3 class="filter_modal__data_title">Бюджет</h3>
+                    <div class="main_range">
+                        <div class="main_range__inp">
+                            <div class="main_range__progress"></div>
+                            <input type="range" class="range-min" min="0" max="50000000" value="15000000" step="100">
+                            <input type="range" class="range-max" min="0" max="50000000" value="30000000" step="100">
+                        </div>
+                        <div class="main_range__result">
+                            <span class="result_btn result_min">
+                                мин. цена
+                                <span>15 000 000 ₽</span>
+                            </span>
+                            <span class="result_btn result_max">
+                                макс. цена
+                                <span>30 000 000 ₽</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter_modal__data">
+                    <h3 class="filter_modal__data_title">Бюджет</h3>
+                    <div class="filter_modal__data_btns">
+                        <button class="active">На море</button>
+                        <button>На горы</button>
+                        <button>На город</button>
+                    </div>
+                </div>
+
+                <div class="filter_modal__data">
+                    <h3 class="filter_modal__data_title">Класс комплекса</h3>
+                    <div class="filter_modal__data_btns">
+                        <button class="active">Бизнес</button>
+                        <button>Элитный</button>
+                        <button>Комфорт</button>
+                        <button>Премиум</button>
+                        <button>Делюкс</button>
+                    </div>
+                </div>
+
+                <div class="filter_modal__data">
+                    <h3 class="filter_modal__data_title">Локация</h3>
+                    <div class="filter_modal__data_btns">
+                        <button class="active">Сочи</button>
+                        <button>Крым</button>
+                    </div>
+                </div>
+
+                <div class="filter_modal__data">
+                    <h3 class="filter_modal__data_title">Отделка</h3>
+                    <div class="filter_modal__data_btns">
+                        <button class="active">без отделки</button>
+                        <button>whitebox</button>
+                        <button>с отделкой</button>
+                    </div>
+                </div>
+
+                <div class="filter_modal__data">
+                    <h3 class="filter_modal__data_title">Сдача</h3>
+                    <div class="filter_modal__data_btns">
+                        <button class="active">сдан</button>
+                        <button>2024</button>
+                        <button>2025</button>
+                        <button>2026</button>
+                        <button>2027+</button>
+                    </div>
+                </div>
+
+                <div class="filter_modal__data">
+                    <h3 class="filter_modal__data_title">Особенности дома</h3>
+                    <div class="filter_modal__data_btns">
+                        <button class="active">школа</button>
+                        <button>спортивная площадка</button>
+                        <button>лаунж-пространство</button>
+                        <button>салон красоты</button>
+                        <button>коворкинг</button>
+                        <button>площадка для питомцев</button>
+                        <button>кафе</button>
+                        <button>медицинский центр</button>
+                        <button>автомойка</button>
+                        <button>фитнес-зал</button>
+                        <button>бассейн</button>
+                        <button>детский сад</button>
+                        <button>подземный паркинг</button>
+                        <button>спа</button>
+                        <button>детская площадка</button>
+                    </div>
+                </div>
+
+                <div class="filter_modal__data">
+                    <h3 class="filter_modal__data_title">Особенности квартиры</h3>
+                    <div class="filter_modal__data_btns">
+                        <button class="active">панорамные окна</button>
+                        <button>высокие потолки</button>
+                        <button>умный дом</button>
+                        <button>с мебелью от застройщика</button>
+                        <button>с террасой</button>
+                        <button>зимний сад</button>
+                        <button>патио</button>
+                        <button>камин</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Filter modal end -->
+
+        <!-- Help -->
+        <section class="help">
+            <div class="main_container">
+                <ul class="help__cards">
+                    <li class="help__cards_item">
+                        <div class="help__cards_item__head">
+                            <img src="./images/help_card_item_1_1.png" alt="" class="help__cards_item__head__main_img">
+                            <ul class="mini_imgs">
+                                <li class="mini_imgs__item">
+                                    <span class="mini_imgs__hover"></span>
+                                    <img src="./images/help_card_item_1_2.png" alt="">
+                                </li>
+                                <li class="mini_imgs__item">
+                                    <span class="mini_imgs__hover"></span>
+                                    <img src="./images/help_card_item_1_3.png" alt="">
+                                </li>
+                                <li class="mini_imgs__item">
+                                    <span class="mini_imgs__hover"></span>
+                                    <img src="./images/help_card_item_1_4.png" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="help__cards_item__body">
+                            <h3 class="main_title">ЖК «Лестория»</h3>
+                            <p>
+                                <img src="./images/icons/location_icon_red.svg" alt="">
+                                г. Сочи, административный центр Адлер
+                            </p>
+                            <ul>
+                                <li>
+                                    Срок сдачи
+                                    <span>2027</span>
+                                </li>
+                                <li>
+                                    Застройщик
+                                    <span>Лестория</span>
+                                </li>
+                                <li>
+                                    Стоимость от
+                                    <span>8 290 000 ₽</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="help__cards_item__foot">
+                            <a href="#" class="btn_danger">Скачать презентацию</a>
+                            <a href="#" class="btn_light">Подробнее</a>
+                        </div>
+                    </li>
+                    <li class="help__cards_item">
+                        <div class="help__cards_item__head">
+                            <img src="./images/help_card_item_2_1.png" alt="" class="help__cards_item__head__main_img">
+                            <ul class="mini_imgs">
+                                <li class="mini_imgs__item">
+                                    <span class="mini_imgs__hover"></span>
+                                    <img src="./images/help_card_item_2_2.png" alt="">
+                                </li>
+                                <li class="mini_imgs__item">
+                                    <span class="mini_imgs__hover"></span>
+                                    <img src="./images/help_card_item_2_3.png" alt="">
+                                </li>
+                                <li class="mini_imgs__item">
+                                    <span class="mini_imgs__hover"></span>
+                                    <img src="./images/help_card_item_2_4.png" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="help__cards_item__body">
+                            <h3 class="main_title">Апартаменты «SkySoul»</h3>
+                            <p>
+                                <img src="./images/icons/location_icon_red.svg" alt="">
+                                п. Коктебель, Крым
+                            </p>
+                            <ul>
+                                <li>
+                                    Срок сдачи
+                                    <span>2027</span>
+                                </li>
+                                <li>
+                                    Застройщик
+                                    <span>SkySoul</span>
+                                </li>
+                                <li>
+                                    Стоимость от
+                                    <span>6 300 000 ₽</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="help__cards_item__foot">
+                            <a href="#" class="btn_danger">Скачать презентацию</a>
+                            <a href="#" class="btn_light">Подробнее</a>
+                        </div>
+                    </li>
+                    <li class="help__cards_item">
+                        <div class="help__cards_item__head">
+                            <img src="./images/help_card_item_3_1.png" alt="" class="help__cards_item__head__main_img">
+                            <ul class="mini_imgs">
+                                <li class="mini_imgs__item">
+                                    <span class="mini_imgs__hover"></span>
+                                    <img src="./images/help_card_item_3_2.png" alt="">
+                                </li>
+                                <li class="mini_imgs__item">
+                                    <span class="mini_imgs__hover"></span>
+                                    <img src="./images/help_card_item_3_3.png" alt="">
+                                </li>
+                                <li class="mini_imgs__item">
+                                    <span class="mini_imgs__hover"></span>
+                                    <img src="./images/help_card_item_3_4.png" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="help__cards_item__body">
+                            <h3 class="main_title">ЖК «Долина Роз»</h3>
+                            <p>
+                                <img src="./images/icons/location_icon_red.svg" alt="">
+                                 г. Судак, Крым
+                            </p>
+                            <ul>
+                                <li>
+                                    Срок сдачи
+                                    <span>2027</span>
+                                </li>
+                                <li>
+                                    Застройщик
+                                    <span>Долина Роз</span>
+                                </li>
+                                <li>
+                                    Стоимость от
+                                    <span>6 000 000 ₽</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="help__cards_item__foot">
+                            <a href="#" class="btn_danger">Скачать презентацию</a>
+                            <a href="#" class="btn_light">Подробнее</a>
+                        </div>
+                    </li>
+                    <li class="help__cards_item">
+                        <div class="help__cards_item__head">
+                            <img src="./images/help_card_item_4_1.png" alt="" class="help__cards_item__head__main_img">
+                            <ul class="mini_imgs">
+                                <li class="mini_imgs__item">
+                                    <span class="mini_imgs__hover"></span>
+                                    <img src="./images/help_card_item_4_2.png" alt="">
+                                </li>
+                                <li class="mini_imgs__item">
+                                    <span class="mini_imgs__hover"></span>
+                                    <img src="./images/help_card_item_4_3.png" alt="">
+                                </li>
+                                <li class="mini_imgs__item">
+                                    <span class="mini_imgs__hover"></span>
+                                    <img src="./images/help_card_item_4_4.png" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="help__cards_item__body">
+                            <h3 class="main_title">ЖК «Кислород»</h3>
+                            <p>
+                                <img src="./images/icons/location_icon_red.svg" alt="">
+                                г. Сочи
+                            </p>
+                            <ul>
+                                <li>
+                                    Срок сдачи
+                                    <span>2027</span>
+                                </li>
+                                <li>
+                                    Застройщик
+                                    <span>Кислород</span>
+                                </li>
+                                <li>
+                                    Стоимость от
+                                    <span>8 700 000 ₽</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="help__cards_item__foot">
+                            <a href="#" class="btn_danger">Скачать презентацию</a>
+                            <a href="#" class="btn_light">Подробнее</a>
+                        </div>
+                    </li>
+                    <li class="help__cards_item">
+                        <div class="help__cards_item__head">
+                            <img src="./images/help_card_item_5_1.png" alt="" class="help__cards_item__head__main_img">
+                            <ul class="mini_imgs">
+                                <li class="mini_imgs__item">
+                                    <span class="mini_imgs__hover"></span>
+                                    <img src="./images/help_card_item_5_2.png" alt="">
+                                </li>
+                                <li class="mini_imgs__item">
+                                    <span class="mini_imgs__hover"></span>
+                                    <img src="./images/help_card_item_5_3.png" alt="">
+                                </li>
+                                <li class="mini_imgs__item">
+                                    <span class="mini_imgs__hover"></span>
+                                    <img src="./images/help_card_item_5_4.png" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="help__cards_item__body">
+                            <h3 class="main_title">Апартаменты «Park Plaza»</h3>
+                            <p>
+                                <img src="./images/icons/location_icon_red.svg" alt="">
+                                 г. Алушта, Крым
+                            </p>
+                            <ul>
+                                <li>
+                                    Срок сдачи
+                                    <span>2027</span>
+                                </li>
+                                <li>
+                                    Застройщик
+                                    <span>Park Plaza</span>
+                                </li>
+                                <li>
+                                    Стоимость от
+                                    <span>12 400 000 ₽</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="help__cards_item__foot">
+                            <a href="#" class="btn_danger">Скачать презентацию</a>
+                            <a href="#" class="btn_light">Подробнее</a>
+                        </div>
+                    </li>
+                    <li class="help__cards_item">
+                        <div class="help__cards_item__head">
+                            <img src="./images/help_card_item_6_1.png" alt="" class="help__cards_item__head__main_img">
+                            <ul class="mini_imgs">
+                                <li class="mini_imgs__item">
+                                    <span class="mini_imgs__hover"></span>
+                                    <img src="./images/help_card_item_6_2.png" alt="">
+                                </li>
+                                <li class="mini_imgs__item">
+                                    <span class="mini_imgs__hover"></span>
+                                    <img src="./images/help_card_item_6_3.png" alt="">
+                                </li>
+                                <li class="mini_imgs__item">
+                                    <span class="mini_imgs__hover"></span>
+                                    <img src="./images/help_card_item_6_4.png" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="help__cards_item__body">
+                            <h3 class="main_title">Таунхаусы «La Vita»</h3>
+                            <p>
+                                <img src="./images/icons/location_icon_red.svg" alt="">
+                                с. Лазурное, г. Алушта, Крым
+                            </p>
+                            <ul>
+                                <li>
+                                    Срок сдачи
+                                    <span>2027</span>
+                                </li>
+                                <li>
+                                    Застройщик
+                                    <span>La Vita</span>
+                                </li>
+                                <li>
+                                    Стоимость от
+                                    <span>17 300 000 ₽</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="help__cards_item__foot">
+                            <a href="#" class="btn_danger">Скачать презентацию</a>
+                            <a href="#" class="btn_light">Подробнее</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="help__show_more">
+                    <a href="#" class="btn_light">
+                        Показать еще
+                        <img src="./images/icons/chevron_right_dark.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Help end -->
+
+        <!-- text_field -->
+        <section class="text_field">
+            <div class="main_container">
+                <h3 class="main_title">
+                    Тут 
+                    <span>
+                        текстовое поле
+                    </span>
+                </h3>
+                <div class="text_field_text">
+                    <p>
+                        Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров представляет собой интересный эксперимент проверки систем массового участия.
+                    </p>
+                    <p>
+                        Повседневная практика показывает, что сложившаяся структура организации позволяет выполнять важные задания по разработке форм развития. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа соответствующий условий активизации. Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.
+                    </p>
+                    <p>
+                        Таким образом постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание систем массового участия. Повседневная практика показывает, что новая модель организационной деятельности способствует подготовки и реализации направлений прогрессивного развития. Товарищи! реализация намеченных плановых заданий требуют от нас анализа систем массового участия. Задача организации, в особенности же укрепление и развитие структуры требуют от нас анализа позиций, занимаемых участниками в отношении поставленных задач. Таким образом сложившаяся структура организации позволяет оценить значение направлений прогрессивного развития. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки систем массового участия.
+                    </p>
+                    <p>
+                        Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации модели развития. Равным образом консультация с широким активом позволяет выполнять важные задания по разработке существенных финансовых и административных условий.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- text_field -->
+
+        <!-- Contact request -->
+        <section class="contact_request">
+            <div class="main_container">
+                <img src="./images/contact_request_bg.png" alt="" class="contact_request__bg">
+                <img src="./images/contact_request_bg.png" alt="" class="contact_request__bg sm">
+                <form action="" class="contact_request__form">
+                    <div class="contact_request__form_left">
+                        <h2 class="main_title contact_request__title">
+                            Остались вопросы? <br> <span>Оставьте заявку или <br> позвоните по номеру</span> 
+                        </h2>
+                        <p class="contact_request__description">Мы ответим на все интересующие Вас вопросы:</p>
+                        <a class="contact_request__link" href="#">
+                            <img src="./images/icons/phone_white_icon.svg" alt="">
+                            <span>Получить консультацию</span>
+                        </a>
+                    </div>
+                    <div class="contact_request__form_right">
+                        <div class="form_inp">
+                            <img src="./images/icons/user_icon.svg" alt="">
+                            <input type="text" placeholder="Ваше имя">
+                        </div>
+                        <div class="form_inp phone">
+                            <img src="./images/icons/flag_icon.svg" alt="">
+                            <input type="tel" placeholder="+7 (___) ___-__-__">
+                        </div>
+                        <button type="submit" class="btn_danger">Оставить заявку</button>
+                        <label class="main_checkbox">
+                            <input type="checkbox">
+                            <span class="main_checkbox__text">
+                                Я соглашаюсь на <a href="#">обработку персональных данных</a> <br> согласно <a href="#">политике конфиденциальности</a>
+                            </span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- Contact request end -->
+
+        <!-- footer -->
+        <footer>
+            <div class="main_container">
+                <div class="footer_top">
+                    <div class="footer_block footer_left_block">
+                        <a href="/" class="footer_logo">
+                            <img src="./images/logo/footer_logo_new.svg" alt="">
+                            <span>
+                                группа компаний<br> в сфере недвижимости
+                            </span>
+                        </a>
+                        <ul class="footer_logo_under">
+                            <li>
+                                ООО «ДМ ГРУПП»
+                            </li>
+                            <li>
+                                ИНН/КПП 3849095689/384901001
+                            </li>
+                            <li>
+                                ОГРН: 1233800012038
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_block footer_block_center">
+                        <div class="footer_center_in">
+                            <h6>
+                                Навигация
+                            </h6>
+                            <ul class="footer_link">
+                                <li class="footer_item">
+                                    <a href="#">
+                                        О нас
+                                    </a>
+                                </li>
+                                <li class="footer_item">
+                                    <a href="#">
+                                        Новостройки
+                                    </a>
+                                </li>
+                                <li class="footer_item">
+                                    <a href="#">
+                                        Ремонт
+                                    </a>
+                                </li>
+                                <li class="footer_item">
+                                    <a href="#">
+                                        Сопровождение
+                                    </a>
+                                </li>
+                                <li class="footer_item">
+                                    <a href="#">
+                                        Переезд
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_center_in">
+                            <h6>
+                                Контакты
+                            </h6>
+                            <ul class="footer_link">
+                                <li class="footer_item">
+                                    <a class="footer_phone" href="tel:+89642810001">
+                                        8 (964) 281-00-01
+                                    </a>
+                                </li>
+                                <a href="#" class="footer_btn">
+                                    Cвязаться с нами
+                                </a>
+                                <li class="nav_item">
+                                    <a href="#" class="footer_social_btn">
+                                        <img src="./images/icons/whatsapp_icon.svg" alt="">
+                                        WhatsApp
+                                    </a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="#" class="footer_social_btn">
+                                        <img src="./images/icons/telegram_icon.svg" alt="">
+                                        Telegram
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer_block footer_block_end">
+                        <a href="#" class="footer_btn">
+                            Cвязаться с нами
+                        </a>
+                        <p>
+                            Ответим на все<br> интересующие вас вопросы
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer_bottom">
+                    <a href="#">
+                        Конфиденциальность
+                    </a>
+                    <span>
+                        2023 © DM Group
+                    </span>
+                </div>
+            </div>
+        </footer>
+        <!-- footer -->
+    </div>
+    
+    <!-- Swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Swiper js -->
+    <!-- js file -->
+    <script src="./js/main.js"></script>
+    <!-- js file -->
+</body>
+</html>
