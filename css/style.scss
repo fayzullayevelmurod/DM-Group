@@ -3228,55 +3228,93 @@ footer {
 }
 
 .migration {
-    .quiz_modal {
+    margin-bottom: 90px;
+
+    .main_title {
+        margin-bottom: 35px;
+    }
+
+    .migration_in_btns {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 5px;
+
+        .active {
+            font-weight: 700;
+            background: linear-gradient(270.00deg, rgb(225, 107, 95),rgb(243, 168, 158) 100%);
+            color: rgb(255, 255, 255);
+        }
+
+        .disable_btn {
+            background: rgb(217, 217, 217);
+            color: rgb(255, 255, 255);
+        }
+
+        button {
+            width: 50px;
+            height: 50px;
+            background: rgb(255, 255, 255);
+            color: rgb(140, 137, 137);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 120%;
+        }
+    }
+
+    .quiz_migration {
         background-color: #fff;
-        padding: 35px 45px;
-    
-        // .quiz_card_top {
-        //     gap: 20px;
-        //     position: relative;
-        //     width: 100%;
-        //     @include flex-center();
-        //     justify-content: space-between;
-        //     padding-bottom: 25px;
-        //     margin-bottom: 30px;
-    
-        //     p {
-        //         svg {
-        //             flex-shrink: 0;
-        //         }
-        //         @include flex-center();
-        //         gap: 8px;
-        //         font-size: 14px;
-        //         line-height: 1.55;
-        //         font-family: 'Stolzl', Arial, sans-serif;
-        //         font-weight: 300;
-        //         color: #000000;
-        //     }
-    
-        //     .quiz-fraction {
-        //         width: auto;
-        //         font-size: 14px;
-        //         line-height: 1.55;
-        //         font-family: 'Stolzl', Arial, sans-serif;
-        //         font-weight: 500;
-        //         color: #000000;
-        //     }
-        // }
-    
-        .quiz-pagination {
-            height: 10px;
-            width: 100px;
+        padding: 50px;
+
+        .quiz_card_content {
+            display: flex;
+            gap: 60px;
+
+            .quiz_card_content_left {
+                flex: 1;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .quiz_card_content_right {
+                flex: 1;
+            }
+
+        }
+
+        .quiz_progress {
+            margin-bottom: 35px;
+            width: 220px;
+            padding: 8px 16px;
+            border: 1px solid rgb(140, 137, 137);
+            @include flex-center();
+            gap: 10px;
         }
     
-        .swiper-pagination-progressbar {
-            .swiper-pagination-progressbar-fill {
-                background: linear-gradient(0deg, rgb(252, 82, 35), rgb(252, 109, 69) 100%);
+        .progress_block {
+            position: relative;
+            width: 100px;
+            height: 10px;
+            background: rgb(241, 241, 241);
+
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 25%;
+                background: linear-gradient(270.00deg, rgb(225, 107, 95),rgb(243, 168, 158) 100%);
             }
         }
-    
+
         .quiz-fraction {
-            @include flex-center();
+            white-space: nowrap;
+            color: rgb(140, 137, 137);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 140%;
         }
     
         .quizSwiper {
@@ -3286,64 +3324,19 @@ footer {
             }
         }
     
-        .quiz_card_content {
-            h6 {
-                padding-bottom: 5px;
-                font-size: 26px;
-                line-height: 1.5;
-                font-weight: 400;
-            }
-    
-            .quiz_one {
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-    
-                li {
-                    @include flex-center();
-                    gap: 10px;
-                }
-    
-                input {
-                    flex-shrink: 0;
-                    width: 22px;
-                    height: 22px;
-                    accent-color: black;
-                }
-                
-                label {
-                    font-size: 15px;
-                    line-height: 1.55;
-                    font-family: 'Stolzl', Arial, sans-serif;
-                    font-weight: 400;
-                    color: #000000;
-                }
-            }
-    
+        .main_title {
+            color: rgb(140, 137, 137);
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 140%;
+            margin-bottom: 30px;
         }
-    
-        .quiz_card_bottom {
-            padding-top: 35px;
-            @include flex-center();
-            justify-content: space-between;
-            button {
-                width: 125px;
-                height: 45px;
-                @include flex-full-center();
-                gap: 10px;
-                font-size: 14px;
-                color: #fff;
-                font-weight: 700;
-                font-family: 'Stolzl', Arial, sans-serif;
-                border-radius: 100px;
-                background-color: #cbcbcb;
-            }
-    
-            .main_btn {
-                img {
-                    transform: rotate(180deg);
-                }
-            }
+
+        p {
+            color: rgb(140, 137, 137);
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 140%;
         }
     }
 }
