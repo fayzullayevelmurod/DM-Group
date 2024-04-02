@@ -99,6 +99,34 @@ let swiper4 = new Swiper(".complex_layouts_Swiper", {
   },
 });
 
+let swiper5 = new Swiper(".quizSwiper", {
+  spaceBetween: 10,
+  allowTouchMove: false,
+  pagination: {
+    el: ".quiz-pagination",
+    type: "progressbar",
+  },
+  effect: 'fade',
+  navigation: {
+    nextEl: ".quiz-button-next",
+    prevEl: ".quiz-button-prev",
+  },
+});
+
+let quiz_fraction_current = document.querySelector('.quiz-fraction .current');
+let quiz_fraction_len = document.querySelector('.quiz-fraction .len');
+
+function makeFraction() {
+  quiz_fraction_current.textContent = swiper2.activeIndex + 1
+  quiz_fraction_len.textContent = swiper2.slides.length
+}
+
+makeFraction()
+
+swiper2.on('slideChange', () => {
+  makeFraction()
+})
+
 const accSingleTriggers = document.querySelectorAll('.js-acc-single-trigger');
 
 accSingleTriggers.forEach(trigger => trigger.addEventListener('click', toggleAccordion));
