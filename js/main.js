@@ -340,3 +340,59 @@ if (about_home) {
     }
   })
 }
+
+let rangeContainer = document.querySelectorAll('.range-slider-container');
+if (rangeContainer.length) {
+  rangeContainer.forEach((rangeEl, idx) => {
+    const rangeSlider = rangeEl.querySelector('.range-slider'),
+          rangeValueBar = rangeEl.querySelector('.range-value-bar'),
+          rangeValue = rangeEl.querySelector('.range-value .value'),
+          minValue = rangeEl.querySelector('.range-slider').min,
+          maxValue = rangeEl.querySelector('.range-slider').max;
+
+    rangeValueBar.style.width = rangeSlider.value * 100 / maxValue + '%'
+    if (idx != 2) {
+      rangeValue.textContent = new Intl.NumberFormat('ru-RU', { style: 'currency', currency: 'RUB', minimumFractionDigits: 0 }).format(rangeSlider.value)
+    } else {
+      rangeValue.textContent = rangeSlider.value + ' лет'
+    }
+    
+    rangeSlider.oninput = () => {
+      rangeValueBar.style.width = rangeSlider.value * 100 / maxValue + '%';
+      if (idx != 2) {
+        rangeValue.textContent = new Intl.NumberFormat('ru-RU', { style: 'currency', currency: 'RUB', minimumFractionDigits: 0 }).format(rangeSlider.value)
+      } else {
+        rangeValue.textContent = rangeSlider.value + ' лет'
+      }
+    }
+    
+    
+    
+    // let isDown = false;
+    
+    // function dragHandler() {
+    //   isDown = !isDown;
+    //   if (!isDown) {
+    //     rangeValue.style.setProperty('opacity', '1');
+    //   } else {
+    //     rangeValue.style.setProperty('opacity', '1');
+    //   }
+    // }
+    
+    // function dragOn(e) {
+    //   if (!isDown) return;
+    //   rangeValueHandler();
+    // }
+    
+    // function rangeValueHandler() {
+    //   rangeValueBar.style.setProperty('width', `${rangeSlider.value}%`);
+    //   rangeValue.innerHTML = `${rangeSlider.value}€`;
+    // }
+    
+    // rangeValueHandler();
+    // rangeSlider.addEventListener('mousedown', dragHandler);
+    // rangeSlider.addEventListener('mousemove', dragOn);
+    // rangeSlider.addEventListener('mouseup', dragHandler);
+    // rangeSlider.addEventListener('click', rangeValueHandler);
+  })
+}
