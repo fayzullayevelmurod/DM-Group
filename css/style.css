@@ -924,8 +924,121 @@ header .burger {
   background: linear-gradient(270deg, rgb(225, 107, 95), rgb(243, 168, 158) 100%);
   padding: 16px 20px;
 }
+.examples_work .swiper-wrapper {
+  align-items: stretch;
+}
+.examples_work .swiper-wrapper .swiper-slide {
+  height: auto;
+}
+.examples_work .complex_layouts_card {
+  text-align: center;
+  flex-direction: column;
+  gap: 0;
+  padding: 40px 32px;
+  height: 100%;
+}
+.examples_work .complex_layouts_card img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 190px;
+  margin: 30px 0;
+}
+.examples_work .complex_layouts_card span {
+  color: rgb(140, 137, 137);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.examples_work .complex_layouts_card h5 {
+  color: rgb(25, 20, 20);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 15px;
+}
+.examples_work .complex_layouts_card p {
+  color: rgb(140, 137, 137);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 0;
+}
+.examples_work .complex_layouts_card_two {
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+}
+.examples_work .complex_layouts_card_two img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+.examples_work .complex_layouts_card_two address {
+  color: rgb(140, 137, 137);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 100%;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+.examples_work .complex_layouts_card_two address img {
+  width: 13px;
+  height: 16px;
+}
+.examples_work .complex_layouts_card_two h6 {
+  text-align: left;
+  margin: 24px 0 8px 0;
+  color: rgb(25, 20, 20);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 120%;
+}
+.examples_work .complex_layouts_card_two .complex_layouts_card_two_blocks {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.examples_work .complex_layouts_card_two .complex_layouts_card_two_blocks h6 {
+  margin: 4px 0 0 0;
+  color: rgb(25, 20, 20);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 140%;
+  text-align: left;
+}
+.examples_work .complex_layouts_card_two .complex_layouts_text {
+  padding: 0 12px;
+}
+.examples_work .complex_layouts_card_two .complex_layout_card_btns {
+  margin-top: 32px;
+  display: flex;
+  gap: 16px;
+}
+.examples_work .complex_layouts_card_two .complex_layout_card_btns a {
+  padding: 16px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 140%;
+  background: linear-gradient(270deg, rgb(225, 107, 95), rgb(243, 168, 158) 100%);
+}
+.examples_work .complex_layouts_card_two .complex_layout_card_btns .complex_layout_btn {
+  background: transparent;
+  border: 1px solid rgb(140, 137, 137);
+  color: rgb(140, 137, 137);
+  font-size: 16px;
+  font-weight: 400;
+}
 .examples_work .examples_workSwiper_btns {
   display: none;
+}
+
+.complex_layouts .swiper-wrapper {
+  padding: 30px 0;
 }
 
 .repair_contact {
@@ -3372,6 +3485,79 @@ footer .footer_bottom span {
   .migration .quiz_migration p {
     font-size: 16px;
   }
+  .examples_work .complex_layouts_card {
+    gap: 0;
+    padding: 29px 27px;
+  }
+  .examples_work .complex_layouts_card img {
+    margin: 20px 0;
+    height: 140px;
+  }
+  .examples_work .complex_layouts_card span {
+    font-size: 12px;
+  }
+  .examples_work .complex_layouts_card h5 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .examples_work .complex_layouts_card p {
+    font-size: 13px;
+  }
+  .examples_work .complex_layouts_card_two {
+    padding: 0;
+  }
+  .examples_work .complex_layouts_card_two img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .examples_work .complex_layouts_card_two address {
+    color: rgb(140, 137, 137);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+  .examples_work .complex_layouts_card_two address img {
+    width: 13px;
+    height: 13px;
+  }
+  .examples_work .complex_layouts_card_two h6 {
+    margin: 17px 0 5px 0;
+    font-size: 30px;
+  }
+  .examples_work .complex_layouts_card_two .complex_layouts_card_two_blocks {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .examples_work .complex_layouts_card_two .complex_layouts_card_two_blocks h6 {
+    margin: 3px 0 0 0;
+    font-size: 18px;
+  }
+  .examples_work .complex_layouts_card_two .complex_layouts_text {
+    padding: 0 12px;
+  }
+  .examples_work .complex_layouts_card_two .complex_layout_card_btns {
+    margin-top: 23px;
+    display: flex;
+    gap: 11px;
+  }
+  .examples_work .complex_layouts_card_two .complex_layout_card_btns a {
+    padding: 11px;
+    font-size: 11.64px;
+    font-weight: 400;
+    line-height: 140%;
+  }
+  .examples_work .complex_layouts_card_two .complex_layout_card_btns .complex_layout_btn {
+    font-size: 11.64px;
+    font-weight: 400;
+    line-height: 140%;
+  }
 }
 @media only screen and (max-width: 1100px) {
   header .logo {
@@ -4144,6 +4330,40 @@ footer .footer_bottom span {
   .migration .quiz_migration p {
     font-size: 16px;
     text-align: center;
+  }
+  .examples_work .main_title {
+    margin-bottom: 20px;
+  }
+  .examples_work .complex_layouts_card {
+    gap: 0;
+    padding: 40px 27px;
+  }
+  .examples_work .complex_layouts_card img {
+    margin: 25px 0;
+  }
+  .examples_work .complex_layouts_card h5 {
+    font-size: 21px;
+  }
+  .examples_work .complex_layouts_card p {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  .examples_work .complex_layouts_card_two {
+    padding: 0;
+  }
+  .examples_work .complex_layouts_card_two img {
+    margin: 0;
+  }
+  .examples_work .complex_layouts_card_two h6 {
+    margin: 24px 0 16px 0;
+    font-size: 25px;
+  }
+  .examples_work .complex_layouts_card_two address {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+  .complex_layouts .swiper-wrapper {
+    padding: 10px 0;
   }
   footer {
     padding: 70px 0 45px 0;

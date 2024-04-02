@@ -91,11 +91,37 @@ let swiper3 = new Swiper(".examples_Swiper", {
 });
 
 let swiper4 = new Swiper(".complex_layouts_Swiper", {
-  spaceBetween: 20,
+  spaceBetween: 15,
   loop: true,
   navigation: {
-    nextEl: ".examples_Swiper-next",
-    prevEl: ".examples_Swiper-prev",
+    nextEl: ".complex_layouts_next",
+    prevEl: ".complex_layouts_prev",
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    840: {
+      spaceBetween: 20,
+      slidesPerView: 3,
+    },
+  },
+});
+
+let swiper6 = new Swiper(".complex_layouts_two_Swiper", {
+  spaceBetween: 25,
+  navigation: {
+    nextEl: ".complex_layouts_two_next",
+    prevEl: ".complex_layouts_two_prev",
+  },
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+    },
+    840: {
+      spaceBetween: 35,
+      slidesPerView: 2,
+    },
   },
 });
 
