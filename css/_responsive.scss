@@ -600,6 +600,48 @@
         }
     }
 
+    .migration {
+        .main_title {
+            margin-bottom: 20px;
+        }
+
+        .migration_in_btns {
+            gap: 2px;
+            button {
+                width: 35px;
+                height: 35px;
+                font-size: 13px;
+            }
+        }
+
+        .quiz_migration {
+            padding: 35px;
+
+            .quiz_card_content {
+                gap: 40px;
+            }
+            
+            .quiz-fraction {
+                font-size: 13px;
+            }
+
+            .quiz_progress {
+                width: 160px;
+                padding: 5px 11px;
+                margin-bottom: 25px;
+            }
+
+            .main_title {
+                font-size: 25px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+
 }
 
 @media only screen and (max-width: 1100px) {
@@ -1584,6 +1626,41 @@
         }
     }
 
+    .migration {
+
+        .migration_in_btns {
+            gap: 0;
+            button {
+                width: 46px;
+                height: 46px;
+                font-size: 16px;
+            }
+        }
+
+        .quiz_migration {
+            padding: 33px 20px 60px 20px;
+            .quiz_card_content {
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+            }
+
+            .quiz_progress {
+                margin: 0 auto 40px auto;
+            }
+
+            .main_title {
+                text-align: center;
+                margin-bottom: 28px;
+            }
+
+            p {
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+    }
+
     footer {
         padding: 70px 0 45px 0;
 
@@ -1698,6 +1775,16 @@
 
     h4 {
         font-size: 15px;
+    }
+
+    .migration {
+        .migration_in_btns {
+            button {
+                padding: 14px;
+                flex: 1;
+                height: auto;
+            }
+        }
     }
 }
 

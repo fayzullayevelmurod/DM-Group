@@ -101,16 +101,21 @@ let swiper4 = new Swiper(".complex_layouts_Swiper", {
 
 let swiper5 = new Swiper(".quizSwiper", {
   spaceBetween: 10,
-  allowTouchMove: false,
+  // allowTouchMove: false,
   pagination: {
-    el: ".quiz-pagination",
-    type: "progressbar",
+    // el: ".quiz-pagination",
+    // type: "progressbar",
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
   },
   effect: 'fade',
-  navigation: {
-    nextEl: ".quiz-button-next",
-    prevEl: ".quiz-button-prev",
-  },
+  // navigation: {
+  //   nextEl: ".quiz-button-next",
+  //   prevEl: ".quiz-button-prev",
+  // },
 });
 
 let quiz_fraction_current = document.querySelector('.quiz-fraction .current');
