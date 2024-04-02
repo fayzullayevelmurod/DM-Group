@@ -3054,12 +3054,13 @@ footer {
 // life_begins_header
 .life_begins_header {
     padding: 50px 0 24px 0;
-    backdrop-filter: blur(18px);
+    backdrop-filter: blur(10px);
     background: rgba(0, 0, 0, 0.01);
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
+    z-index: 2;
 
     .logo {
         span {
@@ -3158,9 +3159,9 @@ footer {
 // life-begins_contact
 
 
-.location_home {
-    background-image: url('../images/location_home_bg.png');
-}
+// .location_home {
+//     background-image: url('../images/location_home_bg.png');
+// }
 
 .map {
     margin-bottom: 200px;
@@ -3339,6 +3340,181 @@ footer {
         }
     }
 }
+
+// About home 
+.about_home {
+    margin-bottom: 200px;
+
+    &__btn {
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+        top: 259px;
+        left: 0;
+
+        .main_container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        button {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(12, 12, 12, 0.9);
+            transition: .3s ease all;
+
+            &:hover {
+                background: linear-gradient(to right, #F3A89E, #E16B5F);
+            }
+        }
+    }
+
+    .swiper-slide {
+        height: 1080px;
+        position: relative;
+        z-index: 1;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: rgba(0, 0, 0, 0.5);
+        }
+    }
+    
+    &__main_img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        object-fit: cover;
+        display: block;
+    }
+
+    &__content {
+        position: absolute;
+        bottom: 258px;
+        left: 0;
+        width: 100%;
+
+        .main_container {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            gap: 24px;
+            color: $text-2;
+        }
+
+        &_item {
+            position: relative;
+
+            &:not(:last-child) {
+                background: rgba(12, 12, 12, 0.9);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 32px;
+            }
+
+            &:nth-child(2) {
+                width: 281px;
+
+                p {
+                    font-size: 16px;
+                }
+            }
+
+            .content_alert {
+                position: absolute;
+                left: 32px;
+                top: 0;
+                transform: translateY(-50%);
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 8px;
+                padding: 10px 16px;
+                background: #302B2B;
+                
+                span {
+                    color: $text-2;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 120%;
+                }
+            }
+            
+            .main_title {
+                margin-bottom: 16px;
+                color: $text-2;
+            }
+            
+            h3 {
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 120%;
+                margin-bottom: 24px;
+            }
+            
+            p {
+                color: $text-3;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 120%;
+            }
+
+            &__top {
+                background: rgba(12, 12, 12, 0.9);
+                padding: 35px 32px;
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 24px;
+                width: 283px;
+                margin-bottom: 24px;
+
+                h4 {
+                    color: $text-3;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 120%;
+
+                    span {
+                        display: block;
+                        color: $text-2;
+                        font-size: 24px;
+                        font-weight: 400;
+                        line-height: 120%;
+                        margin-top: 4px;
+                    }
+                }
+            }
+            
+
+            .content_btn {
+                width: 100%;
+                background: $text-2;
+                padding: 16px 32px;
+                text-align: center;
+                color: rgba(12, 12, 12, 0.9);
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 120%;
+            }
+        }
+    }
+}
+// About home 
 
 @import './responsive';
 @import './responsive2';

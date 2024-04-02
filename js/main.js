@@ -121,12 +121,12 @@ let swiper5 = new Swiper(".quizSwiper", {
 let quiz_fraction_current = document.querySelector('.quiz-fraction .current');
 let quiz_fraction_len = document.querySelector('.quiz-fraction .len');
 
-function makeFraction() {
-  quiz_fraction_current.textContent = swiper2.activeIndex + 1
-  quiz_fraction_len.textContent = swiper2.slides.length
-}
+// function makeFraction() {
+//   quiz_fraction_current.textContent = swiper2.activeIndex + 1
+//   quiz_fraction_len.textContent = swiper2.slides.length
+// }
 
-makeFraction()
+// makeFraction()
 
 swiper2.on('slideChange', () => {
   makeFraction()
@@ -326,3 +326,17 @@ mobile_menu_bg.addEventListener('click', () => {
   mobile_menu_bg.classList.remove('active');
 })
 // burger 
+
+let about_home = document.querySelector('.about_home')
+if (about_home) {
+  let aboutHome = new Swiper (about_home, {
+    slidesPerView: 1,
+    allowTouchMove: false,
+    loop: true,
+    effect: 'fade',
+    navigation: {
+      nextEl: '.about_home__btn_next',
+      prevEl: '.about_home__btn_prev',
+    }
+  })
+}
