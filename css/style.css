@@ -5393,7 +5393,7 @@ footer .footer_bottom span {
   }
   .professional_team .professional_team_in .professional_team_card img {
     height: 303px;
-    transform: translateY(4px);
+    margin-bottom: -4px;
   }
   .professional_team .professional_team_in .card_text {
     padding: 50px 30px;

@@ -413,5 +413,20 @@ const $input = document.querySelectorAll('input[type="tel"]');
 if ($input.length) {
   $input.forEach(inp => {
     IMask(inp, {mask: '+{7}(000) 000-00-00'});
+    t = true;
+    inp.oninput = e => {
+      let inp_text = e.target.value;
+      if (t) {
+        console.log(inp_text.length);
+        if (inp_text.length == 4) {
+          inp.value = inp_text.slice(0, -2);
+        }
+        t = false;
+      }
+      
+      if (!inp_text.length) {
+        t = true;
+      }
+    }
   })
 }
