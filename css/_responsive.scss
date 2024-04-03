@@ -527,6 +527,15 @@
                 padding: 17px 14px;
                 font-size: 16px;
             }
+
+            .form_inp {
+                input {
+                    height: 56px;
+                    font-size: 16px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
+            }
         }
 
         .repair_contact_block_under  {
@@ -1156,6 +1165,7 @@
     .repair_options {
         .main_title {
             margin-bottom: 40px;
+            text-align: center;
         }
 
         .repair_options_cards {
@@ -1190,6 +1200,11 @@
             text-align: center;
             font-size: 25px;
             margin-bottom: 50px;
+            white-space: wrap;
+
+            br {
+                display: none;
+            }
         }
         .professional_team_in {
             .professional_team_card {
@@ -1199,6 +1214,9 @@
                 h6 {
                     font-size: 20px;
                     margin-bottom: 25px;
+                    br {
+                        display: none;
+                    }
                 }
 
                 p {
@@ -1241,6 +1259,16 @@
                 font-size: 25px;
                 text-align: center;
                 margin-bottom: 30px;
+            }
+
+            ul {
+                h6, span {
+                    font-size: 16px;
+                }
+            }
+
+            p, .examples_work_right_btn {
+                font-size: 16px;
             }
 
             .examples_work_left {
@@ -1309,11 +1337,15 @@
                         width: 100%;
                         max-width: 100%;
                         justify-content: space-between;
+
+                        span {
+                            font-size: 16px;
+                        }
                     }
                 }
 
                 span {
-                    font-size: 16px;
+                    font-size: 13px;
                     max-width: 100%;
 
                     br {
@@ -1326,6 +1358,7 @@
                 margin-top: 0;
                 width: 100%;
                 text-align: center;
+                font-weight: 400;
             }
         }
 
@@ -1374,6 +1407,13 @@
                 width: 100%;
                 font-size: 18px;
                 height: 73px;
+            }
+
+            .form_inp {
+                input {
+                    height: 73px;
+                    font-size: 18px;
+                }
             }
         }
 

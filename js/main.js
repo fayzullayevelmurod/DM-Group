@@ -84,6 +84,9 @@ if (services_swiper) {
 let swiper3 = new Swiper(".examples_Swiper", {
   spaceBetween: 20,
   loop: true,
+  autoplay: {
+    delay: 5000,
+  },
   navigation: {
     nextEl: ".examples_Swiper-next",
     prevEl: ".examples_Swiper-prev",
@@ -127,22 +130,28 @@ let swiper6 = new Swiper(".complex_layouts_two_Swiper", {
 
 let swiper5 = new Swiper(".quizSwiper", {
   spaceBetween: 10,
-  // allowTouchMove: false,
-  pagination: {
-    // el: ".quiz-pagination",
-    // type: "progressbar",
-    el: ".swiper-pagination",
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + "</span>";
-    },
-  },
+  allowTouchMove: false,
+  speed: 0,
   effect: 'fade',
-  // navigation: {
-  //   nextEl: ".quiz-button-next",
-  //   prevEl: ".quiz-button-prev",
-  // },
 });
+
+let migration_tab_btns = document.querySelectorAll('.migration_in_btns button');
+if (migration_tab_btns.length) {
+  migration_tab_btns.forEach((btn, btn_id) => {
+    btn.onclick = () => {
+      migration_tab_btns.forEach((el, idx) => {
+        el.classList.remove('active')
+        if (btn_id > idx) {
+          el.classList.add('disable_btn')
+        } else {
+          el.classList.remove('disable_btn')
+        }
+      })
+      swiper5.slideTo(btn_id);
+      btn.classList.add('active')
+    }
+  })
+}
 
 let quiz_fraction_current = document.querySelector('.quiz-fraction .current');
 let quiz_fraction_len = document.querySelector('.quiz-fraction .len');
@@ -152,11 +161,14 @@ let quiz_fraction_len = document.querySelector('.quiz-fraction .len');
 //   quiz_fraction_len.textContent = swiper2.slides.length
 // }
 
-// makeFraction()
+// if (swiper2) {
+  
+//   makeFraction()
 
-swiper2.on('slideChange', () => {
-  makeFraction()
-})
+//   swiper2.on('slideChange', () => {
+//     makeFraction()
+//   })
+// }
 
 const accSingleTriggers = document.querySelectorAll('.js-acc-single-trigger');
 
@@ -391,34 +403,12 @@ if (rangeContainer.length) {
         rangeValue.textContent = rangeSlider.value + ' лет'
       }
     }
-    
-    
-    
-    // let isDown = false;
-    
-    // function dragHandler() {
-    //   isDown = !isDown;
-    //   if (!isDown) {
-    //     rangeValue.style.setProperty('opacity', '1');
-    //   } else {
-    //     rangeValue.style.setProperty('opacity', '1');
-    //   }
-    // }
-    
-    // function dragOn(e) {
-    //   if (!isDown) return;
-    //   rangeValueHandler();
-    // }
-    
-    // function rangeValueHandler() {
-    //   rangeValueBar.style.setProperty('width', `${rangeSlider.value}%`);
-    //   rangeValue.innerHTML = `${rangeSlider.value}€`;
-    // }
-    
-    // rangeValueHandler();
-    // rangeSlider.addEventListener('mousedown', dragHandler);
-    // rangeSlider.addEventListener('mousemove', dragOn);
-    // rangeSlider.addEventListener('mouseup', dragHandler);
-    // rangeSlider.addEventListener('click', rangeValueHandler);
+  })
+}
+
+const $input = document.querySelectorAll('input[type="tel"]');
+if ($input.length) {
+  $input.forEach(inp => {
+    IMask(inp, {mask: '+{7}(000) 000-00-00'});
   })
 }
