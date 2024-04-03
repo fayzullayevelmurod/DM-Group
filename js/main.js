@@ -73,6 +73,9 @@ if (services_swiper) {
     slidesPerView: 1,
     loop: true,
     spaceBetween: 10,
+    autoplay: {
+      delay: 5000
+    },
     effect: 'fade',
     navigation: {
       nextEl: '.services_btns__next',

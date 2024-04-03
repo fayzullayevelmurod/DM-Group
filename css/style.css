@@ -858,6 +858,7 @@ header .burger {
   font-weight: 400;
   line-height: 100%;
   margin-bottom: 16px;
+  font-style: normal;
 }
 .examples_work .examples_work_card h4 {
   max-width: 470px;
