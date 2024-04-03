@@ -2624,6 +2624,22 @@
 
             .card_text {
                 padding: 50px 30px;
+
+                &.green_card__sm {
+                    background: #1E4339;
+
+                    h6 {
+                        color: #fff;
+                        
+                        span {
+                            color: #A7A7A7;
+                        }
+                    }
+
+                    p {
+                        color: #fff !important;
+                    }
+                }
             }
         }
     }

@@ -5398,6 +5398,18 @@ footer .footer_bottom span {
   .professional_team .professional_team_in .card_text {
     padding: 50px 30px;
   }
+  .professional_team .professional_team_in .card_text.green_card__sm {
+    background: #1E4339;
+  }
+  .professional_team .professional_team_in .card_text.green_card__sm h6 {
+    color: #fff;
+  }
+  .professional_team .professional_team_in .card_text.green_card__sm h6 span {
+    color: #A7A7A7;
+  }
+  .professional_team .professional_team_in .card_text.green_card__sm p {
+    color: #fff !important;
+  }
   .examples_work {
     margin-bottom: 70px;
   }
