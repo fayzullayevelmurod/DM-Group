@@ -331,19 +331,75 @@ if (filter_open.length) {
 }
 
 // modal
-let modal = document.querySelector('.modal');
-let modal_close = document.querySelector('.modal_close');
+let modal = document.querySelectorAll('.modal');
+let modal1 = document.querySelector('.modal_1');
+let modal2 = document.querySelector('.modal_2');
+let modal3 = document.querySelector('.modal_3');
+let modal4 = document.querySelector('.modal_4');
+let modal5 = document.querySelector('.modal_5');
+let modal_close = document.querySelectorAll('.modal_close');
 let header_btn = document.querySelectorAll('.header_btn');
+let modal_1_open = document.querySelectorAll('.modal_1__open');
+let modal_2_open = document.querySelectorAll('.modal_2__open');
+let modal_3_open = document.querySelectorAll('.modal_3__open');
+let modal_4_open = document.querySelectorAll('.modal_4__open');
+let modal_5_open = document.querySelectorAll('.modal_5__open');
 
-header_btn.forEach((btn) => {
-  btn.addEventListener('click', () => {
-    modal.classList.add('active');
+// header_btn.forEach((btn) => {
+//   btn.addEventListener('click', () => {
+//     modal.classList.add('active');
+//   })
+// })
+
+modal_close.forEach(mdl_close => {
+  mdl_close.addEventListener('click', () => {
+    modal.forEach(mdl => {
+      mdl.classList.remove('active');
+      body.style.overflow = 'visible';
+    })
   })
 })
 
-modal_close.addEventListener('click', () => {
-  modal.classList.remove('active');
+modal_1_open.forEach(mdl_1 => {
+  mdl_1.onclick = e => {
+    e.preventDefault();
+    modal1.classList.add('active');
+    body.style.overflow = 'hidden';
+  }
 })
+
+modal_2_open.forEach(mdl_2 => {
+  mdl_2.onclick = e => {
+    e.preventDefault();
+    modal2.classList.add('active');
+    body.style.overflow = 'hidden';
+  }
+})
+
+modal_3_open.forEach(mdl_3 => {
+  mdl_3.onclick = e => {
+    e.preventDefault();
+    modal3.classList.add('active');
+    body.style.overflow = 'hidden';
+  }
+})
+
+modal_4_open.forEach(mdl_4 => {
+  mdl_4.onclick = e => {
+    e.preventDefault();
+    modal4.classList.add('active');
+    body.style.overflow = 'hidden';
+  }
+})
+
+modal_5_open.forEach(mdl_5 => {
+  mdl_5.onclick = e => {
+    e.preventDefault();
+    modal5.classList.add('active');
+    body.style.overflow = 'hidden';
+  }
+})
+
 // modal
 
 // burger 
@@ -388,7 +444,9 @@ let rangeContainer = document.querySelectorAll('.range-slider-container'),
     initial_payment_deg = document.querySelector('.initial_payment_deg'),
     monthly_payment = document.querySelector('.monthly_payment'),
     interest_rate_annoul = document.querySelector('.interest_rate_annoul'),
-    term = document.querySelector('.term');
+    term = document.querySelector('.term'),
+    kredit_price = document.querySelector('.kredit_price'),
+    required_income = document.querySelector('.required_income');
 
 if (rangeContainer.length) {
   rangeContainer.forEach((rangeEl, idx) => {
@@ -431,10 +489,13 @@ function initialPayment() {
 }
 
 function makeMonthlyPayment() {
-  let ЕЖЕМЕСЯЧНАЯ_СТАВКА = Number(interest_rate_annoul.innerHTML.replace(",", ".")) / 12 / 100,
-      ОБЩАЯ_СТАВКА = Math.pow((1 + ЕЖЕМЕСЯЧНАЯ_СТАВКА), (term.value * 12)),
-      ЕЖЕМЕСЯЧНЫЙ_ПЛАТЕЖ = estate_cost.value * ЕЖЕМЕСЯЧНАЯ_СТАВКА * ОБЩАЯ_СТАВКА / (ОБЩАЯ_СТАВКА - 1)
-  monthly_payment.textContent = formatNumber2(ЕЖЕМЕСЯЧНЫЙ_ПЛАТЕЖ)
+  let MONTHLY_RATE = Number(interest_rate_annoul.innerHTML.replace(",", ".")) / 12 / 100,
+      TOTAL_RATE = Math.pow((1 + MONTHLY_RATE), (term.value * 12)),
+      monthlyPayment = estate_cost.value * MONTHLY_RATE * TOTAL_RATE / (TOTAL_RATE - 1);
+      // Необходимый_доход = monthlyPayment * 3
+  monthly_payment.textContent = formatNumber2(monthlyPayment);
+  kredit_price.textContent = formatNumber((estate_cost.value) - (estate_cost.value * initial_payment_deg.value / 100));
+  required_income.textContent = formatNumber2(monthlyPayment * 3);
 }
 
 function formatNumber(num) {
