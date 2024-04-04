@@ -382,31 +382,66 @@ if (about_home) {
   })
 }
 
-let rangeContainer = document.querySelectorAll('.range-slider-container');
+let rangeContainer = document.querySelectorAll('.range-slider-container'),
+    estate_cost = document.querySelector('.estate_cost'),
+    initial_payment_val = document.querySelector('.initial_payment_val'),
+    initial_payment_deg = document.querySelector('.initial_payment_deg'),
+    monthly_payment = document.querySelector('.monthly_payment'),
+    interest_rate_annoul = document.querySelector('.interest_rate_annoul'),
+    term = document.querySelector('.term');
+
 if (rangeContainer.length) {
   rangeContainer.forEach((rangeEl, idx) => {
     const rangeSlider = rangeEl.querySelector('.range-slider'),
           rangeValueBar = rangeEl.querySelector('.range-value-bar'),
           rangeValue = rangeEl.querySelector('.range-value .value'),
+          rangeRation= rangeEl.querySelector('.range-value .degree'),
           minValue = rangeEl.querySelector('.range-slider').min,
           maxValue = rangeEl.querySelector('.range-slider').max;
 
-    rangeValueBar.style.width = rangeSlider.value * 100 / maxValue + '%'
-    if (idx != 2) {
-      rangeValue.textContent = new Intl.NumberFormat('ru-RU', { style: 'currency', currency: 'RUB', minimumFractionDigits: 0 }).format(rangeSlider.value)
+    rangeValueBar.style.width = (rangeSlider.value - minValue) * 100 / (maxValue - minValue) + '%'
+    if (idx == 0) {
+      rangeValue.textContent = formatNumber(rangeSlider.value)
+    } else if (idx == 1) {
+      initialPayment();
+      rangeRation.textContent = rangeSlider.value + ' %'
     } else {
       rangeValue.textContent = rangeSlider.value + ' лет'
     }
+
+    makeMonthlyPayment();
     
     rangeSlider.oninput = () => {
-      rangeValueBar.style.width = rangeSlider.value * 100 / maxValue + '%';
-      if (idx != 2) {
-        rangeValue.textContent = new Intl.NumberFormat('ru-RU', { style: 'currency', currency: 'RUB', minimumFractionDigits: 0 }).format(rangeSlider.value)
+      rangeValueBar.style.width = (rangeSlider.value - minValue) * 100 / (maxValue - minValue) + '%'
+      if (idx == 0) {
+        rangeValue.textContent = formatNumber(rangeSlider.value)
+      } else if (idx == 1) {
+        rangeRation.textContent = rangeSlider.value + ' %'
       } else {
         rangeValue.textContent = rangeSlider.value + ' лет'
       }
+      initialPayment();
+      makeMonthlyPayment();
     }
   })
+}
+
+function initialPayment() {
+  initial_payment_val.textContent = formatNumber(estate_cost.value * initial_payment_deg.value / 100);
+}
+
+function makeMonthlyPayment() {
+  let ЕЖЕМЕСЯЧНАЯ_СТАВКА = Number(interest_rate_annoul.innerHTML.replace(",", ".")) / 12 / 100,
+      ОБЩАЯ_СТАВКА = Math.pow((1 + ЕЖЕМЕСЯЧНАЯ_СТАВКА), (term.value * 12)),
+      ЕЖЕМЕСЯЧНЫЙ_ПЛАТЕЖ = estate_cost.value * ЕЖЕМЕСЯЧНАЯ_СТАВКА * ОБЩАЯ_СТАВКА / (ОБЩАЯ_СТАВКА - 1)
+  monthly_payment.textContent = formatNumber2(ЕЖЕМЕСЯЧНЫЙ_ПЛАТЕЖ)
+}
+
+function formatNumber(num) {
+  return new Intl.NumberFormat('ru-RU', { style: 'currency', currency: 'RUB', minimumFractionDigits: 0 }).format(num)
+}
+function formatNumber2(num) {
+  return new Intl.NumberFormat('ru-RU', { style: 'currency', currency: 'RUB', minimumFractionDigits: 2 }).format(num)
 }
 
 const $input = document.querySelectorAll('input[type="tel"]');

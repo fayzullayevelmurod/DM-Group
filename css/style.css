@@ -3401,7 +3401,7 @@ footer .footer_bottom span {
   line-height: 140%;
   margin-bottom: 8px;
 }
-.mortgage__form_item .mortgage_inp input {
+.mortgage__form_item .mortgage_inp__text {
   width: 100%;
   outline: none;
   border: 0;
@@ -3410,6 +3410,7 @@ footer .footer_bottom span {
   font-size: 20px;
   font-weight: 400;
   line-height: 140%;
+  background: white;
 }
 .mortgage__form_item.request {
   display: flex;
@@ -4844,7 +4845,7 @@ footer .footer_bottom span {
     font-size: 12px;
     margin-bottom: 6px;
   }
-  .mortgage__form_item .mortgage_inp input {
+  .mortgage__form_item .mortgage_inp__text {
     padding: 18px 12px;
     font-size: 15px;
   }
@@ -6098,7 +6099,7 @@ footer .footer_bottom span {
   .mortgage__form_item .mortgage_inp label {
     font-size: 16px;
   }
-  .mortgage__form_item .mortgage_inp input {
+  .mortgage__form_item .mortgage_inp__text {
     padding: 20px 14px;
     font-size: 20px;
   }

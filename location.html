@@ -832,7 +832,7 @@
                                                     19,4 м²
                                                 </h6>
                                                 <span>
-                                                    Покупка в октябре 2022 в ипотеку от Сбербанка под 7,7% при господдержке
+                                                    Покупка в октябре 2022в ипотеку от Сбербанка под 7,7% при господдержке
                                                 </span>
                                             </li>
                                             <li>
@@ -927,18 +927,18 @@
                         <div class="range-slider-container">
                             <label>Стоимость недвижимости</label>
                             <span class="range-value">
-                                <span class="value">6 700 000 ₽</span>
+                                <span class="value">7 000 000 ₽</span>
                             </span>
-                            <input type="range" min="0" max="13400000" value="6700000" class="range-slider">
+                            <input type="range" min="7000000" max="35000000" value="7000000" step="100000" class="range-slider estate_cost">
                             <span class="range-value-bar"></span>
                         </div>
                         <div class="range-slider-container">
                             <label>Первоначальный взнос</label>
                             <span class="range-value">
-                                <span class="value">998 300 ₽</span>
+                                <span class="value initial_payment_val">998 300 ₽</span>
                                 <span class="degree">14.9 %</span>
                             </span>
-                            <input type="range" min="0" max="1996600" value="998300" class="range-slider">
+                            <input type="range" min="10" max="50" value="10" step="0.1" class="range-slider initial_payment_deg">
                             <span class="range-value-bar"></span>
                         </div>
                         <div class="range-slider-container">
@@ -946,12 +946,14 @@
                             <span class="range-value">
                                 <span class="value">30 лет</span>
                             </span>
-                            <input type="range" min="0" max="60" value="30" class="range-slider">
+                            <input type="range" min="5" max="30" value="5" step="1" class="range-slider term">
                             <span class="range-value-bar"></span>
                         </div>
                         <div class="mortgage_inp">
                             <label for="">Процентная ставка</label>
-                            <input type="text" value="8.6%">
+                            <span class="mortgage_inp__text">
+                                <span class="interest_rate_annoul">6,3</span>%
+                            </span>
                         </div>
                     </div>
                     <div class="mortgage__form_item request">
@@ -962,7 +964,7 @@
                             </div>
                             <div class="form_control">
                                 <label for="">Ежемесячный платеж</label>
-                                <span>44 246 ₽</span>
+                                <span class="monthly_payment">44 246 ₽</span>
                             </div>
                             <div class="form_control">
                                 <label for="">Необходимый доход</label>
