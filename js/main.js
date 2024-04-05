@@ -491,7 +491,7 @@ function initialPayment() {
 function makeMonthlyPayment() {
   let MONTHLY_RATE = Number(interest_rate_annoul.innerHTML.replace(",", ".")) / 12 / 100,
       TOTAL_RATE = Math.pow((1 + MONTHLY_RATE), (term.value * 12)),
-      monthlyPayment = estate_cost.value * MONTHLY_RATE * TOTAL_RATE / (TOTAL_RATE - 1);
+      monthlyPayment = ((estate_cost.value) - (estate_cost.value * initial_payment_deg.value / 100)) * MONTHLY_RATE * TOTAL_RATE / (TOTAL_RATE - 1);
       // Необходимый_доход = monthlyPayment * 3
   monthly_payment.textContent = formatNumber2(monthlyPayment);
   kredit_price.textContent = formatNumber((estate_cost.value) - (estate_cost.value * initial_payment_deg.value / 100));
