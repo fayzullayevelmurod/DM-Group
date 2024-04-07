@@ -2976,16 +2976,6 @@ footer .footer_bottom span {
   position: relative;
   z-index: 1;
 }
-.about_home .swiper-slide::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: rgba(0, 0, 0, 0.5);
-}
 .about_home__main_img {
   position: absolute;
   top: 0;
@@ -3002,6 +2992,7 @@ footer .footer_bottom span {
   bottom: 258px;
   left: 0;
   width: 100%;
+  z-index: 2;
 }
 .about_home__content .main_container {
   display: flex;
@@ -3048,7 +3039,7 @@ footer .footer_bottom span {
   margin-bottom: 16px;
   color: #ffffff;
 }
-.about_home__content_item h3 {
+.about_home__content_item h2 {
   font-size: 24px;
   font-weight: 400;
   line-height: 120%;
@@ -3070,13 +3061,13 @@ footer .footer_bottom span {
   width: 283px;
   margin-bottom: 24px;
 }
-.about_home__content_item__top h4 {
+.about_home__content_item__top h3 {
   color: #8C8989;
   font-size: 20px;
   font-weight: 400;
   line-height: 120%;
 }
-.about_home__content_item__top h4 span {
+.about_home__content_item__top h3 span {
   display: block;
   color: #ffffff;
   font-size: 24px;
@@ -4639,7 +4630,7 @@ footer .footer_bottom span {
     margin-bottom: 11px;
     font-size: 35px;
   }
-  .about_home__content_item h3 {
+  .about_home__content_item h2 {
     font-size: 16px;
     margin-bottom: 17px;
   }
@@ -4652,10 +4643,10 @@ footer .footer_bottom span {
     width: 202px;
     margin-bottom: 17px;
   }
-  .about_home__content_item__top h4 {
+  .about_home__content_item__top h3 {
     font-size: 16px;
   }
-  .about_home__content_item__top h4 span {
+  .about_home__content_item__top h3 span {
     font-size: 18px;
     margin-top: 2px;
   }
@@ -5112,7 +5103,7 @@ footer .footer_bottom span {
     font-size: 16px;
     font-weight: 400;
   }
-  .about_home__content_item h3 {
+  .about_home__content_item h2 {
     font-size: 16px;
     margin-bottom: 16px;
   }
@@ -5125,7 +5116,7 @@ footer .footer_bottom span {
     width: 100%;
     margin-bottom: 35px;
   }
-  .about_home__content_item__top h4 {
+  .about_home__content_item__top h3 {
     font-size: 16px;
     display: flex;
     align-items: center;
@@ -5133,7 +5124,7 @@ footer .footer_bottom span {
     width: 100%;
     gap: 9px;
   }
-  .about_home__content_item__top h4 span {
+  .about_home__content_item__top h3 span {
     font-size: 16px;
     margin-top: 0;
   }
