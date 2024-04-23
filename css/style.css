@@ -2045,6 +2045,20 @@ footer .footer_bottom span {
 .services .swiper-slide:not(.swiper-slide-active) {
   height: 0px;
 }
+.services .swiper-slide.swiper-slide-active .marquee__content {
+  animation: marquee 45s linear infinite forwards;
+}
+.services .swiper-slide.swiper-slide-active .marquee__content:hover {
+  animation-play-state: paused;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-66.6%);
+  }
+}
 .services .swiper-slide .main_container {
   height: 500px;
   bottom: 0;
@@ -2056,7 +2070,33 @@ footer .footer_bottom span {
   right: 0;
   bottom: 0;
 }
-.services .swiper-slide span {
+.services .swiper-slide .marquee {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+.services .swiper-slide .marquee__content {
+  min-width: 8000px;
+  display: flex;
+}
+.services .swiper-slide .marquee__content__2 {
+  min-width: 9000px;
+}
+.services .swiper-slide .marquee__content__3 {
+  min-width: 12000px;
+}
+.services .swiper-slide .marquee__content__4 {
+  min-width: 9500px;
+}
+.services .swiper-slide .marquee__content__5 {
+  min-width: 9800px;
+}
+.services .swiper-slide .marquee .list-inline {
+  display: flex;
+  justify-content: space-around;
+  width: 33.33%;
+}
+.services .swiper-slide span, .services .swiper-slide li {
   font-size: 80px;
   font-weight: 400;
   line-height: 140%;
@@ -2064,6 +2104,7 @@ footer .footer_bottom span {
   color: transparent;
   -webkit-text-stroke: 1px #8C8989;
   -webkit-text-fill-color: transparent;
+  white-space: nowrap;
 }
 .services .swiper-slide p {
   position: absolute;
@@ -4428,7 +4469,25 @@ footer .footer_bottom span {
     width: calc(100% - 272px);
     height: 290px;
   }
-  .services .swiper-slide span {
+  .services .swiper-slide .marquee {
+    gap: 20px;
+  }
+  .services .swiper-slide .marquee__content {
+    min-width: 4400px;
+  }
+  .services .swiper-slide .marquee__content__2 {
+    min-width: 5100px;
+  }
+  .services .swiper-slide .marquee__content__3 {
+    min-width: 6950px;
+  }
+  .services .swiper-slide .marquee__content__4 {
+    min-width: 5400px;
+  }
+  .services .swiper-slide .marquee__content__5 {
+    min-width: 5700px;
+  }
+  .services .swiper-slide span, .services .swiper-slide li {
     font-size: 46px;
   }
   .services .swiper-slide p {
@@ -6500,7 +6559,25 @@ footer .footer_bottom span {
     height: 230px;
     position: static;
   }
-  .services .swiper-slide span {
+  .services .swiper-slide .marquee {
+    gap: 10px;
+  }
+  .services .swiper-slide .marquee__content {
+    min-width: 3800px;
+  }
+  .services .swiper-slide .marquee__content__2 {
+    min-width: 4400px;
+  }
+  .services .swiper-slide .marquee__content__3 {
+    min-width: 6050px;
+  }
+  .services .swiper-slide .marquee__content__4 {
+    min-width: 4700px;
+  }
+  .services .swiper-slide .marquee__content__5 {
+    min-width: 4900px;
+  }
+  .services .swiper-slide span, .services .swiper-slide li {
     font-size: 40px;
   }
   .services .swiper-slide p {

@@ -1253,8 +1253,32 @@
                 width: calc(100% - 272px);
                 height: 290px;
             }
+            
+            .marquee {
+                gap: 20px;
+    
+                &__content {
+                    min-width: 4400px;
+    
+                    &__2 {
+                        min-width: 5100px;
+                    }
+    
+                    &__3 {
+                        min-width: 6950px;
+                    }
+    
+                    &__4 {
+                        min-width: 5400px;
+                    }
 
-            span {
+                    &__5 {
+                        min-width: 5700px;
+                    }
+                }
+            }
+
+            span, li {
                 font-size: 46px;
             }
 
@@ -4051,7 +4075,31 @@
                 position: static;
             }
 
-            span {
+            .marquee {
+                gap: 10px;
+    
+                &__content {
+                    min-width: 3800px;
+    
+                    &__2 {
+                        min-width: 4400px;
+                    }
+    
+                    &__3 {
+                        min-width: 6050px;
+                    }
+    
+                    &__4 {
+                        min-width: 4700px;
+                    }
+
+                    &__5 {
+                        min-width: 4900px;
+                    }
+                }
+            }
+
+            span, li {
                 font-size: 40px;
             }
 
